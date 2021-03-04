@@ -1,0 +1,15 @@
+{
+  "name": "@finn-no/fabric-tailwind-config",
+  "version": "0.5.9",
+  "description": "Fabric's Tailwind configuration",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.schibsted.io:finn/fabric-css.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+  "license": "MIT",
+  "gitHead": "aec0b89506e20d5358ae6a00e150409071680054"
+}
