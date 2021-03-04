@@ -26,7 +26,6 @@ Fabric CSS is published both to npm and to eik (as an npm `postpublish` step).
 
 1. Make sure you're on `master`
 2. `git pull`
-3. Make sure you have set up
-   [npm publishing to local repository](https://confluence.schibsted.io/display/FINNWEB/How+to+publish+to+our+local+NPM+registry)
+3. Make sure you're logged into NPM
 4. Make sure you are [authenticated with the eik server](https://eik.dev/docs/client_login)
 5. `yarn lerna publish`
