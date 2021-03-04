@@ -9,7 +9,7 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
   "license": "MIT",
   "gitHead": "aec0b89506e20d5358ae6a00e150409071680054"
 }

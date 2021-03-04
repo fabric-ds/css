@@ -14,7 +14,7 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
   "license": "MIT",
   "devDependencies": {
     "@finn-no/fabric-icons": "^0.1.1",
