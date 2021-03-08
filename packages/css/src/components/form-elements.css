@@ -153,12 +153,21 @@
             background-position: center;
         }
 
+        &:indeterminate + label:before,
         &:checked + label:before {
             @apply bg-blue-600 border-blue-600;
         }
 
+        &:indeterminate:hover + label:before,
         &:checked:hover + label:before {
             @apply bg-blue-700 border-blue-700;
+        }
+
+        &:indeterminate + label:before {
+            @apply text-white text-center font-bold;
+            content: '–';
+            line-height: 1.1;
+            background-image: none;
         }
     }
 

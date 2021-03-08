@@ -191,6 +191,10 @@
                 <input type="checkbox" id="fancycheckbox4" />
                 <label for="fancycheckbox4">Something</label>
               </div>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="maybe-checkbox" />
+                <label for="maybe-checkbox">Maybe</label>
+              </div>
             </div>
             <div class="text-right">
               <label class="mr-32">
@@ -261,5 +265,9 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <script>
+      const el = document.getElementById('maybe-checkbox')
+      el.indeterminate = true
+    </script>
   </body>
 </html>
