@@ -8,7 +8,7 @@
 
 @import "tailwindcss/utilities";
 /* For backwards compatibility with Troika we include it's utilities */
-@import "@finn-no/troika-css-utilities/dist/utilities.css";
+@import "./troika-utilities.css";
 @import "./utilities.css";
 
 @import "./theme.css";

@@ -18,8 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "@finn-no/fabric-icons": "^0.1.1",
-    "@finn-no/fabric-tailwind-config": "^0.5.9",
-    "@finn-no/troika-css-utilities": "^0.6.5"
+    "@finn-no/fabric-tailwind-config": "^0.5.9"
   },
   "eik": {
     "server": "https://assets.finn.no",
