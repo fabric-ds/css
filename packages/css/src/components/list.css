@@ -2,7 +2,7 @@
     list-style: none;
     @apply p-0;
 }
-.list>li,
+.list > li,
 .list__item {
     @apply leading-22 relative mb-0;
 }
@@ -12,11 +12,11 @@
 .list__item____body {
     @apply text-gray-500;
 }
-.list--compact>li,
+.list--compact > li,
 .list--compact .list__item {
     @apply text-14;
 }
-.list--large>li,
+.list--large > li,
 .list--large .list__item {
     @apply text-22;
 }
@@ -27,17 +27,16 @@
     @apply text-14;
 }
 
-
 .list--ordered {
     counter-reset: item;
     @apply p-0;
 }
-.list--ordered>li,
+.list--ordered > li,
 .list--ordered .list__item {
     counter-increment: item;
-    @apply pl-40 mb-16;    
+    @apply pl-40 mb-16;
 }
-.list--ordered>li::before,
+.list--ordered > li::before,
 .list--ordered .list__item::before {
     content: counter(item) ".";
     @apply text-blue-600 absolute left-16;
@@ -46,17 +45,17 @@
 .list--checked {
     @apply p-0;
 }
-.list--checked>li,
+.list--checked > li,
 .list--checked .list__item {
     @apply pl-48 relative mb-16;
 }
-.list--checked>li::before,
-.list--checked .list__item::before { 
+.list--checked > li::before,
+.list--checked .list__item::before {
     content: "";
     background-image: svg-load("24x24/check.svg", currentColor: "#2563eb");
-    @apply bg-center block h-24 w-24 bg-contain bg-no-repeat absolute left-14 -top-1;  
+    @apply bg-center block h-24 w-24 bg-contain bg-no-repeat absolute left-14 -top-1;
 }
-.list--checked.list--large>li::before,
+.list--checked.list--large > li::before,
 .list--checked.list--large .list__item::before {
     @apply top-1;
 }
