@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@finn-no/fabric-icons": "^0.1.1",
+    "@finn-no/fabric-icons": "^0.2.0",
     "@finn-no/fabric-tailwind-config": "^0.5.10"
   },
   "eik": {

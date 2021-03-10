@@ -88,7 +88,7 @@
     &:before {
         @apply block absolute right-0 bottom-0 w-32 h-full;
         content: "";
-        background-image: svg-load("16x16/chevron-down.svg", currentColor: "#404040");
+        background-image: svg-load("16/chevron-down.svg", currentColor: "#404040");
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: 62.5%;
@@ -149,7 +149,7 @@
     & input[type="checkbox"] {
         & + label:before {
             @apply rounded-2;
-            background-image: svg-load("16x16/check.svg", currentColor: "white");
+            background-image: svg-load("16/check.svg", currentColor: "white");
             background-position: center;
         }
 
