@@ -3,7 +3,7 @@ name: Deploy documentation
 on:
   push:
     branches:
-      - deploy-docs-to-gh-pages
+      - master
 
 jobs:
   build:
