@@ -50,7 +50,7 @@ function basePathFix() {
         name: 'base-path-fix',
         transformIndexHtml(html) {
             // Regex matches href=", followed by a /, then any combination of \w, / or -, ending with .html
-            return html.replace(/href="\/([\w\/-]*)\.html/g, 'href="/finn/fabric-css/$1.html');
+            return html.replace(/href="\/([\w\/-]*)\.html/g, 'href="/fabric-css/$1.html');
         },
     };
 }
