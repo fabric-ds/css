@@ -165,7 +165,7 @@
 
         &:indeterminate + label:before {
             @apply text-white text-center font-bold;
-            content: '–';
+            content: "–";
             line-height: 1.1;
             background-image: none;
         }
