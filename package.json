@@ -10,7 +10,7 @@
     "postbuild": "./scripts/reportSizes.mjs",
     "dev": "vite",
     "docs": "vite build",
-    "docs:deploy": "yarn build && gh-pages -d site",
+    "docs:deploy": "yarn docs && gh-pages -d site",
     "format": "prettier --write . --ignore-path .gitignore",
     "lint": "prettier --check . --ignore-path .gitignore"
   },
