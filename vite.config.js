@@ -22,7 +22,7 @@ export default function ({ mode }) {
     }
 
     return {
-        base: isProduction ? '/finn/fabric-css/' : '',
+        base: isProduction ? '/fabric-css/' : '',
         plugins: [
             html({
                 inject: {
