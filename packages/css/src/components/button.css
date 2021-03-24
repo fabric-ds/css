@@ -124,7 +124,7 @@ a.button--in-progress:visited {
     @apply border-transparent;
     @apply text-gray-500;
     background-size: 30px 30px !important;
-    @apply bg-gray-100;
+    @apply bg-gray-100 !important;
     background-image: linear-gradient(
         135deg,
         rgba(0, 0, 0, 0.05) 25%,
