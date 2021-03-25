@@ -182,7 +182,7 @@ module.exports = {
         maxHeight: ['responsive'],
         maxWidth: ['responsive'],
         minHeight: [],
-        minWidth: [],
+        minWidth: ['responsive'],
         objectFit: [],
         objectPosition: [],
         order: ['responsive'],
