@@ -16,6 +16,15 @@ module.exports = plugin(({ addUtilities, addBase }) => {
         '.h5': h5,
         '.h1, .h2, .h3, .h4, .h5': bold,
     };
+    const veryNormal = { fontWeight: 'normal !important' };
     addUtilities(headings, ['responsive']);
-    addBase({ h1, h2, h3, h4, h5, 'h1, h2, h3, h4, h5': bold });
+    addBase({
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        'h1, h2, h3, h4, h5': bold,
+        '.font-normal': veryNormal, // fixes specificity/order issue with .hN classes
+    });
 });
