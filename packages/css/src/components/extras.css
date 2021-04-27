@@ -1,18 +1,18 @@
-.f-slider .thumb {
+.f-slider .f-thumb {
     &:hover,
     &:focus {
-        & .thumb-center {
+        & .f-thumb-center {
             transform: scale(1.25);
         }
     }
 }
 
 .f-step {
-    &:last-child .step-line {
+    &:last-child .f-step-line {
         display: none;
     }
 
-    &.step-h:last-child {
+    &.f-step-h:last-child {
         flex: 0 1 auto;
     }
 }
