@@ -1,7 +1,6 @@
 const { colors: colorSpec } = require('./colors');
 const focusRing = require('./focus-ring');
 const headings = require('./headings');
-const buttonSmall = require('./button-small');
 
 const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrString]) => {
     acc[colorName] = {};
@@ -15,7 +14,7 @@ const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrS
 
 module.exports = {
     darkMode: false,
-    plugins: [focusRing, headings, buttonSmall],
+    plugins: [focusRing, headings],
     corePlugins: {
         // Backgrounds
         gradientColorStops: false,

@@ -84,7 +84,27 @@ a.button:hover {
 }
 
 /* Sizing */
-/* All sizing moved to a TW-plugin so it could be made responsive */
+.button--small {
+    @apply px-16 py-8 text-12 leading-16;
+}
+
+.button--small.button--secondary {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.button--small.button--utility {
+    padding: 7px 15px;
+}
+
+.button--small.button--pill {
+    @apply p-4;
+    min-height: 36px;
+    min-width: 36px;
+}
+.button--small.button--link {
+    @apply p-0;
+}
 
 /* Disabled state */
 .button:disabled,
