@@ -1,18 +1,138 @@
 .f-slider .f-thumb {
-    &:hover,
-    &:focus {
-        & .f-thumb-center {
-            transform: scale(1.25);
-        }
+  &:hover,
+  &:focus {
+    & .f-thumb-center {
+      transform: scale(1.25);
     }
+  }
 }
 
 .f-step {
-    &:last-child .f-step-line {
-        display: none;
-    }
+  &.step-v {
+    grid-template-rows: 20px auto;
+  }
+  &.step-v-l {
+    grid-template-columns: 20px 1fr;
+  }
+  &.step-v-r {
+    grid-template-columns: 1fr 20px;
+  }
+  &.step-h {
+    grid-template-rows: auto 20px;
+    grid-template-columns: 1fr 20px 1fr;
+  }
+  &.step-v:last-child .step-line {
+    display: none;
+  }
+  &.step-h:last-child .step-line-h-r,
+  &.step-h:first-child .step-line-h-l {
+    background-color: transparent !important;
+  }
+}
 
-    &.f-step-h:last-child {
-        flex: 0 1 auto;
+.f-card {
+  @apply shadow tap-highlight-transparent;
+
+  &:hover {
+    @apply shadow-2;
+  }
+
+  &:active {
+    @apply shadow-none;
+
+    & .f-card-outline {
+      @apply border-gray-300;
     }
+  }
+
+  &:focus-visible {
+    & .f-card-outline {
+      @apply border-aqua-400;
+    }
+  }
+}
+.f-card-selected {
+  @apply bg-blue-50;
+
+  & .f-card-outline {
+    @apply border-blue-600;
+  }
+}
+
+.f-card .field.in-card {
+  position: static;
+
+  & .input-toggle {
+    position: static;
+  }
+
+  & .input-toggle input {
+    width: 100%;
+    height: 100%;
+    clip: auto;
+    appearance: none;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+}
+
+.f-expandable {
+  will-change: height;
+  @apply tap-highlight-transparent;
+
+  & .f-expandable-chevron {
+    top: calc(50% - 8px);
+  }
+}
+
+.f-modal-backdrop {
+  --f-modal-max-height: 80vh;
+  --f-modal-width: 640px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.f-modal {
+  max-height: var(--f-modal-max-height);
+  height: var(--f-modal-height);
+  width: var(--f-modal-width);
+  will-change: max-height;
+  backface-visibility: hidden;
+  transition: all 0.3s ease;
+
+  @media (--max480) {
+    padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+  }
+}
+.f-modal-title-button {
+  @media (max-width: 480px) {
+    min-width: 32px;
+    min-height: 32px;
+  }
+}
+/* vue-specific transitions handlers */
+.f-modal-title-enter-from, .f-modal-title-leave-to {
+  opacity: 0;
+  backface-visibility: hidden;
+}
+.f-modal-title-leave-active {
+  position: absolute;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateY(100%);
+
+  @media (--min480) {
+    transform: translateY(50%);
+  }
 }
