@@ -99,8 +99,8 @@ a.button:hover {
 
 .button--small.button--pill {
     @apply p-4;
-    min-height: 36px;
-    min-width: 36px;
+    min-height: 32px;
+    min-width: 32px;
 }
 .button--small.button--link {
     @apply p-0;

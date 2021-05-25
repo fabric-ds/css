@@ -6,7 +6,21 @@
     outline: none;
 }
 
+.tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .tabular-nums {
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.reduced-motion\:duration-0 {
+    @media (prefers-reduced-motion) {
+        transition-duration: 0s;
+    }
+}
+
+.fixed-ios-fix {
+  transform: translate3d(0,0,0);
 }
