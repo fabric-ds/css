@@ -1,0 +1,8 @@
+.f-slider .f-thumb {
+    &:hover,
+    &:focus {
+        & .f-thumb-center {
+            transform: scale(1.25);
+        }
+    }
+}

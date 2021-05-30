@@ -1,0 +1,40 @@
+.f-card {
+    @apply shadow tap-highlight-transparent;
+
+    &:hover {
+        @apply shadow-2;
+    }
+
+    &:active {
+        @apply shadow-none;
+
+        & .f-card-outline {
+            @apply border-gray-300;
+        }
+    }
+
+    &:focus-visible {
+        & .f-card-outline {
+            @apply border-aqua-400;
+        }
+    }
+}
+
+.f-card .field.in-card {
+    position: static;
+
+    & .input-toggle {
+        position: static;
+    }
+
+    & .input-toggle input {
+        width: 100%;
+        height: 100%;
+        clip: auto;
+        appearance: none;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+    }
+}
+

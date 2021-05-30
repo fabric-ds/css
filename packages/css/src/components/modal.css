@@ -1,0 +1,53 @@
+.f-modal-backdrop {
+    --f-modal-max-height: 80%;
+    --f-modal-width: 640px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.f-modal {
+    max-height: var(--f-modal-max-height);
+    height: var(--f-modal-height);
+    width: var(--f-modal-width);
+    will-change: max-height, height;
+    backface-visibility: hidden;
+    transition: all 0.3s ease;
+
+    @media (--max480) {
+        padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+    }
+}
+.f-modal-title-button {
+    @media (max-width: 480px) {
+        min-width: 32px;
+        min-height: 32px;
+    }
+}
+
+/* vue-specific transitions handlers */
+.f-modal-title-enter-from,
+.f-modal-title-leave-to {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+.f-modal-title-leave-active {
+    position: absolute;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+    transition: transform 0.3s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+    transform: translateY(100%);
+
+    @media (--min480) {
+        transform: translateY(50%);
+    }
+}
