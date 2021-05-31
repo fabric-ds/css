@@ -1,0 +1,8 @@
+.f-expandable {
+    will-change: height;
+    @apply tap-highlight-transparent;
+
+    & .f-expandable-chevron {
+        top: calc(50% - 8px);
+    }
+}

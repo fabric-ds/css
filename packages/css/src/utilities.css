@@ -21,6 +21,13 @@
     }
 }
 
+/* iOS position fixed doesn't work under certain scenarios */
 .fixed-ios-fix {
-  transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* add .f-grid to a Fabric .grid to fix conflict between Troika and Fabric */
+.f-grid.grid:not(.grid--auto-height):after,
+.grid:not(.grid--auto-height):before {
+    content: none;
 }

@@ -3,4 +3,10 @@
 @import "./components/page-container.css";
 @import "./components/form-elements.css";
 @import "./components/field.css";
-@import "./components/extras.css";
+@import "./components/card.css";
+@import "./components/expandable.css";
+@import "./components/modal.css";
+@import "./components/slider.css";
+@import "./components/steps.css";
+@import "./components/switch.css";
+@import "./components/toast.css";

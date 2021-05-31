@@ -1,0 +1,17 @@
+{
+  "name": "@finn-no/fabric-component-classes",
+  "version": "0.0.17",
+  "type": "module",
+  "main": "index.js",
+  "exports": "./index.js",
+  "author": "Dave Honneffer <pearofducks@gmail.com>",
+  "license": "MIT",
+  "scripts": {},
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "4e4c14fec2d4af07732afeeb5f5ee0c801bc01cc"
+}
