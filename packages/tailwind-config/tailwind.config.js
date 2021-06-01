@@ -119,7 +119,8 @@ module.exports = {
         },
         // Effects
         boxShadow: {
-            DEFAULT: '0 1px 3px rgba(var(--f-bluegray-600-rgb), .12), 0 1px 2px rgba(var(--f-bluegray-600-rgb), .24)',
+            DEFAULT:
+                '0 1px 3px rgba(var(--f-bluegray-600-rgb), .12), 0 1px 2px rgba(var(--f-bluegray-600-rgb), .24)',
             2: '0 3px 6px rgba(var(--f-bluegray-600-rgb), .16), 0 3px 6px rgba(var(--f-bluegray-600-rgb), .24)',
             3: '0 10px 20px rgba(var(--f-bluegray-600-rgb), .19), 0 6px 6px rgba(var(--f-bluegray-600-rgb), .23)',
             4: '0 14px 28px rgba(var(--f-bluegray-600-rgb), .25), 0 10px 10px rgba(var(--f-bluegray-600-rgb), .22)',

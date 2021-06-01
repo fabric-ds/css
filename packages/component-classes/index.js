@@ -107,5 +107,27 @@ export const toast = {
     toastClose: 'ml-auto p-8',
 };
 
+export const tabs = {
+    wrapperUnderlined: 'border-b border-gray-200 -mx-16 sm:mx-0 px-4 sm:px-0 mb-32',
+    wrapperContained: '',
+    tabContainer: 'mx-auto max-w-screen-md w-full grid f-grid relative',
+    wunderbar: 'absolute border-blue-600 -bottom-4 border-b-4 transition-all',
+};
+
+export const tab = {
+    tab: 'group grid f-grid items-center gap-8 focus-ring font-normal antialias p-16 pb-4 hover:underline',
+    tabActive: 'active-tab',
+    tabContained: 'rounded-t-8',
+    tabContainedActive: 'bg-aqua-50',
+    icon: 'mx-auto ',
+    iconUnderlined: 'group-hover:text-blue-600',
+    iconUnderlinedActive: 'text-blue-600',
+    iconUnderlinedInactive: 'text-gray-300',
+    contentUnderlined: 'font-bold content-underlined', // content-underlined is a no-op that prevents a quirk in how Vue handles class bindings
+    contentUnderlinedInactive: 'text-gray-500 group-hover:text-gray-700',
+    contentUnderlinedActive: 'text-blue-600',
+    contentContainedActive: 'font-bold',
+};
+
 export const buttonReset =
     'focus:outline-none appearance-none cursor-pointer bg-transparent border-0 m-0 p-0 inline-block';
