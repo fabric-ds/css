@@ -15,6 +15,9 @@
         padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
     }
 }
+.f-modal-title {
+    grid-template-columns: auto 1fr auto;
+}
 .f-modal-title-button {
     @media (max-width: 480px) {
         min-width: 32px;
