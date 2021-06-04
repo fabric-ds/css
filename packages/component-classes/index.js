@@ -16,8 +16,8 @@ export const modal = {
     backdrop: 'f-modal-backdrop fixed inset-0 flex sm:place-content-center sm:place-items-center items-end',
     modal:
         'f-modal rounded-8 mx-0 sm:mx-16 bg-white flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32 rounded-b-0 sm:rounded-b-8',
-    content: 'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink',
-    footer: 'flex justify-end flex-shrink-0',
+    content: 'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink px-16 sm:px-32 relative',
+    footer: 'flex justify-end flex-shrink-0 px-16 sm:px-32',
     transitionTitle: 'transition-all duration-300',
     title:
         '-mt-4 sm:-mt-8 h-40 sm:h-48 grid gap-8 sm:gap-16 f-modal-title items-center px-16 sm:px-32 border-b sm:border-b-0 flex-shrink-0',
