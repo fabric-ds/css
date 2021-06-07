@@ -20,7 +20,7 @@ export const modal = {
     footer: 'flex justify-end flex-shrink-0 px-16 sm:px-32',
     transitionTitle: 'transition-all duration-300',
     title:
-        '-mt-4 sm:-mt-8 h-40 sm:h-48 grid gap-8 sm:gap-16 f-modal-title items-center px-16 sm:px-32 border-b sm:border-b-0 flex-shrink-0',
+        '-mt-4 sm:-mt-8 h-40 sm:h-48 grid f-grid gap-8 sm:gap-16 f-modal-title items-center px-16 sm:px-32 border-b sm:border-b-0 flex-shrink-0',
     titleText: 'mb-0 h4 sm:h3',
     titleButton: 'button button--pill f-modal-title-button',
     titleButtonLeft: '-ml-8 sm:-ml-12',
@@ -35,10 +35,10 @@ export const box = {
 };
 
 export const step = {
-    stepVertical: 'step-v grid grid-flow-col gap-x-16',
+    stepVertical: 'step-v grid f-grid grid-flow-col gap-x-16',
     stepVerticalLeft: 'step-v-l',
     stepVerticalRight: 'step-v-r text-right',
-    stepHorizontal: 'step-h flex-1 grid gap-y-16 items-center',
+    stepHorizontal: 'step-h flex-1 grid f-grid gap-y-16 items-center',
 
     stepDot: 'rounded-full border-2 h-20 w-20 transition-colors duration-300',
     stepDotVertical: '',
@@ -87,7 +87,7 @@ export const switchToggle = {
 
 export const toaster = {
     toasterContainer: 'fixed fixed-ios-fix bottom-16 left-0 right-0 mx-8 sm:mx-16 z-50 pointer-events-none',
-    toaster: 'f-toaster grid auto-rows-auto justify-items-center justify-center mx-auto pointer-events-none',
+    toaster: 'f-toaster grid f-grid auto-rows-auto justify-items-center justify-center mx-auto pointer-events-none',
 };
 
 export const toast = {
