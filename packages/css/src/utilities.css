@@ -28,6 +28,6 @@
 
 /* add .f-grid to a Fabric .grid to fix conflict between Troika and Fabric */
 .f-grid.grid:not(.grid--auto-height):after,
-.grid:not(.grid--auto-height):before {
+.f-grid.grid:not(.grid--auto-height):before {
     content: none;
 }
