@@ -31,3 +31,8 @@
 .f-grid.grid:not(.grid--auto-height):before {
     content: none;
 }
+
+/* add t-grid to a Troika .grid to fix conflict between Troika and Fabric */
+.t-grid.grid {
+    display: block;
+}
