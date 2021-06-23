@@ -1,4 +1,5 @@
-:root {
+:root,
+:host {
     --f-blue-50: #eff6ff;
     --f-blue-100: #dbeafe;
     --f-blue-200: #bfdbfe;
