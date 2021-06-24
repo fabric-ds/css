@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@eik/cli": "^1.8.10",
+    "@eik/cli": "^2.0.0-next.6",
     "@finn-no/browserslist-config": "^3.0.0",
     "autoprefixer": "^10.1.0",
     "brotli-size": "^4.0.0",
@@ -44,5 +44,6 @@
     "tailwindcss": "^2.0.3",
     "vite": "^2.0.0-beta.69",
     "vite-plugin-html": "^2.0.0-rc.3"
-  }
+  },
+  "dependencies": {}
 }
