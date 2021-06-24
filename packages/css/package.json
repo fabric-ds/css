@@ -1,6 +1,6 @@
 {
   "name": "@finn-no/fabric-css",
-  "version": "0.7.26",
+  "version": "0.7.27",
   "description": "Fabric CSS core components and utilities",
   "files": [
     "dist"
