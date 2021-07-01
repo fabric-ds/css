@@ -7,7 +7,7 @@
         }
     }
 
-    & .active-track {
+    & .larger-active-track {
       height: 6px;
       top: 19px;
     }
