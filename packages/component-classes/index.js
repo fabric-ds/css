@@ -1,15 +1,12 @@
 export const slider = {
-    wrapper: 'f-slider relative w-full h-32',
-    track: 'track absolute bg-bluegray-300 h-4 top-14 rounded-4 w-full',
-    trackDisabled: 'pointer-events-none',
-    activeTrack: 'active-track absolute bg-blue-600 h-4 top-14 rounded-4',
-    activeTrackDisabled: 'bg-bluegray-400 pointer-events-none',
-    thumb: 'f-thumb absolute w-32 h-32 bottom-0 rounded-full outline-none border-8',
-    thumbEnabled: 'shadow border-white cursor-pointer',
-    thumbDisabled: 'border-bluegray-200 cursor-disabled pointer-events-none',
-    thumbCenter: 'f-thumb-center absolute h-16 w-16 rounded-full transition-transform',
-    thumbCenterEnabled: 'bg-blue-600',
-    thumbCenterDisabled: 'bg-bluegray-400',
+    wrapper: 'f-slider relative w-full h-44 py-2',
+    track: 'track absolute bg-blue-200 h-4 top-20 rounded-4 w-full',
+    trackDisabled: 'pointer-events-none bg-gray-200',
+    activeTrack: 'active-track absolute bg-blue-600 h-4 top-20 rounded-4',
+    activeTrackDisabled: 'bg-bluegray-300 pointer-events-none',
+    thumb: 'f-thumb absolute w-24 h-24 bottom-10 rounded-4 outline-none',
+    thumbEnabled: 'shadow bg-blue-600 cursor-pointer',
+    thumbDisabled: 'bg-bluegray-300 cursor-disabled pointer-events-none'
 };
 
 export const modal = {

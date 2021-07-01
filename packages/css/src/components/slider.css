@@ -1,8 +1,27 @@
-.f-slider .f-thumb {
+.f-slider {
     &:hover,
     &:focus {
+        /* deprecated; remove 2021q4 */
         & .f-thumb-center {
             transform: scale(1.25);
         }
+    }
+
+    & .active-track {
+      height: 6px;
+      top: 19px;
+    }
+
+    & .f-thumb {
+      transition: 0.1s box-shadow;
+
+      &:hover,
+      &:focus {
+          box-shadow: 0 0 0 6px rgba(var(--f-blue-400-rgb), 0.4);
+      }
+
+      &:active {
+          box-shadow: 0 0 0 8px rgba(var(--f-blue-400-rgb), 0.4);
+      }
     }
 }
