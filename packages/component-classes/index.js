@@ -26,9 +26,8 @@ export const modal = {
 };
 
 export const box = {
-    box: 'group block break-words last-child:mb-0 p-16 rounded-8',
+    box: 'group block relative break-words last-child:mb-0 p-16 rounded-8', // relative here enables f-clickable
     bleed: '-mx-16 sm:mx-0 rounded-l-0 rounded-r-0 sm:rounded-8', // we target L and R separately because of TW's rules-order
-    clickable: 'cursor-pointer focus-ring',
 };
 
 export const step = {
@@ -128,3 +127,17 @@ export const tab = {
 
 export const buttonReset =
     'focus:outline-none appearance-none cursor-pointer bg-transparent border-0 m-0 p-0 inline-block';
+
+export const expandable = {
+  expandable: 'f-expandable',
+  expandableInfo: 'bg-aqua-50',
+  expandableBox: 'py-0 px-0 ' + box.box,
+  expandableBleed: boxClasses.bleed,
+  chevron: 'inline-block align-middle transform transition-transform',
+  chevronNonBox: 'relative left-8',
+  chevronBox:'f-expandable-chevron absolute right-16',
+  chevronExpanded: '-rotate-180',
+  button: buttonReset + ' hover:underline focus:underline',
+  buttonBox: 'w-full text-left relative ' + box.box,
+  buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
+}
