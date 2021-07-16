@@ -1,4 +1,7 @@
 .f-step {
+    &:last-child > *:last-child {
+        padding-bottom: 0;
+    }
     &.step-v {
         grid-template-rows: 20px auto;
     }
