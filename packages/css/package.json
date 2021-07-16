@@ -13,6 +13,7 @@
     "postbuild": "./scripts/replaceTailwindVariables.mjs"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "license": "MIT",
@@ -24,5 +25,5 @@
     "server": "https://assets.finn.no",
     "files": "dist"
   },
-  "gitHead": "95e6df93ad638154805ed8caa60b6015f28920f9"
+  "gitHead": "b768fa6a37e0684e3862b221bec9a0136c8cc107"
 }

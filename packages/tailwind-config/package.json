@@ -8,6 +8,7 @@
     "url": "git@github.schibsted.io:finn/fabric-css.git"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "license": "MIT",
