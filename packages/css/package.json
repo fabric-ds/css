@@ -1,6 +1,6 @@
 {
   "name": "@finn-no/fabric-css",
-  "version": "0.7.30",
+  "version": "0.7.31",
   "description": "Fabric CSS core components and utilities",
   "files": [
     "dist"
@@ -19,7 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "@finn-no/fabric-icons": "^0.2.0",
-    "@finn-no/fabric-tailwind-config": "^0.5.14"
+    "@finn-no/fabric-tailwind-config": "^0.5.15"
   },
   "eik": {
     "server": "https://assets.finn.no",
