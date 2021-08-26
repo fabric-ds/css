@@ -193,9 +193,11 @@
 }
 
 .segment-control {
-    @apply inline-flex relative rounded-8 font-bold;
+    @apply inline-flex relative font-bold;
 
     &:focus-within .segment-control-options {
+        @apply rounded-8;
+
         box-shadow: 0 0 0 1px var(--f-white), 0 0 0 3px var(--f-aqua-400);
     }
 
