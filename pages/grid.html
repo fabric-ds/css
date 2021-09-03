@@ -1,0 +1,79 @@
+<html lang="en">
+<%- include('head.html'); -%>
+
+  <body>
+    <%- include('nav.html'); -%>
+
+      <main>
+        <h1>Grid</h1>
+        <p>
+          Use the grid (or Flex where that makes more sense) for any layout related task.
+        </p>
+
+
+        <h2 class="h4 mt-48 text-yellow-600">Warning</h2>
+        <p class="mt-8 border-l-4 pl-16 border-yellow-600">
+          Note that Fabric grid is a way to use CSS <code>display:grid</code> available through Tailwind. Troika Grid on
+          the other hand was an Abstraction, using whatever styling was available (Using a mix between
+          <code>display:grid</code>, <code>display:flex</code>, and <code>display:table</code>).
+        </p>
+
+        <h2 class="mt-48">References</h2>
+        <ul>
+          <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></li>
+          <li><a href="https://tailwindcss.com/docs/grid-auto-flow">Grid in Tailwind</a></li>
+        </ul>
+
+        <h2 class="mt-48">Common usage</h2>
+
+
+        <h3>Example: Grid</h3>
+        <syntax-highlight>
+          <section class="grid grid-cols-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </syntax-highlight>
+        <p>Used a lot on FINN, Default <code>display:block</code> behavior(Single column) and DOM order on smaller
+          devices, dividing it into 2/3 and 1/3 from medium devices and up. The <a
+            href="https://tailwindcss.com/docs/responsive-design">responsive prefix</a> <code>md:</code> turns the
+          classes on above the medium breakpoint.</p>
+
+
+
+        <h3 class="mt-48">Example: Responsive 2/3, 1/3 Grid</h3>
+        <syntax-highlight>
+          <section class="md:grid md:grid-cols-3">
+            <div class="md:grid-cols-2"></div>
+            <div></div>
+          </section>
+        </syntax-highlight>
+        <p>Used a lot on FINN, Default <code>display:block</code> behavior(Single column) and DOM order on smaller
+          devices, dividing it into 2/3 and 1/3 from medium devices and up. The <a
+            href="https://tailwindcss.com/docs/responsive-design">responsive prefix</a> <code>md:</code> turns the
+          classes on above the medium breakpoint.</p>
+
+
+
+        <h3 class="mt-48">Example: Results list</h3>
+        <syntax-highlight>
+          <section class="md:grid md:grid-cols-2 lg:grid-cols-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </syntax-highlight>
+        <p>Simple grid, could be a result page in card view, could be recommendations. Children are divided into a same
+          size grid, the <a href="https://tailwindcss.com/docs/responsive-design">responsive prefixes</a> (md:, lg:)
+          give them 2 columns on medium, and 3 on large devices.</p>
+
+      </main>
+  </body>
+
+</html>
