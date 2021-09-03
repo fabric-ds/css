@@ -1,0 +1,116 @@
+<html lang="en">
+<%- include('head.html'); -%>
+
+  <body>
+    <%- include('nav.html'); -%>
+
+      <main>
+        <h1>Spacing</h1>
+        <p>Utilities for controlling an element's padding.</p>
+
+        <h2 class="mt-48">References</h2>
+        <ul>
+          <li><a href="https://tailwindcss.com/docs/margin">Margin in Tailwind</a></li>
+          <li><a href="https://tailwindcss.com/docs/padding">Padding in Tailwind</a></li>
+          <li><a href="https://tailwindcss.com/docs/responsive-design">Responsive prefix</a></li>
+        </ul>
+
+        <h2 class="mt-48">Fabric config</h2>
+        <p>The Fabric setup supports the px specific sizes.</p>
+
+        <p>Available sizes from <a href="https://github.com/finn-no/fabric-css/blob/main/packages/tailwind-config/tailwind.config.js">tailwind-config</a>: </p>
+        <syntax-highlight>
+            spacing: {
+                0: '0',
+                1: '1px',
+                2: '2px',
+                4: '4px',
+                6: '6px',
+                8: '8px',
+                10: '10px',
+                12: '12px',
+                14: '14px',
+                16: '16px',
+                20: '20px',
+                24: '24px',
+                28: '28px',
+                32: '32px',
+                40: '40px',
+                44: '44px',
+                48: '48px',
+                56: '56px',
+                64: '64px',
+                80: '80px',
+                96: '96px',
+                112: '112px',
+                128: '128px',
+                144: '144px',
+            }
+            </syntax-highlight>
+    
+        <h2 class="mt-48">Common usage</h2>
+        <p>These can be used in a number of ways as described in more detail in the <a href="https://tailwindcss.com/docs/padding">Tailwind documentation</a>.
+        The syntax is exactly the same for margins and paddings , just m instead of p.</p>
+        
+        <h3 class="mt-48">Padding examples</h3>
+        
+        <table class="w-full">
+            <thead>
+            <tr>
+                <th class="text-left">Direction</th>
+                <th class="text-left">Syntax</th>
+                <th class="text-left">Example</th>
+                <th class="text-left">Explanation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>top, right, bottom, left</td>
+                <td>p{t|r|b|l}-{size}</td>
+                <td>pr-48</td>
+                <td>Padding right 48px</td>
+            </tr>
+            <tr>
+                <td>horizontal, vertical</td> 
+                <td>p{x|y}-{size}</td>
+                <td>px-48</td>
+                <td>Padding horizontally 48px</td>
+            </tr>
+            <tr>
+                <td>All sides</td> 
+                <td>p-{size}</td>
+                <td>p-48</td>
+                <td>Padding all sides 48 px</td>
+            </tr>
+            <tr>
+                <td>Responsive</td> 
+                <td></td>
+                <td>md:p-48</td>
+                <td>Padding 48px on medium devices and bigger</td> 
+            </tr>
+        </tbody>
+        </table>
+        
+        <h3 class="mt-48">Examples</h3>
+        <syntax-highlight>
+            <div class="p-48">...</div>
+          </syntax-highlight>
+        <p>48px padding on all sides</p>
+        
+        <syntax-highlight>
+            <div class="my-24 mx-48">...</div>
+          </syntax-highlight>
+        <p>24px margin vertically, 48px margin horizontally</p>  
+        <syntax-highlight>
+          <div class="p-16 md:p-24 lg:p-16">...</div>
+        </syntax-highlight>
+        <p>16px padding on smaller devices, 24px padding on medium devices, 16px padding on larger devices and up.</p>
+
+        <syntax-highlight>
+          <div class="mx-auto">...</div>
+        </syntax-highlight>
+        <p>Centers the div when theres room using the good old margin-x:auto trick.</p>
+      </main>
+  </body>
+
+</html>
