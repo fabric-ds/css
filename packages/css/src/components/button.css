@@ -85,7 +85,15 @@ a.button:hover {
 
 /* Sizing */
 .button--small {
-    @apply px-16 py-8 text-12 leading-16;
+    @apply px-16 py-6 text-12 leading-16;
+}
+
+.button--small.button--primary,
+.button--small.button--destructive,
+.button--small.button--destructive-flat,
+.button--small.button--order,
+.button--small.button--tertiary {
+    @apply py-8;
 }
 
 .button--small.button--secondary {
