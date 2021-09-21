@@ -1,6 +1,7 @@
 const { colors: colorSpec } = require('./colors');
 const focusRing = require('./focus-ring');
 const headings = require('./headings');
+const transitionGpu = require('./transition-gpu');
 
 const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrString]) => {
     acc[colorName] = {};
@@ -14,7 +15,7 @@ const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrS
 
 module.exports = {
     darkMode: false,
-    plugins: [focusRing, headings],
+    plugins: [focusRing, headings, transitionGpu],
     corePlugins: {
         // Backgrounds
         gradientColorStops: false,
