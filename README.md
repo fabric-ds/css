@@ -1,7 +1,5 @@
 # Fabric CSS
 
-[![Build Status](https://travis.schibsted.io/finn/fabric-css.svg?token=c2i7RTPCstzjYPkxuoGG&branch=master)](https://travis.schibsted.io/finn/fabric-css)
-
 Monorepo for Fabric CSS
 
 ## Development

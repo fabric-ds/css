@@ -1,5 +1,5 @@
 {
-  "name": "@finn-no/fabric-css-root",
+  "name": "@fabric-ds/css-root",
   "private": true,
   "version": "0.0.0",
   "workspaces": [
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.schibsted.io:finn/fabric-css.git"
+    "url": "git@github.com:fabric-ds/css.git"
   },
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,5 @@
 {
-  "name": "@finn-no/fabric-component-classes",
+  "name": "@fabric-ds/component-classes",
   "version": "0.0.30",
   "type": "module",
   "main": "index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@finn-no/fabric-css",
+  "name": "@fabric-ds/css",
   "version": "0.7.36",
   "description": "Fabric CSS core components and utilities",
   "files": [
@@ -8,7 +8,7 @@
   "style": "dist/fabric.min.css",
   "scripts": {
     "prepublish": "yarn build",
-    "postpublish": "eik publish && eik package-alias @finn-no/fabric-css",
+    "postpublish": "eik publish && eik package-alias @fabric-ds/css",
     "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css",
     "postbuild": "./scripts/replaceTailwindVariables.mjs"
   },
@@ -18,8 +18,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@finn-no/fabric-icons": "^0.2.0",
-    "@finn-no/fabric-tailwind-config": "^0.5.19"
+    "@fabric-ds/icons": "^0.3.8",
+    "@fabric-ds/tailwind-config": "^0.5.19"
   },
   "eik": {
     "server": "https://assets.finn.no",

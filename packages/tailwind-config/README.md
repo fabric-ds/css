@@ -12,7 +12,7 @@ like.**
 ## Install
 
 ```sh
-npm install @finn-no/fabric-tailwind-config
+npm install @fabric-ds/tailwind-config
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install @finn-no/fabric-tailwind-config
 ```js
 // tailwind.config.js
 module.exports = {
-    presets: [require('@finn-no/fabric-tailwind-config')],
+    presets: [require('@fabric-ds/tailwind-config')],
     // ...
 };
 ```

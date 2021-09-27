@@ -22,9 +22,7 @@ module.exports = (ctx) => {
             },
         }),
         importSvg({
-            paths: [
-                path.resolve(path.dirname(require.resolve('@finn-no/fabric-icons/package.json')), 'dist'),
-            ],
+            paths: [path.resolve(path.dirname(require.resolve('@fabric-ds/icons/package.json')), 'dist')],
         }),
     ];
 
