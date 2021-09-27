@@ -1,4 +1,4 @@
-name: Deploy documentation
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,22 +6,25 @@ on:
       - main
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: install node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14.x'
-    - name: yarn
-      run: yarn
-    - name: yarn docs:deploy
-      run: |
-        git config --global user.email "froderis@users.noreply.github.com"
-        git config --global user.name "froderis"
-        echo "machine github.com login froderis password ${{ secrets.GIT_TOKEN }}" > ~/.netrc
-        yarn docs:deploy
-      env:
-        CI: true
-        GIT_USER: froderis
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+            yarn
+      - name: Build Packages
+        run: |
+            yarn build
+      - name: Build Docs
+        run: |
+            yarn docs
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+            target_branch: gh-pages
+            build_dir: site
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
