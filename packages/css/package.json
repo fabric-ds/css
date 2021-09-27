@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@fabric-ds/icons": "^0.2.0",
+    "@fabric-ds/icons": "^0.3.8",
     "@fabric-ds/tailwind-config": "^0.5.19"
   },
   "eik": {
