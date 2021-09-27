@@ -1,11 +1,11 @@
 {
-  "name": "@finn-no/fabric-tailwind-config",
+  "name": "@fabric-ds/tailwind-config",
   "version": "0.5.19",
   "description": "Fabric's Tailwind configuration",
   "main": "tailwind.config.js",
   "repository": {
     "type": "git",
-    "url": "git@github.schibsted.io:finn/fabric-css.git"
+    "url": "git@github.com:fabric-ds/css.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
