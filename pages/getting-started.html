@@ -1,74 +1,78 @@
 <html lang="en">
   <%- include('head.html'); -%>
   <body>
-    <%- include('nav.html'); -%>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Getting started</h1>
+        <p class="mt-24">
+          If you are interested in learning more about Fabric before using it, check out the
+          <a href="/pages/introduction.html">Introduction</a>
+          section.
+        </p>
 
-    <main>
-      <h1>Getting started</h1>
-      <p class="mt-24">
-        If you are interested in learning more about Fabric before using it, check out the
-        <a href="/pages/introduction.html">Introduction</a>
-        section.
-      </p>
+        <h2 class="mt-48">Setup</h2>
 
-      <h2 class="mt-48">Setup</h2>
+        <h3 class="mt-24">CDN (recommended)</h3>
 
-      <h3 class="mt-24">CDN (recommended)</h3>
+        <p>
+          The recommended way to use Fabric is by loading it from our
+          <a href="https://eik.dev/">Eik</a>
+          CDN.
+        </p>
 
-      <p>
-        The recommended way to use Fabric is by loading it from our
-        <a href="https://eik.dev/">Eik</a>
-        CDN.
-      </p>
+        <p>
+          Since Eik supports
+          <a href="https://eik.dev/docs/overview_concepts#aliasing">aliasing by major versions</a>
+          you can load Fabric by specifing only the major version you're relying upon. This is great, because
+          it allows us to efficiently utilize the browser's cache as the user navigates FINN, and it ensures
+          you're always using the latest minor.patch version.
+        </p>
 
-      <p>
-        Since Eik supports
-        <a href="https://eik.dev/docs/overview_concepts#aliasing">aliasing by major versions</a>
-        you can load Fabric by specifing only the major version you're relying upon. This is great, because it
-        allows us to efficiently utilize the browser's cache as the user navigates FINN, and it ensures you're
-        always using the latest minor.patch version.
-      </p>
+        <p>In HTML:</p>
+        <syntax-highlight>
+          &lt;link href="https://assets.finn.no/pkg/@fabric-ds/css/v0/fabric.min.css" rel="stylesheet" />
+        </syntax-highlight>
 
-      <p>In HTML:</p>
-      <syntax-highlight>
-        &lt;link href="https://assets.finn.no/pkg/@fabric-ds/css/v0/fabric.min.css" rel="stylesheet" />
-      </syntax-highlight>
+        <h3 class="mt-24">npm (alternative)</h3>
 
-      <h3 class="mt-24">npm (alternative)</h3>
+        <p>
+          Even though we recommend using Fabric through the Eik CDN, you can also install it as an
+          <a href="https://www.npmjs.com/">npm</a>
+          package:
+        </p>
 
-      <p>
-        Even though we recommend using Fabric through the Eik CDN, you can also install it as an
-        <a href="https://www.npmjs.com/">npm</a>
-        package:
-      </p>
+        <syntax-highlight>$ npm install @fabric-ds/css</syntax-highlight>
 
-      <syntax-highlight>$ npm install @fabric-ds/css</syntax-highlight>
+        <p>
+          The
+          <code>package.json</code>
+          contains the path to the minified CSS under the
+          <code>style</code>
+          key.
+        </p>
 
-      <p>
-        The
-        <code>package.json</code>
-        contains the path to the minified CSS under the
-        <code>style</code>
-        key.
-      </p>
+        <h2 class="mt-48">Usage with Podium</h2>
+        <p class="mt-24">
+          If you are developing with
+          <a href="https://podium-lib.io/">Podium</a>
+          , Fabric's CSS should only by included by the
+          <a href="https://podium-lib.io/docs/layout/getting_started">layout server</a>
+          , not the individual
+          <a href="https://podium-lib.io/docs/podlet/getting_started">podlets</a>
+          . This prevents accidentally including several versions of Fabric on the same page.
+        </p>
 
-      <h2 class="mt-48">Usage with Podium</h2>
-      <p class="mt-24">
-        If you are developing with
-        <a href="https://podium-lib.io/">Podium</a>
-        , Fabric's CSS should only by included by the
-        <a href="https://podium-lib.io/docs/layout/getting_started">layout server</a>
-        , not the individual
-        <a href="https://podium-lib.io/docs/podlet/getting_started">podlets</a>
-        . This prevents accidentally including several versions of Fabric on the same page.
-      </p>
+        <h2 class="mt-48">Next</h2>
+        <p class="mt-24">
+          If you're using Fabric for a new page, we recommend having a look at
+          <a href="/pages/page-container.html">Page-container</a>
+          next. It is the primary content container for FINN pages.
+        </p>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
 
-      <h2 class="mt-48">Next</h2>
-      <p class="mt-24">
-        If you're using Fabric for a new page, we recommend having a look at
-        <a href="/pages/page-container.html">Page-container</a>
-        next. It is the primary content container for FINN pages.
-      </p>
-    </main>
+    <%- include('scripts.html'); -%>
   </body>
 </html>

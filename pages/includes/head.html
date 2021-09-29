@@ -1,7 +1,12 @@
 <head>
+  <title>Fabric CSS</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="/packages/css/src/fabric.css" />
+
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js?a=1" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
+
   <script type="module" src="/pages/client/code-example.js"></script>
   <script type="module" src="/pages/client/syntax-highlight.js"></script>
   <script
@@ -9,21 +14,4 @@
     integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
     crossorigin="anonymous"
   ></script>
-
-  <title>Fabric CSS</title>
-
-  <style>
-    body {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      height: 100vh;
-    }
-
-    main {
-      width: 980px;
-      padding: 40px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
 </head>

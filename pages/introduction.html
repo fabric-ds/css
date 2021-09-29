@@ -1,12 +1,16 @@
 <html lang="en">
   <%- include('head.html'); -%>
   <body>
-    <%- include('nav.html'); -%>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Introduction</h1>
 
-    <main>
-      <h1>Introduction</h1>
+        <p>Fabric CSS is the core implementation of the Fabric, FINNs design system.</p>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
 
-      <p>Fabric CSS is the core implementation of the Fabric, FINNs design system.</p>
-    </main>
+    <%- include('scripts.html'); -%>
   </body>
 </html>

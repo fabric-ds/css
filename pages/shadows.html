@@ -1,27 +1,31 @@
 <html lang="en">
   <%- include('head.html'); -%>
   <body>
-    <%- include('nav.html'); -%>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Shadows</h1>
 
-    <main>
-      <h1>Shadows</h1>
+        <h2 class="mt-64 mb-16">Old</h2>
 
-      <h2 class="mt-64 mb-16">Old</h2>
+        <section class="space-x-16 flex">
+          <div class="h-128 w-128 shadow-light-1"></div>
+          <div class="h-128 w-128 shadow-light-2"></div>
+          <div class="h-128 w-128 shadow-light-3"></div>
+        </section>
 
-      <section class="space-x-16 flex">
-        <div class="h-128 w-128 shadow-light-1"></div>
-        <div class="h-128 w-128 shadow-light-2"></div>
-        <div class="h-128 w-128 shadow-light-3"></div>
-      </section>
+        <h2 class="mt-64 mb-16">Proposed</h2>
 
-      <h2 class="mt-64 mb-16">Proposed</h2>
+        <section class="space-x-16 flex">
+          <div class="h-128 w-128 shadow"></div>
+          <div class="h-128 w-128 shadow-2"></div>
+          <div class="h-128 w-128 shadow-3"></div>
+          <div class="h-128 w-128 shadow-4"></div>
+        </section>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
 
-      <section class="space-x-16 flex">
-        <div class="h-128 w-128 shadow"></div>
-        <div class="h-128 w-128 shadow-2"></div>
-        <div class="h-128 w-128 shadow-3"></div>
-        <div class="h-128 w-128 shadow-4"></div>
-      </section>
-    </main>
+    <%- include('scripts.html'); -%>
   </body>
 </html>

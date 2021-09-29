@@ -1,8 +1,14 @@
 <html lang="en">
   <%- include('head.html'); -%>
   <body>
-    <%- include('nav.html'); -%>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Fabric CSS</h1>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
 
-    <main></main>
+    <%- include('scripts.html'); -%>
   </body>
 </html>
