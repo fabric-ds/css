@@ -1,300 +1,273 @@
 <html lang="en">
   <%- include('head.html'); -%>
   <body>
-    <%- include('nav.html'); -%>
-
-    <main>
-      <h1>Buttons</h1>
-      <div class="mb-24">
-        <h2 class="h3 mt-64 text-bluegray-500">Primary</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--primary">Button</button>
-          <a href="#" class="button button--primary">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--primary"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--primary"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Buttons</h1>
+        <div class="mb-24">
+          <h2 class="h3 mt-64 text-bluegray-500">Primary</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--primary">Button</button>
+            <a href="#" class="button button--primary">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--primary"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--primary"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Secondary</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--secondary">Button</button>
-          <a href="#" class="button button--secondary">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--secondary"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--secondary"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Secondary</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--secondary">Button</button>
+            <a href="#" class="button button--secondary">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--secondary"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--secondary"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Tertiary</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--tertiary">Button</button>
-          <a href="#" class="button button--tertiary">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--tertiary"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--tertiary"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Tertiary</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--tertiary">Button</button>
+            <a href="#" class="button button--tertiary">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--tertiary"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--tertiary"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Destructive</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--destructive">Button</button>
-          <a href="#" class="button button--destructive">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--destructive"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--destructive"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Destructive</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--destructive">Button</button>
+            <a href="#" class="button button--destructive">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--destructive"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--destructive"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Destructive-flat</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--destructive-flat">Button</button>
-          <a href="#" class="button button--destructive-flat">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--destructive-flat"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--destructive-flat"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Destructive-flat</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--destructive-flat">Button</button>
+            <a href="#" class="button button--destructive-flat">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--destructive-flat"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--destructive-flat"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Order</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--order">Button</button>
-          <a href="#" class="button button--order">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--order"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--order"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Order</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--order">Button</button>
+            <a href="#" class="button button--order">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--order"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--order"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Utility</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--utility">Button</button>
-          <a href="#" class="button button--utility">link in disguise</a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--utility"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              Button
-            </button>
-            <a
-              href="#"
-              class="button button--utility"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
-              link in disguise
-            </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Utility</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--utility">Button</button>
+            <a href="#" class="button button--utility">link in disguise</a>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--utility"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                Button
+              </button>
+              <a
+                href="#"
+                class="button button--utility"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                link in disguise
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Pill</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--pill">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                d="M11.97 22c.55 0 .86-.48 1.75-1.4 1.11-1.17 2.18-2.26 2.96-3.08 2.3-2.4 3.2-3.32 3.83-4.03a5.59 5.59 0 0 0 .77-6.53A5.48 5.48 0 0 0 16.5 4c-1.16 0-2 .44-3.47 1.58L12 6.53l-1-.95C9.4 4.23 8.26 4 7.5 4c-.6 0-3.2 0-4.85 2.96-1.22 2.16-.58 4.83.97 6.53.27.3 1.42 1.49 3.4 3.62l2.76 2.94c.47.51 1.65 1.95 2.2 1.95z"
-              ></path>
-            </svg>
-          </button>
-
-          <a href="#" class="button button--pill">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                d="M11.97 22c.55 0 .86-.48 1.75-1.4 1.11-1.17 2.18-2.26 2.96-3.08 2.3-2.4 3.2-3.32 3.83-4.03a5.59 5.59 0 0 0 .77-6.53A5.48 5.48 0 0 0 16.5 4c-1.16 0-2 .44-3.47 1.58L12 6.53l-1-.95C9.4 4.23 8.26 4 7.5 4c-.6 0-3.2 0-4.85 2.96-1.22 2.16-.58 4.83.97 6.53.27.3 1.42 1.49 3.4 3.62l2.76 2.94c.47.51 1.65 1.95 2.2 1.95z"
-              ></path>
-            </svg>
-          </a>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button
-              class="button button--pill"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
+          <h2 class="h3 mt-64 text-bluegray-500">Pill</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--pill">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
                 <path
                   fill="none"
@@ -304,11 +277,8 @@
                 ></path>
               </svg>
             </button>
-            <a
-              href="#"
-              class="button button--pill"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
-            >
+
+            <a href="#" class="button button--pill">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
                 <path
                   fill="none"
@@ -318,42 +288,76 @@
                 ></path>
               </svg>
             </a>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="disabled" />
-                Disabled
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="progress" />
-                In-progress
-              </label>
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button
+                class="button button--pill"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M11.97 22c.55 0 .86-.48 1.75-1.4 1.11-1.17 2.18-2.26 2.96-3.08 2.3-2.4 3.2-3.32 3.83-4.03a5.59 5.59 0 0 0 .77-6.53A5.48 5.48 0 0 0 16.5 4c-1.16 0-2 .44-3.47 1.58L12 6.53l-1-.95C9.4 4.23 8.26 4 7.5 4c-.6 0-3.2 0-4.85 2.96-1.22 2.16-.58 4.83.97 6.53.27.3 1.42 1.49 3.4 3.62l2.76 2.94c.47.51 1.65 1.95 2.2 1.95z"
+                  ></path>
+                </svg>
+              </button>
+              <a
+                href="#"
+                class="button button--pill"
+                :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    d="M11.97 22c.55 0 .86-.48 1.75-1.4 1.11-1.17 2.18-2.26 2.96-3.08 2.3-2.4 3.2-3.32 3.83-4.03a5.59 5.59 0 0 0 .77-6.53A5.48 5.48 0 0 0 16.5 4c-1.16 0-2 .44-3.47 1.58L12 6.53l-1-.95C9.4 4.23 8.26 4 7.5 4c-.6 0-3.2 0-4.85 2.96-1.22 2.16-.58 4.83.97 6.53.27.3 1.42 1.49 3.4 3.62l2.76 2.94c.47.51 1.65 1.95 2.2 1.95z"
+                  ></path>
+                </svg>
+              </a>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="disabled" />
+                  Disabled
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="progress" />
+                  In-progress
+                </label>
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <h2 class="h3 mt-64 text-bluegray-500">Link - button emulating link behavior</h2>
-        <syntax-highlight class="mb-0">
-          <button class="button button--link">Button</button>
-        </syntax-highlight>
-        <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
-          <div class="p-16 border-t-2 border-bluegray-200">
-            <button class="button button--link" :class="{ 'button--small': small }">
-              Button emulating link
-            </button>
-            <div class="text-right">
-              <label class="mr-32">
-                <input class="mr-8" type="checkbox" x-model="small" />
-                Small
-              </label>
+          <h2 class="h3 mt-64 text-bluegray-500">Link - button emulating link behavior</h2>
+          <syntax-highlight class="mb-0">
+            <button class="button button--link">Button</button>
+          </syntax-highlight>
+          <section x-data="{ disabled: false, progress:false, small: false }" class="bg-bluegray-50">
+            <div class="p-16 border-t-2 border-bluegray-200">
+              <button class="button button--link" :class="{ 'button--small': small }">
+                Button emulating link
+              </button>
+              <div class="text-right">
+                <label class="mr-32">
+                  <input class="mr-8" type="checkbox" x-model="small" />
+                  Small
+                </label>
+              </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
+          </section>
+        </div>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
+
+    <%- include('scripts.html'); -%>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
   </body>
 </html>

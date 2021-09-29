@@ -1,45 +1,50 @@
 <html lang="en">
   <%- include('head.html'); -%>
   <body>
-    <%- include('nav.html'); -%>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Page-container</h1>
+        <p class="mt-24">
+          Page-container is the primary container for FINN pages. Its main job is to give the standardized
+          responsive behavior, keep the width of the main content, and center/left align it on certain screen
+          sizes to mach banner setups. It is considered the outer boundary for content.
+        </p>
 
-    <main>
-      <h1>Page-container</h1>
-      <p class="mt-24">
-        Page-container is the primary container for FINN pages. Its main job is to give the standardized responsive behavior, keep the width of the main content, and center/left align it on certain screen sizes to mach banner setups. 
-        It is considered the outer boundary for content.
-      </p>
+        <h2 class="h4 mt-48 text-yellow-600">Warning</h2>
+        <p class="mt-8 border-l-4 pl-16 border-yellow-600">
+          Note that
+          <code>page-container</code>
+          is not fully compatible with
+          <code>panel</code>
+          from Troika. Please migrate to the new Box component in Fabric before using this class, or ensure
+          your Panels still have the appropriate vertical-alignment.
+        </p>
 
-      <h2 class="h4 mt-48 text-yellow-600">Warning</h2>
-      <p class="mt-8 border-l-4 pl-16 border-yellow-600">
-        Note that
+        <h2 class="mt-48">Common usage</h2>
+        <syntax-highlight>
+          <div>
+            <!-- FINN header -->
+          </div>
+
+          <main class="page-container">
+            <!-- Content here -->
+          </main>
+
+          <div>
+            <!-- FINN footer -->
+          </div>
+        </syntax-highlight>
+
+        Note that the
         <code>page-container</code>
-        is not fully compatible with
-        <code>panel</code>
-        from Troika. Please migrate to the new Box component in Fabric before using this class, or ensure your
-        Panels still have the appropriate vertical-alignment.
-      </p>
+        class doesn't have to be applied to a
+        <code>main</code>
+        element. You can adjust this as needed.
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
 
-      <h2 class="mt-48">Common usage</h2>
-      <syntax-highlight>
-        <div>
-          <!-- FINN header -->
-        </div>
-
-        <main class="page-container">
-          <!-- Content here -->
-        </main>
-
-        <div>
-          <!-- FINN footer -->
-        </div>
-      </syntax-highlight>
-
-      Note that the
-      <code>page-container</code>
-      class doesn't have to be applied to a
-      <code>main</code>
-      element. You can adjust this as needed.
-    </main>
+    <%- include('scripts.html'); -%>
   </body>
 </html>
