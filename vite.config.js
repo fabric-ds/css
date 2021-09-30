@@ -22,7 +22,7 @@ export default function ({ mode }) {
     }
 
     return {
-        base: isProduction ? '/css/' : '',
+        // base: isProduction ? '/css/' : '',
         plugins: [
             html({
                 inject: {
