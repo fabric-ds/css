@@ -4,17 +4,13 @@
   <meta name="viewport" content="width=device-width" />
 
   <style>
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    f-docs-template {
-      animation: fadeIn 0.3s;
-    }
-    :not(:defined) {
-      opacity: 0;
-    }
-  </style>
+      f-docs-template {
+        visibility: hidden;
+      }
+      f-docs-template:defined {
+        visibility: visible;
+      }
+    </style>
   <link rel="stylesheet" href="/packages/css/src/fabric.css" />
   <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js?a=1" rel="modulepreload" />
   <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
