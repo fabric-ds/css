@@ -9,7 +9,7 @@
     "build": "NODE_ENV=production lerna run build --stream",
     "postbuild": "./scripts/reportSizes.mjs",
     "dev": "vite",
-    "docs": "vite build",
+    "docs": "vite build && cp CNAME site",
     "docs:deploy": "yarn docs && gh-pages -d site",
     "format": "prettier --write . --ignore-path .gitignore",
     "lint": "prettier --check . --ignore-path .gitignore"
