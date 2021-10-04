@@ -40,6 +40,14 @@ module.exports = {
         strokeWidth: false,
     },
     theme: {
+        aspectRatio: {
+          1: '1',
+          2: '2',
+          3: '3',
+          4: '4',
+          9: '9',
+          16: '16',
+        },
         spacing: {
             0: '0',
             1: '1px',
