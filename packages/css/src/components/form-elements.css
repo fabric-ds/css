@@ -4,7 +4,7 @@
     & input,
     & select,
     & textarea {
-        @apply block border text-gray-700 border-bluegray-300 px-8 py-12 rounded-4 w-full;
+        @apply block border bg-white text-gray-700 border-bluegray-300 px-8 py-12 rounded-4 w-full;
 
         &:hover {
             @apply border-gray-500;
