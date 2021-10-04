@@ -45,5 +45,7 @@
     "vite": "^2.6.2",
     "vite-plugin-html": "^2.0.0-rc.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "filesize": "^8.0.3"
+  }
 }
