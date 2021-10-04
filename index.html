@@ -3,8 +3,28 @@
   <body>
     <f-docs-template>
       <%- include('nav.html'); -%>
+
+      <div slot="banner" class="mx-auto p-32" style="max-width: 1024">
+        <div class="md:grid md:grid-cols-3">
+          <div class="md:col-span-2">
+            <h1 style="font-size: 48px; line-height: 56px" class="text-white mb-16">Fabric CSS</h1>
+            <p style="font-size: 22px; line-height: 28px" class="text-white">
+              The home of the CSS implementation of Fabric, FINN's design system.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <main slot="content">
-        <h1>Fabric CSS</h1>
+        <div class="grid lg:grid-cols-3 gap-16">
+          <div class="lg:col-span-2">
+            <h1>Under construction</h1>
+            <p>Fabric CSS is currently in active development.</p>
+          </div>
+          <div>
+            <f-docs-highlight-box></f-docs-highlight-box>
+          </div>
+        </div>
       </main>
       <%- include('footer.html'); -%>
     </f-docs-template>
