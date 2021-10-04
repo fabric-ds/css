@@ -227,6 +227,6 @@ module.exports = {
         whitespace: [],
         width: ['responsive'],
         wordBreak: [],
-        zIndex: [],
+        zIndex: ['responsive'],
     },
 };

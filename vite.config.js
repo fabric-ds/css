@@ -22,7 +22,7 @@ export default function ({ mode }) {
     }
 
     return {
-        base: isProduction ? '/css/' : '',
+        // base: isProduction ? '/css/' : '',
         plugins: [
             html({
                 inject: {
@@ -50,7 +50,7 @@ function basePathFix() {
         name: 'base-path-fix',
         transformIndexHtml(html) {
             // Regex matches href=", followed by a /, then any combination of \w, / or -, ending with .html
-            return html.replace(/href="\/([\w\/-]*)\.html/g, 'href="/css/$1.html');
+            return html.replace(/href="\/([\w\/-]*)\.html/g, 'href="/$1.html');
         },
     };
 }
