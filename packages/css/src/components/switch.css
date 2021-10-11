@@ -1,3 +1,12 @@
 .f-switch-selected {
     transform: translateX(20px);
 }
+
+.f-switch:hover {
+    & .f-track-selected {
+        background-color: var(--f-blue-700);
+    }
+    & .f-track-unselected {
+        background-color: var(--f-gray-400);
+    }
+}

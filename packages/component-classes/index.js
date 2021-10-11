@@ -69,11 +69,11 @@ export const card = {
 };
 
 export const switchToggle = {
-    label: 'block relative h-24 w-44 cursor-pointer group',
+    label: 'block relative h-24 w-44 cursor-pointer f-switch',
     labelDisabled: 'pointer-events-none',
     switchTrack: 'absolute h-full w-full rounded-full transition-colors',
-    switchTrackSelected: 'bg-blue-600 group-hover:bg-blue-700',
-    switchTrackUnselected: 'bg-gray-300 group-hover:bg-gray-400',
+    switchTrackSelected: 'bg-blue-600 f-track-selected',
+    switchTrackUnselected: 'bg-gray-300 f-track-unselected',
     switchTrackDisabled: 'bg-bluegray-200',
     switchThumb: 'absolute transition-gpu h-16 w-16 top-4 left-4 rounded-full transition-transform',
     switchThumbSelected: 'f-switch-selected',
@@ -111,16 +111,16 @@ export const tabs = {
 };
 
 export const tab = {
-    tab: 'group grid f-grid items-center gap-8 focus-ring font-normal antialias p-16 pb-4 hover:underline',
+    tab: 'grid f-grid items-center gap-8 focus-ring font-normal antialias p-16 pb-4 hover:underline f-tab',
     tabActive: 'active-tab',
     tabContained: 'rounded-t-8',
     tabContainedActive: 'bg-aqua-50',
     icon: 'mx-auto ',
-    iconUnderlined: 'group-hover:text-blue-600',
+    iconUnderlined: 'f-tab-icon',
     iconUnderlinedActive: 'text-blue-600',
     iconUnderlinedInactive: 'text-gray-300',
     contentUnderlined: 'font-bold content-underlined', // content-underlined is a no-op that prevents a quirk in how Vue handles class bindings
-    contentUnderlinedInactive: 'text-gray-500 group-hover:text-gray-700',
+    contentUnderlinedInactive: 'text-gray-500 f-tab-text',
     contentUnderlinedActive: 'text-blue-600',
     contentContainedActive: 'font-bold',
 };
