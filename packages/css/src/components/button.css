@@ -2,7 +2,7 @@
 .button--secondary,
 .button--default {
     /* Common for all button types */
-    @apply font-bold rounded-8 leading-24 max-w-max focus-ring;
+    @apply font-bold rounded-8 leading-24 max-w-max focus-ring justify-center;
     transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
     transition-property: background-color, border-color;
 
