@@ -1,0 +1,8 @@
+.f-tab:hover {
+    & .f-tab-icon {
+        color: var(--f-blue-600);
+    }
+    & .f-tab-text {
+        color: var(--f-gray-700);
+    }
+}
