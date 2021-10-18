@@ -15,31 +15,29 @@
             </div>
           </syntax-highlight>
 
-          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="bg-bluegray-50">
-            <div class="p-16 border-t-2 border-bluegray-200">
-              <div
-                class="input input--text"
-                :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
-              >
-                <label for="_normalInput">Text</label>
-                <input type="text" id="_normalInput" />
-                <div class="input__sub-text">Hint message</div>
-              </div>
+          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="example">
+            <div
+              class="input input--text"
+              :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
+            >
+              <label for="_normalInput">Text</label>
+              <input type="text" id="_normalInput" />
+              <div class="input__sub-text">Hint message</div>
+            </div>
 
-              <div class="text-right">
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="invalid" />
-                  invalid
-                </label>
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="disabled" />
-                  disabled
-                </label>
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="readonly" />
-                  read-only
-                </label>
-              </div>
+            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="invalid" />
+                invalid
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="readonly" />
+                read-only
+              </label>
             </div>
           </section>
 
@@ -68,38 +66,36 @@
               <div class="input__sub-text">Hint message</div>
             </div>
           </syntax-highlight>
-          <section x-data="{ invalid: false, disabled: false, readonly: false }">
-            <div class="bg-bluegray-50 p-16 border-t-2 border-bluegray-200">
-              <div
-                class="input input--select"
-                :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
-              >
-                <label for="xyx">Select</label>
-                <div class="input--select__wrap">
-                  <select id="xyxz">
-                    <option>Velg noe</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
-                <div class="input__sub-text">Hint message</div>
+          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="example">
+            <div
+              class="input input--select"
+              :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
+            >
+              <label for="xyx">Select</label>
+              <div class="input--select__wrap">
+                <select id="xyxz">
+                  <option>Velg noe</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
               </div>
+              <div class="input__sub-text">Hint message</div>
+            </div>
 
-              <div class="text-right">
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="invalid" />
-                  invalid
-                </label>
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="disabled" />
-                  disabled
-                </label>
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="readonly" />
-                  read-only
-                </label>
-              </div>
+            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="invalid" />
+                invalid
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="readonly" />
+                read-only
+              </label>
             </div>
           </section>
 
@@ -111,31 +107,29 @@
               <div class="input__sub-text">Hint message</div>
             </div>
           </syntax-highlight>
-          <section x-data="{ invalid: false, disabled: false, readonly: false }">
-            <div class="bg-bluegray-50 p-16 border-t-2 border-bluegray-200">
-              <div
-                class="input"
-                :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
-              >
-                <label for="textarea-example">Textarea</label>
-                <textarea id="textarea-example" rows="2"></textarea>
-                <div class="input__sub-text">Hint message</div>
-              </div>
+          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="example">
+            <div
+              class="input"
+              :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
+            >
+              <label for="textarea-example">Textarea</label>
+              <textarea id="textarea-example" rows="2"></textarea>
+              <div class="input__sub-text">Hint message</div>
+            </div>
 
-              <div class="text-right">
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="invalid" />
-                  invalid
-                </label>
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="disabled" />
-                  disabled
-                </label>
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="readonly" />
-                  read-only
-                </label>
-              </div>
+            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="invalid" />
+                invalid
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="readonly" />
+                read-only
+              </label>
             </div>
           </section>
 
@@ -153,25 +147,23 @@
               </div>
             </div>
           </syntax-highlight>
-          <section x-data="{ disabled: false }">
-            <div class="bg-bluegray-50 p-16 border-t-2 border-bluegray-200">
-              <div class="field">
-                <label>Contact method</label>
-                <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
-                  <input type="radio" id="contactChoice3" name="contact" value="email" checked />
-                  <label for="contactChoice3">Email</label>
-                </div>
-                <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
-                  <input type="radio" id="contactChoice4" name="contact" value="phone" />
-                  <label for="contactChoice4">Phone</label>
-                </div>
+          <section x-data="{ disabled: false }" class="example">
+            <div class="field">
+              <label>Contact method</label>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="radio" id="contactChoice3" name="contact" value="email" checked />
+                <label for="contactChoice3">Email</label>
               </div>
-              <div class="text-right">
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="disabled" />
-                  disabled
-                </label>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="radio" id="contactChoice4" name="contact" value="phone" />
+                <label for="contactChoice4">Phone</label>
               </div>
+            </div>
+            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                disabled
+              </label>
             </div>
           </section>
 
@@ -189,29 +181,27 @@
               </div>
             </div>
           </syntax-highlight>
-          <section x-data="{ disabled: false }">
-            <div class="bg-bluegray-50 p-16 border-t-2 border-bluegray-200">
-              <div class="field">
-                <label>Checkboxes!</label>
-                <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
-                  <input type="checkbox" id="fancycheckbox3" checked />
-                  <label for="fancycheckbox3">Nothing</label>
-                </div>
-                <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
-                  <input type="checkbox" id="fancycheckbox4" />
-                  <label for="fancycheckbox4">Something</label>
-                </div>
-                <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
-                  <input type="checkbox" id="maybe-checkbox" />
-                  <label for="maybe-checkbox">Maybe</label>
-                </div>
+          <section x-data="{ disabled: false }" class="example">
+            <div class="field">
+              <label>Checkboxes!</label>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="fancycheckbox3" checked />
+                <label for="fancycheckbox3">Nothing</label>
               </div>
-              <div class="text-right">
-                <label class="mr-32">
-                  <input class="mr-8" type="checkbox" x-model="disabled" />
-                  disabled
-                </label>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="fancycheckbox4" />
+                <label for="fancycheckbox4">Something</label>
               </div>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="maybe-checkbox" />
+                <label for="maybe-checkbox">Maybe</label>
+              </div>
+            </div>
+            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                disabled
+              </label>
             </div>
           </section>
 
@@ -233,10 +223,7 @@
             </div>
           </syntax-highlight>
 
-          <section
-            x-data="{ small: false, justified: false, disabled: false }"
-            class="bg-bluegray-50 p-16 border-t-2 border-bluegray-200"
-          >
+          <section x-data="{ small: false, justified: false, disabled: false }" class="example">
             <div class="field">
               <label id="segment-label">Number of rooms:</label>
               <div
@@ -256,7 +243,7 @@
               </div>
               <div class="field-hint">A segment hint, Error msg</div>
             </div>
-            <div class="text-right">
+            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 disabled
