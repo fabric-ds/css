@@ -41,8 +41,10 @@ module.exports = {
     },
     theme: {
         extend: {
-          '0': '0ms',
-          '1': '1ms'
+          transitionDuration: {
+            '0': '0ms',
+            '1': '1ms'
+          }
         },
         aspectRatio: {
           1: '1',
