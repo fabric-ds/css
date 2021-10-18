@@ -81,24 +81,24 @@ strong {
 
 /* fieldset + legend tries to place the legend on the fieldset's "line", we need to override this to get sane behavior */
 legend {
-  display: table;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+    display: table;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
-  & + * {
-    clear: both;
-  }
+    & + * {
+        clear: both;
+    }
 }
 
 fieldset {
-  border: 0;
-  padding: 0.01em 0 0 0;
-  margin: 0;
-  min-width: 0;
+    border: 0;
+    padding: 0.01em 0 0 0;
+    margin: 0;
+    min-width: 0;
 }
 
 body:not(:-moz-handler-blocked) fieldset {
-  display: table-cell;
+    display: table-cell;
 }
