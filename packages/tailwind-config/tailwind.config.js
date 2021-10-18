@@ -40,6 +40,10 @@ module.exports = {
         strokeWidth: false,
     },
     theme: {
+        extend: {
+          '0': '0ms',
+          '1': '1ms'
+        },
         aspectRatio: {
           1: '1',
           2: '2',
