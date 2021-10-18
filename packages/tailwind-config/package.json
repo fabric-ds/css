@@ -1,6 +1,6 @@
 {
   "name": "@fabric-ds/tailwind-config",
-  "version": "0.5.22",
+  "version": "0.5.23",
   "description": "Fabric's Tailwind configuration",
   "main": "tailwind.config.js",
   "repository": {
