@@ -6,12 +6,12 @@
       <main slot="content">
         <h1>Buttons</h1>
         <div class="mb-24">
-          <h2 class="h3 mt-64 text-bluegray-500">Primary</h2>
+          <h2>Primary</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--primary">Button</button>
             <a href="#" class="button button--primary">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--primary"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -25,7 +25,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -41,12 +41,12 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Secondary</h2>
+          <h2>Secondary</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--secondary">Button</button>
             <a href="#" class="button button--secondary">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--secondary"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -60,7 +60,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -76,12 +76,12 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Tertiary</h2>
+          <h2>Tertiary</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--tertiary">Button</button>
             <a href="#" class="button button--tertiary">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--tertiary"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -95,7 +95,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -111,12 +111,12 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Destructive</h2>
+          <h2>Destructive</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--destructive">Button</button>
             <a href="#" class="button button--destructive">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--destructive"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -130,7 +130,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -146,12 +146,12 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Destructive-flat</h2>
+          <h2>Destructive-flat</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--destructive-flat">Button</button>
             <a href="#" class="button button--destructive-flat">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--destructive-flat"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -165,7 +165,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -181,12 +181,12 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Order</h2>
+          <h2>Order</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--order">Button</button>
             <a href="#" class="button button--order">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--order"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -200,7 +200,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -216,12 +216,12 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Utility</h2>
+          <h2>Utility</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--utility">Button</button>
             <a href="#" class="button button--utility">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--utility"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -235,7 +235,7 @@
             >
               link in disguise
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -251,7 +251,7 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Pill</h2>
+          <h2>Pill</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--pill">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
@@ -275,7 +275,7 @@
               </svg>
             </a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button
               class="button button--pill"
               :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
@@ -303,7 +303,7 @@
                 ></path>
               </svg>
             </a>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="disabled" />
                 Disabled
@@ -319,15 +319,15 @@
             </div>
           </section>
 
-          <h2 class="h3 mt-64 text-bluegray-500">Link - button emulating link behavior</h2>
+          <h2>Link - button emulating link behavior</h2>
           <syntax-highlight class="mb-0">
             <button class="button button--link">Button</button>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example mt-0">
+          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
             <button class="button button--link" :class="{ 'button--small': small }">
               Button emulating link
             </button>
-            <div class="bg-bluegray-100 -m-32 mt-32 p-8 pl-12">
+            <div class="example-controls">
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="small" />
                 Small
