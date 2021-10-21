@@ -9,51 +9,57 @@
           <div class="md:col-span-2">
             <h1 style="font-size: 48px; line-height: 56px" class="text-white mb-16">Fabric CSS</h1>
             <p style="font-size: 22px; line-height: 28px" class="text-white">
-              The home of the CSS implementation of Fabric, FINN's design system.
+              The home of the CSS implementation of Fabric,
             </p>
+            <p style="font-size: 22px; line-height: 28px" class="text-white">FINN's design system.</p>
           </div>
         </div>
       </div>
 
       <main slot="content">
-        <div class="grid lg:grid-cols-3 gap-16">
+        <div class="md:grid lg:grid-cols-3 gap-16">
           <div class="lg:col-span-2">
             <h1>Introduction</h1>
-            <p>It's important to understand that Fabric CSS is built on top of an open source project called Tailwind. We built on top of Tailwind in order to take advantage of its enormous set of utility classes that can be used to achieve just about anything. You almost never have to write CSS again.</p>
-            
-            <h2 class="mt-48">Getting started</h2>
-    
-            <h3 class="mt-24">CDN (recommended)</h3>
-    
+            <p>
+              It's important to understand that Fabric CSS is built on top of an open source project called
+              Tailwind. We built on top of Tailwind in order to take advantage of its enormous set of utility
+              classes that can be used to achieve just about anything. You almost never have to write CSS
+              again.
+            </p>
+
+            <h2>Getting started</h2>
+
+            <h3>CDN (recommended)</h3>
+
             <p>
               The recommended way to use Fabric is by loading it from our
               <a href="https://eik.dev/">Eik</a>
               CDN.
             </p>
-    
+
             <p>
               Since Eik supports
               <a href="https://eik.dev/docs/overview_concepts#aliasing">aliasing by major versions</a>
-              you can load Fabric by specifing only the major version you're relying upon. This is great, because
-              it allows us to efficiently utilize the browser's cache as the user navigates FINN, and it ensures
-              you're always using the latest minor.patch version.
+              you can load Fabric by specifing only the major version you're relying upon. This is great,
+              because it allows us to efficiently utilize the browser's cache as the user navigates FINN, and
+              it ensures you're always using the latest minor.patch version.
             </p>
-    
+
             <p>In HTML:</p>
-            <syntax-highlight>
+            <syntax-highlight class="mb-0">
               &lt;link href="https://assets.finn.no/pkg/@fabric-ds/css/v0/fabric.min.css" rel="stylesheet" />
             </syntax-highlight>
-    
-            <h3 class="mt-24">npm (alternative)</h3>
-    
+
+            <h3>npm (alternative)</h3>
+
             <p>
               Even though we recommend using Fabric through the Eik CDN, you can also install it as an
               <a href="https://www.npmjs.com/">npm</a>
               package:
             </p>
-    
-            <syntax-highlight>$ npm install @fabric-ds/css</syntax-highlight>
-    
+
+            <syntax-highlight class="mb-0">$ npm install @fabric-ds/css</syntax-highlight>
+
             <p>
               The
               <code>package.json</code>
@@ -61,9 +67,9 @@
               <code>style</code>
               key.
             </p>
-    
-            <h2 class="mt-48">Usage with Podium</h2>
-            <p class="mt-24">
+
+            <h2>Usage with Podium</h2>
+            <p>
               If you are developing with
               <a href="https://podium-lib.io/">Podium</a>
               , Fabric's CSS should only by included by the

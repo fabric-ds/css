@@ -7,14 +7,14 @@
         <h1>Spacing</h1>
         <p>Utilities for controlling an element's padding/margin.</p>
 
-        <h2 class="mt-48">References</h2>
+        <h2>References</h2>
         <ul>
           <li><a href="https://tailwindcss.com/docs/margin">Margin in Tailwind</a></li>
           <li><a href="https://tailwindcss.com/docs/padding">Padding in Tailwind</a></li>
           <li><a href="https://tailwindcss.com/docs/responsive-design">Responsive prefix</a></li>
         </ul>
 
-        <h2 class="mt-48">Fabric config</h2>
+        <h2>Fabric config</h2>
         <p>The Fabric setup supports the px specific sizes.</p>
 
         <p>
@@ -24,28 +24,28 @@
           </a>
           :
         </p>
-        <syntax-highlight>
+        <syntax-highlight class="mb-0">
           spacing: { 0: '0', 1: '1px', 2: '2px', 4: '4px', 6: '6px', 8: '8px', 10: '10px', 12: '12px', 14:
           '14px', 16: '16px', 20: '20px', 24: '24px', 28: '28px', 32: '32px', 40: '40px', 44: '44px', 48:
           '48px', 56: '56px', 64: '64px', 80: '80px', 96: '96px', 112: '112px', 128: '128px', 144: '144px', }
         </syntax-highlight>
 
-        <h2 class="mt-48">Common usage</h2>
+        <h2>Common usage</h2>
         <p>
           These can be used in a number of ways as described in more detail in the
           <a href="https://tailwindcss.com/docs/padding">Tailwind documentation</a>
           . The syntax is exactly the same for margins and paddings , just m instead of p.
         </p>
 
-        <h3 class="mt-48">Padding examples</h3>
+        <h3>Padding examples</h3>
 
-        <table class="w-full">
+        <table>
           <thead>
             <tr>
-              <th class="text-left">Direction</th>
-              <th class="text-left">Syntax</th>
-              <th class="text-left">Example</th>
-              <th class="text-left">Explanation</th>
+              <th>Direction</th>
+              <th>Syntax</th>
+              <th>Example</th>
+              <th>Explanation</th>
             </tr>
           </thead>
           <tbody>
@@ -76,17 +76,17 @@
           </tbody>
         </table>
 
-        <h3 class="mt-48">Examples</h3>
-        <syntax-highlight>
+        <h3>Examples</h3>
+        <syntax-highlight class="mb-0">
           <div class="p-48">...</div>
         </syntax-highlight>
         <p>48px padding on all sides</p>
 
-        <syntax-highlight>
+        <syntax-highlight class="mb-0">
           <div class="my-24 mx-48">...</div>
         </syntax-highlight>
         <p>24px margin vertically, 48px margin horizontally</p>
-        <syntax-highlight>
+        <syntax-highlight class="mb-0">
           <div class="p-16 md:p-24 lg:p-16">...</div>
         </syntax-highlight>
         <p>
@@ -94,7 +94,7 @@
           up.
         </p>
 
-        <syntax-highlight>
+        <syntax-highlight class="mb-0">
           <div class="mx-auto">...</div>
         </syntax-highlight>
         <p>Centers the div when theres room using the good old margin-x:auto trick.</p>
