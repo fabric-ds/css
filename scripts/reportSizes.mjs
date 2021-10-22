@@ -17,7 +17,7 @@ glob('packages/*/dist/*.css', { absolute: true }, async (er, files) => {
 });
 
 async function report(filePath) {
-    const discSize = fs.statSync(filePath).size
+    const discSize = fs.statSync(filePath).size;
     const size = await brotliSize.file(filePath);
 
     const prettySize = prettyBytes(size);

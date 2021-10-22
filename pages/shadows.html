@@ -6,21 +6,11 @@
       <main slot="content">
         <h1>Shadows</h1>
 
-        <h2 class="mt-64 mb-16">Old</h2>
-
         <syntax-highlight class="mb-0">
-          <div class="h-128 w-128 shadow-light-1"></div>
-          <div class="h-128 w-128 shadow-light-2"></div>
-          <div class="h-128 w-128 shadow-light-3"></div>
-        </syntax-highlight>
-
-        <h2 class="mt-64 mb-16">New</h2>
-
-        <syntax-highlight class="mb-0">
-          <div class="h-128 w-128 shadow"></div>
-          <div class="h-128 w-128 shadow-2"></div>
-          <div class="h-128 w-128 shadow-3"></div>
-          <div class="h-128 w-128 shadow-4"></div>
+          <div class="shadow"></div>
+          <div class="shadow-2"></div>
+          <div class="shadow-3"></div>
+          <div class="shadow-4"></div>
         </syntax-highlight>
 
         <section class="space-x-16 flex example">
@@ -28,6 +18,13 @@
           <div class="h-128 w-128 shadow-2"></div>
           <div class="h-128 w-128 shadow-3"></div>
           <div class="h-128 w-128 shadow-4"></div>
+        </section>
+
+        <section class="space-x-16 flex example">
+          <div class="h-128 w-128 rounded-8 shadow"></div>
+          <div class="h-128 w-128 rounded-8 shadow-2"></div>
+          <div class="h-128 w-128 rounded-8 shadow-3"></div>
+          <div class="h-128 w-128 rounded-8 shadow-4"></div>
         </section>
       </main>
       <%- include('footer.html'); -%>
