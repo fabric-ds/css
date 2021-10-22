@@ -11,7 +11,6 @@ export class SyntaxHighlight extends LitElement {
         :host {
             display: block;
             margin-top: 20px;
-            margin-bottom: 20px;
         }
 
         pre {
