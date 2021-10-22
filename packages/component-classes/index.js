@@ -6,18 +6,18 @@ export const slider = {
     activeTrackDisabled: 'bg-bluegray-300 pointer-events-none',
     thumb: 'f-thumb absolute w-24 h-24 bottom-10 rounded-4 outline-none',
     thumbEnabled: 'shadow bg-blue-600 cursor-pointer',
-    thumbDisabled: 'bg-bluegray-300 cursor-disabled pointer-events-none'
+    thumbDisabled: 'bg-bluegray-300 cursor-disabled pointer-events-none',
 };
 
 export const modal = {
-    backdrop: 'f-modal-backdrop fixed inset-0 flex sm:place-content-center sm:place-items-center items-end z-20',
-    modal:
-        'f-modal rounded-8 mx-0 sm:mx-16 bg-white flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32 rounded-b-0 sm:rounded-b-8',
-    content: 'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink px-16 sm:px-32 relative',
+    backdrop:
+        'f-modal-backdrop fixed inset-0 flex sm:place-content-center sm:place-items-center items-end z-20',
+    modal: 'f-modal rounded-8 mx-0 sm:mx-16 bg-white flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32 rounded-b-0 sm:rounded-b-8',
+    content:
+        'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink px-16 sm:px-32 relative',
     footer: 'flex justify-end flex-shrink-0 px-16 sm:px-32',
     transitionTitle: 'transition-all duration-300',
-    title:
-        '-mt-4 sm:-mt-8 h-40 sm:h-48 grid f-grid gap-8 sm:gap-16 f-modal-title items-center px-16 sm:px-32 border-b sm:border-b-0 flex-shrink-0',
+    title: '-mt-4 sm:-mt-8 h-40 sm:h-48 grid f-grid gap-8 sm:gap-16 f-modal-title items-center px-16 sm:px-32 border-b sm:border-b-0 flex-shrink-0',
     titleText: 'mb-0 h4 sm:h3',
     titleButton: 'button button--pill f-modal-title-button',
     titleButtonLeft: '-ml-8 sm:-ml-12',
@@ -83,7 +83,8 @@ export const switchToggle = {
 
 export const toaster = {
     toasterContainer: 'fixed fixed-ios-fix bottom-16 left-0 right-0 mx-8 sm:mx-16 z-50 pointer-events-none',
-    toaster: 'f-toaster grid f-grid auto-rows-auto justify-items-center justify-center mx-auto pointer-events-none',
+    toaster:
+        'f-toaster grid f-grid auto-rows-auto justify-items-center justify-center mx-auto pointer-events-none',
 };
 
 export const toast = {
@@ -129,15 +130,15 @@ export const buttonReset =
     'focus:outline-none appearance-none cursor-pointer bg-transparent border-0 m-0 p-0 inline-block';
 
 export const expandable = {
-  expandable: 'f-expandable',
-  expandableInfo: 'bg-aqua-50',
-  expandableBox: 'py-0 px-0 ' + box.box,
-  expandableBleed: box.bleed,
-  chevron: 'inline-block align-middle transform transition-transform',
-  chevronNonBox: 'relative left-8',
-  chevronBox:'f-expandable-chevron absolute right-16',
-  chevronExpanded: '-rotate-180',
-  button: buttonReset + ' hover:underline focus:underline',
-  buttonBox: 'w-full text-left relative ' + box.box,
-  buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
-}
+    expandable: 'f-expandable',
+    expandableInfo: 'bg-aqua-50',
+    expandableBox: 'py-0 px-0 ' + box.box,
+    expandableBleed: box.bleed,
+    chevron: 'inline-block align-middle transform transition-transform',
+    chevronNonBox: 'relative left-8',
+    chevronBox: 'f-expandable-chevron absolute right-16',
+    chevronExpanded: '-rotate-180',
+    button: buttonReset + ' hover:underline focus:underline',
+    buttonBox: 'w-full text-left relative ' + box.box,
+    buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
+};
