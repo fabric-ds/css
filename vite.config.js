@@ -1,4 +1,4 @@
-import html from 'vite-plugin-html';
+import { injectHtml } from 'vite-plugin-html';
 import glob from 'glob';
 import path from 'path';
 
@@ -24,11 +24,8 @@ export default function ({ mode }) {
     return {
         // base: isProduction ? '/css/' : '',
         plugins: [
-            html({
-                inject: {
-                    injectOptions: { views: ['pages/includes'] },
-                },
-                minify: false,
+            injectHtml({
+                injectOptions: { views: ['pages/includes'] },
             }),
             isProduction && basePathFix(),
         ],
