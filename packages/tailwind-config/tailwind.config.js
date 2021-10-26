@@ -115,10 +115,10 @@ module.exports = {
           ...colors,
           ice: colors.aqua['50'],
           toothpaste: colors.aqua['200'],
-          marble: colors.bluegray['100'],
-          mint: colors.green['200'],
+          marble: colors.bluegray['50'],
+          mint: colors.green['100'],
           banana: colors.yellow['100'],
-          salmon: colors.red['200']
+          salmon: colors.red['100']
         },
         // Typography
         textColor: {
