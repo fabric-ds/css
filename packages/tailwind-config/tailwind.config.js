@@ -111,6 +111,15 @@ module.exports = {
             full: '9999px',
         },
         colors,
+        backgroundColor: {
+          ...colors,
+          ice: colors.aqua['50'],
+          toothpaste: colors.aqua['200'],
+          marble: colors.bluegray['100'],
+          mint: colors.green['200'],
+          banana: colors.yellow['100'],
+          salmon: colors.red['200']
+        },
         // Typography
         textColor: {
             ...colors,
