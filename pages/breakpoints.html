@@ -64,7 +64,7 @@
           <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">5</div>
           <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">6</div>
         </section>
-        <p>It is a good practise to explicitly turn everything of when not applicable, even if it is something that is 'currently' ignored by the browser. In this example the <code>md:grid-cols-2</code> could be set as <code>grid-cols-2</code> and that would have the exact same effect since grid is not turned on below the <code>md:</code> breakpoint, but when things start to get more complex its much better to always turn off stuff that is not needed. And also... Browsers do change over time. </p>
+        <p>It is a good practice to explicitly turn everything off when not applicable, even if it is something that is 'currently' ignored by the browser. In this example the <code>md:grid-cols-2</code> could be set as <code>grid-cols-2</code> and that would have the exact same effect since grid is not turned on below the <code>md:</code> breakpoint, but when things start to get more complex its much better to always turn off stuff that is not needed. And also... Browsers do change over time. </p>
         <h2>Targeting mobile screens</h2>
         <p>
           Where this approach surprises people most often is that to style something for mobile, you need to use the unprefixed version of a utility, not the <code>sm:</code> prefixed version. Don’t think of <code>sm:</code> as meaning “on small screens”, think of it as “at the small breakpoint“.
