@@ -1,0 +1,78 @@
+<html lang="en">
+  <%- include('head.html'); -%>
+  <body>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Breakpoints</h1>
+        <h2>Mobile first</h2>
+        <p class="pb-0">
+          Fabric (Tailwind) uses a mobile first breakpoint system, similar to what you might be used to in other frameworks like Bootstrap.</p>
+        <p>What this means is that unprefixed utilities (like flex) take effect on all screen sizes, while prefixed utilities (like md:flex) only take effect at the specified breakpoint and above.</p>
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://tailwindcss.com/docs/responsive-design">Responsice design in Tailwind</a></li>
+        </ul>
+        
+        
+        <h2>Supported breakpoints</h2>
+        <table class="mb-24">
+          <tr>
+            <th>Breakpoint prefix</th>
+            <th>Min width</th>
+            <th>CSS</th>
+          </tr>
+          <tr>
+            <td>sm</td>
+            <td>480px</td>
+            <td>@media (min-width: 480px){ ... }</td>
+          </tr>
+
+          <tr>
+            <td>md</td>
+            <td>768px</td>
+            <td>@media (min-width: 768px){ ... }</td>
+          </tr>
+
+          <tr>
+            <td>lg</td>
+            <td>990px</td>
+            <td>@media (min-width: 990px){ ... }</td>
+          </tr>
+        </table>
+        <p><code>sm:</code> hits typical mobiles in landscape and up</p>
+        <p><code>md:</code> hits tablets and up</p>
+        <p><code>lg:</code> hits full desktop-width and up</p>
+       
+        <h2>Example</h2>
+        <syntax-highlight>
+          <section class="md:grid md:grid-cols-2 lg:grid-cols-3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </section>
+        </syntax-highlight>
+
+        <section class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 example">
+          <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">1</div>
+          <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">2</div>
+          <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">3</div>
+          <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">4</div>
+          <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">5</div>
+          <div class="p-16 bg-gray-200 rounded-4 mb-2 md:mb-0">6</div>
+        </section>
+        <p>It is a good practise to explicitly turn everything of when not applicable, even if it is something that is 'currently' ignored by the browser. In this example the <code>md:grid-cols-2</code> could be set as <code>grid-cols-2</code> and that would have the exact same effect since grid is not turned on below the <code>md:</code> breakpoint, but when things start to get more complex its much better to always turn off stuff that is not needed. And also... Browsers do change over time. </p>
+        <h2>Targeting mobile screens</h2>
+        <p>
+          Where this approach surprises people most often is that to style something for mobile, you need to use the unprefixed version of a utility, not the <code>sm:</code> prefixed version. Don’t think of <code>sm:</code> as meaning “on small screens”, think of it as “at the small breakpoint“.
+        </p>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
+
+    <%- include('scripts.html'); -%>
+  </body>
+</html>
