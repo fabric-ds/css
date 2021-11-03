@@ -3,12 +3,10 @@
 
     &:hover {
         @apply shadow-2 bg-blue-50;
-        transform: translateY(-2px);
     }
 
     &:active {
         @apply shadow-none;
-        transform: translateY(0px);
 
         & .f-card-outline {
             @apply border-gray-300;
