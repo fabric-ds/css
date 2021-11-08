@@ -63,7 +63,7 @@ export const step = {
 export const card = {
     card: 'cursor-pointer overflow-hidden relative transition-all outline-none',
     cardShadow: 'f-card rounded-8',
-    cardFlat: 'border rounded-4',
+    cardFlat: 'border-2 rounded-4',
     cardFlatUnselected: 'border-gray-300 hover:bg-blue-50 hover:border-blue-600 active:border-blue-700',
     cardFlatSelected: 'border-blue-600 hover:bg-blue-100 hover:border-blue-700 active:border-blue-800',
     cardSelected: 'bg-blue-50',
