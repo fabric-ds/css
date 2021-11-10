@@ -146,3 +146,10 @@ export const expandable = {
     buttonBox: 'w-full text-left relative ' + box.box,
     buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
 };
+
+export const suffix = {
+  wrapper: 'absolute right-0 top-0 bottom-0 hover:text-aqua-400 flex justify-center items-center focus-ring',
+  wrapperWithLabel: 'w-max pr-12',
+  wrapperWithIcon: 'w-40',
+  label: 'field-label pb-0 text-12'
+}
