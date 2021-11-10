@@ -7,6 +7,7 @@
   ],
   "style": "dist/fabric.min.css",
   "scripts": {
+    "preversion": "eik login",
     "prepublish": "yarn build",
     "postpublish": "eik publish && eik package-alias @fabric-ds/css",
     "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css",
