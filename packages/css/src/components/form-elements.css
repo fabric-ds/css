@@ -81,10 +81,10 @@
         @apply pr-80;
     }
     @nest .has-prefix & input {
-        @apply pl-48;
+        @apply pl-40;
     }
     @nest .has-wide-prefix & input {
-        @apply pl-96;
+        @apply pl-80;
     }
 }
 

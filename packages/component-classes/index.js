@@ -159,6 +159,6 @@ export const suffix = {
 export const prefix = {
   wrapper: prefixSuffixWrapperBase + 'left-0',
   wrapperWithLabel: 'w-max pl-12',
-  wrapperWithIcon: 'w-48',
-  label: 'pb-0 text-secondary'
+  wrapperWithIcon: 'w-40',
+  label: 'field-label pb-0 text-secondary text-12'
 }
