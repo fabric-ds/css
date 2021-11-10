@@ -147,9 +147,18 @@ export const expandable = {
     buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
 };
 
+const prefixSuffixWrapperBase = 'absolute top-0 bottom-0 hover:text-aqua-400 flex justify-center items-center focus-ring ';
+
 export const suffix = {
-  wrapper: 'absolute right-0 top-0 bottom-0 hover:text-aqua-400 flex justify-center items-center focus-ring',
+  wrapper: prefixSuffixWrapperBase + 'right-0',
   wrapperWithLabel: 'w-max pr-12',
   wrapperWithIcon: 'w-40',
   label: 'field-label pb-0 text-12'
+}
+
+export const prefix = {
+  wrapper: prefixSuffixWrapperBase + 'left-0',
+  wrapperWithLabel: 'w-max pl-12',
+  wrapperWithIcon: 'w-40',
+  label: 'field-label pb-0 text-secondary text-12'
 }

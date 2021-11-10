@@ -80,6 +80,12 @@
     @nest .has-wide-suffix & input {
         @apply pr-80;
     }
+    @nest .has-prefix & input {
+        @apply pl-40;
+    }
+    @nest .has-wide-prefix & input {
+        @apply pl-80;
+    }
 }
 
 .input--select__wrap {
