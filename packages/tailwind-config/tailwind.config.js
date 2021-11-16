@@ -19,6 +19,7 @@ const shadows = {
   '20': '0 3px 6px rgba(var(--f-bluegray-600-rgb), .16), 0 3px 6px rgba(var(--f-bluegray-600-rgb), .24)',
   '30': '0 10px 20px rgba(var(--f-bluegray-600-rgb), .19), 0 6px 6px rgba(var(--f-bluegray-600-rgb), .23)',
   '40': '0 14px 28px rgba(var(--f-bluegray-600-rgb), .25), 0 10px 10px rgba(var(--f-bluegray-600-rgb), .22)',
+  'none': 'none'
 }
 
 module.exports = {
@@ -155,7 +156,8 @@ module.exports = {
           DEFAULT: shadows['10'],
           2: shadows['20'],
           3: shadows['30'],
-          4: shadows['40']
+          4: shadows['40'],
+          'none': shadows['none']
         },
         dropShadow: shadows,
         screens: {
