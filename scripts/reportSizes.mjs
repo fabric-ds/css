@@ -25,5 +25,5 @@ async function report(filePath) {
     const fileName = path.basename(filePath);
 
     console.log(`${prettySize}: ${fileName}.br`);
-    console.log(`${filesize(discSize)}: ${fileName}.min.css`);
+    console.log(`${filesize(discSize)}: ${fileName}`);
 }
