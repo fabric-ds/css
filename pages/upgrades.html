@@ -1,0 +1,83 @@
+<html lang="en">
+  <%- include('head.html'); -%>
+  <body>
+    <f-docs-template>
+      <%- include('nav.html'); -%>
+      <main slot="content">
+        <h1>Upgrading</h1>
+        <h2>Upgrading from Fabric v0 to v1</h2>
+        <p>
+          Fabric CSS version 1 contains a
+          <b>BREAKING CHANGE</b>
+          which removes support for Troika utility classes. We don't do this lightly as our general goal is to
+          avoid breaking changes as much as possible but it seems wise to clear this out sooner rather than
+          later.
+        </p>
+
+        <h3>Will this affect me?</h3>
+        <p>
+          This will affect anyone using Troika utility classes in Fabric only apps. These classes are always
+          prefixed with
+          <b><i>u-</i></b>
+          so they are easy to recognise
+        </p>
+
+        <h3>How can I make the upgrade?</h3>
+        <h4>1. Handle u- prefixed Troika utility classes</h4>
+        <p>
+          Go through your markup and replace
+          <b><i>u-</i></b>
+          prefixed classes with valid Fabric equivalents. This should be a quick job even on a large app. You
+          can find example replacements here:
+          <a href="https://github.schibsted.io/finn/fabric#noteable-changes">
+            https://github.schibsted.io/finn/fabric#noteable-changes
+          </a>
+        </p>
+
+        <h5>Compatibility mode</h5>
+        <p>
+          If you don't have time to make this change right away, you will always have the option of including
+          the Troika utilities package manually to keep supporting
+          <b><i>u-</i></b>
+          classes until you can find time.
+        </p>
+        <p>
+          Install the utils package
+          <syntax-highlight>npm install -D @finn-no/troika-css-utilities</syntax-highlight>
+        </p>
+        <p>
+          In your app's
+          <b><i>styles.css</i></b>
+          file, import Troika utils:
+          <syntax-highlight>@import 'import '@finn-no/troika-css-utilities/dist/utilities.css';</syntax-highlight>
+        </p>
+
+        Alternatively, if you don't have a postcss build pipeline in place though, you can always import directly from the Eik server
+
+        <syntax-highlight>
+          <link rel="stylesheet" href="https://assets.finn.no/pkg/troika-css-utilities/v1/utilities.css">
+        </syntax-highlight>
+        
+        <br>
+        <h4>2. Install the Fabric CSS v1 dependency</h4>
+
+        <syntax-highlight>npm install -D @fabric-ds/css@1</syntax-highlight>
+
+        <br>
+        <h4>3. Update import map to v1</h4>
+        <p>
+          Update your app's eik.json file to point at the correct import map. Without this step you will not end up with Fabric v1 in production.
+
+          <syntax-highlight>
+            "import-map": [..., "https://assets.finn.no/map/fabric/v2", ...]
+          </syntax-highlight>
+
+          <b>n.b.</b> Yes, the "v2" in the example above is correct. The v2 import map points at Fabric v1. 
+        </p>
+      </main>
+      <%- include('footer.html'); -%>
+    </f-docs-template>
+
+    <%- include('scripts.html'); -%>
+  </body>
+</html>
