@@ -14,11 +14,6 @@
     font-style: normal;
 }
 
-html {
-    /* Trickery: 1rem = 10px */
-    font-size: 62.5%;
-}
-
 body {
     /* Trickery: resets a more sensible default font-size */
     @apply bg-white text-gray-700 text-16;
