@@ -62,7 +62,7 @@ const colors = {
     bluegray: {
         50:  "#f8fafc", // Marble
         100: "#f1f4f9",
-        200: "#ebeff5",
+        200: "#e1e6ee",
         300: "#c3ccd9", // Sardine
         400: "#9ba8ba",
         500: "#6f7d90",
