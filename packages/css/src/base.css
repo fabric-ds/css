@@ -97,3 +97,10 @@ fieldset {
 body:not(:-moz-handler-blocked) fieldset {
     display: table-cell;
 }
+
+/* Ensure font styling gets appended to the DOM and SDOM */
+html,
+:host {
+    font-family: Finntype, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
