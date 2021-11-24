@@ -15,12 +15,12 @@ const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrS
 }, {});
 
 const shadows = {
-  '10': '0 1px 3px rgba(var(--f-bluegray-600-rgb), .12), 0 1px 2px rgba(var(--f-bluegray-600-rgb), .24)',
-  '20': '0 3px 6px rgba(var(--f-bluegray-600-rgb), .16), 0 3px 6px rgba(var(--f-bluegray-600-rgb), .24)',
-  '30': '0 10px 20px rgba(var(--f-bluegray-600-rgb), .19), 0 6px 6px rgba(var(--f-bluegray-600-rgb), .23)',
-  '40': '0 14px 28px rgba(var(--f-bluegray-600-rgb), .25), 0 10px 10px rgba(var(--f-bluegray-600-rgb), .22)',
-  'none': 'none'
-}
+    10: '0 1px 3px rgba(var(--f-bluegray-600-rgb), .12), 0 1px 2px rgba(var(--f-bluegray-600-rgb), .24)',
+    20: '0 3px 6px rgba(var(--f-bluegray-600-rgb), .16), 0 3px 6px rgba(var(--f-bluegray-600-rgb), .24)',
+    30: '0 10px 20px rgba(var(--f-bluegray-600-rgb), .19), 0 6px 6px rgba(var(--f-bluegray-600-rgb), .23)',
+    40: '0 14px 28px rgba(var(--f-bluegray-600-rgb), .25), 0 10px 10px rgba(var(--f-bluegray-600-rgb), .22)',
+    none: 'none',
+};
 
 module.exports = {
     darkMode: false,
@@ -120,14 +120,14 @@ module.exports = {
         },
         colors,
         backgroundColor: {
-          ...colors,
-          // TBD
-          // ice: colors.aqua['50'],
-          // toothpaste: colors.aqua['200'],
-          // marble: colors.bluegray['50'],
-          // mint: colors.green['100'],
-          // banana: colors.yellow['100'],
-          // salmon: colors.red['100']
+            ...colors,
+            // TBD
+            // ice: colors.aqua['50'],
+            // toothpaste: colors.aqua['200'],
+            // marble: colors.bluegray['50'],
+            // mint: colors.green['100'],
+            // banana: colors.yellow['100'],
+            // salmon: colors.red['100']
         },
         // Typography
         textColor: {
@@ -135,9 +135,6 @@ module.exports = {
             primary: colors.gray['700'],
             secondary: colors.gray['500'],
             danger: colors.red['600'],
-        },
-        fontFamily: {
-            sans: ['Finntype', 'Arial', 'Helvetica', 'sans-serif'],
         },
         fontSize: {
             12: ['12px', '16px'],
@@ -153,11 +150,11 @@ module.exports = {
         },
         // Effects
         boxShadow: {
-          DEFAULT: shadows['10'],
-          2: shadows['20'],
-          3: shadows['30'],
-          4: shadows['40'],
-          'none': shadows['none']
+            DEFAULT: shadows['10'],
+            2: shadows['20'],
+            3: shadows['30'],
+            4: shadows['40'],
+            none: shadows['none'],
         },
         dropShadow: shadows,
         screens: {
