@@ -145,7 +145,7 @@ module.exports = {
             34: ['34px', '41px'],
         },
         fontWeight: {
-            normal: 300,
+            normal: 400,
             bold: 700,
         },
         // Effects
