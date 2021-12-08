@@ -4,6 +4,7 @@
     background-color: rgba(0, 0, 0, 0.35);
 }
 .f-modal {
+    min-height: var(--f-modal-min-height);
     max-height: var(--f-modal-max-height);
     height: var(--f-modal-height);
     width: var(--f-modal-width);
