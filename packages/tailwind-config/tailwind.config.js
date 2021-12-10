@@ -15,7 +15,6 @@ const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrS
 }, {});
 
 module.exports = {
-    darkMode: false,
     plugins: [focusRing, headings, transitionGpu, aspectRatio],
     corePlugins: {
         // Backgrounds

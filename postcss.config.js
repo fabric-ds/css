@@ -12,7 +12,6 @@ module.exports = (ctx) => {
         atImport,
         // For some reason, hot reloading the tailwind config only works in vite when we don't specify a config.
         // But if we don't specify a config, PostCSS doens't load it when building for prod.
-        ctx.env === 'production' ? tailwind(require('./tailwind.config')) : tailwind,
         presetEnv({
             stage: 0,
             browsers: 'extends @finn-no/browserslist-config',
@@ -21,6 +20,7 @@ module.exports = (ctx) => {
                 'focus-visible-pseudo-class': false,
             },
         }),
+        ctx.env === 'production' ? tailwind(require('./tailwind.config')) : tailwind,
         importSvg({
             paths: [path.resolve(path.dirname(require.resolve('@fabric-ds/icons/package.json')), 'dist')],
         }),
