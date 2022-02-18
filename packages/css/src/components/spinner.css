@@ -1,0 +1,29 @@
+.f-spinner {
+  --spinner-size: 24px;
+  height: var(--spinner-size);
+  width: var(--spinner-size);
+  border-radius: 50%;
+  border: calc(var(--spinner-size) / 8) solid var(--f-blue-100);
+  border-top-color: var(--f-aqua-400);
+  position: relative;
+  animation: f-spin-rotate 0.75s infinite linear;
+}
+.f-spinner:before, .f-spinner:after {
+  content: ' ';
+  height: calc(var(--spinner-size) / 8);
+  width: calc(var(--spinner-size) / 8);
+  border-radius: 50%;
+  position: absolute;
+  background: var(--f-aqua-400);
+  /* yes seriously - this corrects a weird top-quirk at large sizes */
+  top: calc(var(--spinner-size) / 180);
+}
+.f-spinner:before {
+  left: 0;
+}
+.f-spinner:after {
+  right: 0;
+}
+@keyframes f-spin-rotate {
+  to { transform: rotate(359deg); }
+}
