@@ -1,6 +1,6 @@
 {
   "name": "@fabric-ds/css",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Fabric CSS core components and utilities",
   "files": [
     "dist"
