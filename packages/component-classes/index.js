@@ -1,3 +1,10 @@
+export const pageIndicator = {
+  wrapper: 'flex space-x-8 p-8',
+  dot: 'h-8 w-8 rounded-full',
+  inactive: 'bg-bluegray-300',
+  active: 'bg-blue-600'
+}
+
 export const slider = {
     wrapper: 'f-slider relative w-full h-44 py-2',
     track: 'track absolute bg-bluegray-300 h-4 top-20 rounded-4 w-full',
