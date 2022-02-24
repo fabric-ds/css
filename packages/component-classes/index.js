@@ -7,7 +7,7 @@ export const pageIndicator = {
 
 export const slider = {
     wrapper: 'f-slider relative w-full h-44 py-2',
-    track: 'track absolute bg-bluegray-300 h-4 top-20 rounded-4 w-full',
+    track: 'track absolute bg-blue-200 h-4 top-20 rounded-4 w-full',
     trackDisabled: 'pointer-events-none bg-gray-200',
     activeTrack: 'larger-active-track absolute bg-blue-600 h-4 top-20 rounded-4',
     activeTrackDisabled: 'bg-bluegray-300 pointer-events-none',
