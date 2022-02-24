@@ -10,6 +10,10 @@
   "scripts": {
     "preversion": "tsc"
   },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
