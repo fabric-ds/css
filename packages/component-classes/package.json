@@ -3,16 +3,23 @@
   "version": "0.0.37",
   "type": "module",
   "main": "index.js",
+  "types": "./index.d.ts",
   "exports": "./index.js",
   "author": "Dave Honneffer <pearofducks@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "preversion": "tsc"
+  },
   "files": [
-    "/dist"
+    "index.js",
+    "index.d.ts"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c"
+  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
 }

@@ -5,6 +5,17 @@ export const pageIndicator = {
   active: 'bg-blue-600'
 }
 
+export const ribbon = {
+  base: 'py-4 px-8 border rounded-4 inline-flex last-child:mb-0',
+  info: 'border-aqua-50 bg-aqua-50',
+  success: 'border-green-100 bg-green-100',
+  warning: 'border-yellow-100 bg-yellow-100',
+  error: 'border-red-100 bg-red-100',
+  disabled: 'border-bluegray-300 bg-bluegray-300',
+  sponsored: 'border-aqua-200 bg-aqua-200',
+  neutral: 'border-bluegray-300 bg-white'
+}
+
 export const slider = {
     wrapper: 'f-slider relative w-full h-44 py-2',
     track: 'track absolute bg-blue-200 h-4 top-20 rounded-4 w-full',
