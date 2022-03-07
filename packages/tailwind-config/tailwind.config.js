@@ -17,10 +17,10 @@ const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrS
 // NB: these cannot take the 4th 'spread' arg without hax because we use them for both box and drop shadow
 // drop-shadow does not support the 4th arg
 const shadows = {
-    10: ['0 1px 3px rgba(var(--f-bluegray-600-rgb), .12)', '0 1px 2px rgba(var(--f-bluegray-600-rgb), .24)'],
-    20: ['0 3px 6px rgba(var(--f-bluegray-600-rgb), .16)', '0 3px 6px rgba(var(--f-bluegray-600-rgb), .24)'],
-    30: ['0 10px 20px rgba(var(--f-bluegray-600-rgb), .19)', '0 6px 6px rgba(var(--f-bluegray-600-rgb), .23)'],
-    40: ['0 14px 28px rgba(var(--f-bluegray-600-rgb), .25)', '0 10px 10px rgba(var(--f-bluegray-600-rgb), .22)'],
+    10: ['0 1px 6px rgba(var(--f-gray-700-rgb), .16)', '0 1px 1px rgba(var(--f-gray-700-rgb), .24)'],
+    20: ['0 3px 8px rgba(var(--f-gray-700-rgb), .24)', '0 3px 6px rgba(var(--f-gray-700-rgb), .16)'],
+    30: ['0 6px 8px rgba(var(--f-gray-700-rgb), .23)', '0 10px 20px rgba(var(--f-gray-700-rgb), .19)'],
+    40: ['0 9px 12px rgba(var(--f-gray-700-rgb), .22)', '0 14px 28px rgba(var(--f-gray-700-rgb), .25)'],
     none: 'none',
 };
 
