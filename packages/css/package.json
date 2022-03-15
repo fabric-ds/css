@@ -3,15 +3,24 @@
   "version": "1.1.0",
   "description": "Fabric CSS core components and utilities",
   "files": [
-    "dist"
+    "dist/npm"
   ],
-  "style": "dist/fabric.min.css",
+  "main": "./dist/npm/fabric.min.js",
+  "exports": {
+    ".": "./dist/npm/fabric.min.js",
+    "./fabric.min.js": "./dist/npm/fabric.min.js",
+    "./fabric.min.css": "./dist/npm/fabric.min.css"
+  },
+  "style": "dist/npm/fabric.min.css",
   "scripts": {
     "preversion": "eik login",
     "prepublish": "yarn build",
     "postpublish": "eik publish && eik package-alias @fabric-ds/css",
-    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css",
-    "postbuild": "./scripts/replaceTailwindVariables.mjs"
+    "build": "yarn build:css && yarn build:replace && yarn build:js && yarn build:eik",
+    "build:css": "NODE_ENV=production postcss src/fabric.css --o dist/npm/fabric.min.css",
+    "build:replace": "./scripts/replaceTailwindVariables.mjs",
+    "build:js": "./scripts/constructedStylesheet.mjs",
+    "build:eik": "node ./scripts/esbuild.mjs && cp ./dist/npm/fabric.min.css ./dist/eik/fabric.min.css"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -19,12 +28,14 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@eik/esbuild-plugin": "^1.1.6",
     "@fabric-ds/icons": "^0.3.8",
-    "@fabric-ds/tailwind-config": "^0.5.31"
+    "@fabric-ds/tailwind-config": "^0.5.31",
+    "lit": "^2.2.0"
   },
   "eik": {
     "server": "https://assets.finn.no",
-    "files": "dist"
+    "files": "dist/eik"
   },
   "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c"
 }
