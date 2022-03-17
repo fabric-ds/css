@@ -1,6 +1,6 @@
 {
   "name": "@fabric-ds/tailwind-config",
-  "version": "0.5.31",
+  "version": "0.5.32",
   "description": "Fabric's Tailwind configuration",
   "main": "tailwind.config.js",
   "dependencies": {
