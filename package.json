@@ -45,6 +45,6 @@
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.0.3",
     "vite": "^2.6.2",
-    "vite-plugin-html": "^2.0.0-rc.3"
+    "vite-plugin-html": "^3.0.0"
   }
 }
