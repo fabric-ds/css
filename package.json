@@ -31,7 +31,7 @@
     "cssnano": "^5.0.8",
     "filesize": "^8.0.3",
     "gh-pages": "^3.1.0",
-    "glob": "^7.1.6",
+    "glob": "^8.0.0",
     "html-format": "^1.0.1",
     "lerna": "^4.0.0",
     "lit-element": "^3.0.0",
