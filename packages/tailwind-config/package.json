@@ -1,6 +1,6 @@
 {
   "name": "@fabric-ds/tailwind-config",
-  "version": "1.0.0-next.1",
+  "version": "0.5.32",
   "description": "Fabric's Tailwind configuration",
   "main": "tailwind.config.js",
   "dependencies": {
@@ -16,5 +16,10 @@
     "access": "public"
   },
   "license": "MIT",
-  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c"
+  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^19.0.2"
+  }
 }

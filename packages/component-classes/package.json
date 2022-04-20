@@ -1,6 +1,6 @@
 {
   "name": "@fabric-ds/component-classes",
-  "version": "1.0.0-next.1",
+  "version": "0.0.38",
   "type": "module",
   "main": "index.js",
   "types": "./index.d.ts",
@@ -20,6 +20,9 @@
   },
   "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^19.0.2",
     "typescript": "^4.5.5"
   }
 }
