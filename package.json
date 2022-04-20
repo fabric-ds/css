@@ -12,11 +12,12 @@
     "docs": "vite build && cp CNAME site",
     "docs:deploy": "yarn docs && gh-pages -d site",
     "format": "prettier --write . --ignore-path .gitignore",
-    "lint": "prettier --check . --ignore-path .gitignore"
+    "lint": "prettier --check . --ignore-path .gitignore",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fabric-ds/css.git"
+    "url": "https://github.com/fabric-ds/css.git"
   },
   "publishConfig": {
     "access": "public"
@@ -46,7 +47,8 @@
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.0.3",
     "vite": "^2.6.2",
-    "vite-plugin-html": "^2.0.0-rc.3"
+    "vite-plugin-html": "^2.0.0-rc.3",
+    "semantic-release": "^19.0.2"
   },
   "config": {
     "commitizen": {
