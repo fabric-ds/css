@@ -26,6 +26,8 @@
   "devDependencies": {
     "@eik/cli": "^2.0.0-next.6",
     "@finn-no/browserslist-config": "^3.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "autoprefixer": "^10.1.0",
     "brotli-size": "^4.0.0",
@@ -45,10 +47,11 @@
     "prettier": "^2.2.1",
     "pretty-bytes": "^5.5.0",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
+    "semantic-release-slack-bot": "^3.5.2",
     "tailwindcss": "^2.0.3",
     "vite": "^2.6.2",
-    "vite-plugin-html": "^2.0.0-rc.3",
-    "semantic-release": "^19.0.2"
+    "vite-plugin-html": "^2.0.0-rc.3"
   },
   "config": {
     "commitizen": {
