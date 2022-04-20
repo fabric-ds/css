@@ -43,7 +43,7 @@ module.exports = {
               pattern: 'main',
               notifyOnSuccess: true,
               onSuccessTemplate: {
-                text: ':tada: A new release for one or more pacakges in $package_name has been published - $repo_url. \n $release_notes',
+                text: ':tada: A new release for one or more packages in $package_name has been published - $repo_url. \n $release_notes',
               },
             },
           ],
