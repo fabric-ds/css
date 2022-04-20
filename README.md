@@ -7,23 +7,39 @@ Monorepo for Fabric CSS
 Install dependencies:
 
 ```sh
-yarn
+npm install
 ```
 
 Start a dev server:
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Changes to to either the CSS, Tailwind configuration or the HTML files should hot reload.
 
-## How to release
+## Releases
 
-Fabric CSS is published both to npm and to eik (as an npm `postpublish` step).
+This project uses
+[Semantic Release](https://github.com/semantic-release/semantic-release) to
+automate package publishing when making changes to the `main` or `next` branch.
 
-1. Make sure you're on `master`
-2. `git pull`
-3. Make sure you're logged into NPM
-4. Make sure you are [authenticated with the eik server](https://eik.dev/docs/client_login)
-5. `yarn lerna publish`
+It is recommended to branch off the `next` branch and follow
+[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+when making changes. When your changes are ready for pull request, this should
+be opened against the `next` branch.
+
+[Read more in-depth about Fabric Releases here](https://github.com/fabric-ds/issues/blob/779d59723993c13d62374516259602d967da56ca/rfcs/0004-releases.md).
+
+Please note that the version published will depend on your commit message
+structure. We use [commitizen](https://github.com/commitizen/cz-cli) to help
+follow this structure:
+
+```
+npm install -g commitizen
+```
+
+When installed, you should be able to type `cz` or `git cz` in your terminal to
+commit your changes (replacing `git commit`).
+
+[![Add and commit with Commitizen](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)
