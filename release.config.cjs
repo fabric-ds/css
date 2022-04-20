@@ -51,7 +51,7 @@ module.exports = {
       ],
       ["@semantic-release/git", {
         "assets": [
-          "packages/package.json", 
+          "package.json", 
           "packages/component-classes/package.json", 
           "packages/css/package.json",
           "packages/tailwind-config/package.json",
