@@ -5,7 +5,7 @@ const cssnano = require('cssnano');
 const atImport = require('postcss-import');
 const presetEnv = require('postcss-preset-env');
 const importSvg = require('postcss-import-svg');
-const { breakpoints: customMedia } = require('./packages/tailwind-config/colors');
+const { breakpoints: customMedia } = require('./src/tailwind/colors');
 
 module.exports = (ctx) => {
     const plugins = [

@@ -1,4 +1,4 @@
-/* Modeled after https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports */
+/* Modeled after https://tailwindcss.com/pages/using-with-preprocessors#build-time-imports */
 
 @import "tailwindcss/base";
 @import "./base.css";
