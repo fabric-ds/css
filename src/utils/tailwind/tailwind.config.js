@@ -26,6 +26,7 @@ const shadows = {
 
 module.exports = {
     darkMode: false,
+    purge: false,
     plugins: [focusRing, headings, transitionGpu, aspectRatio],
     corePlugins: {
         // Backgrounds

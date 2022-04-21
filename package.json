@@ -8,13 +8,22 @@
   "style": "dist/fabric.min.css",
   "exports": {
     ".": "./dist/fabric.min.css",
-    "./tailwind-config": "./dist/tailwind/tailwind.config.js"
+    "./tailwind-config": "./dist/tailwind/tailwind.config.js",
+    "./component-classes": "./dist/component-classes/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "./component-classes": [
+        "dist/index.d.ts"
+      ]
+    }
   },
   "scripts": {
     "eik:login": "npx @eik/cli login",
     "eik:publish": "npx @eik/cli publish",
     "eik:alias": "eik package-alias @fabric-ds/css",
-    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css && cp -r src/tailwind dist",
+    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css && npm run copy && tsc",
+    "copy": "cp -r src/utils/tailwind dist && cp -r src/utils/component-classes dist",
     "postbuild": "./src/scripts/replaceTailwindVariables.mjs && ./src/scripts/reportSizes.mjs",
     "dev": "vite",
     "docs": "vite build && cp CNAME site",
@@ -60,12 +69,15 @@
     "semantic-release": "^19.0.2",
     "semantic-release-slack-bot": "^3.5.2",
     "tailwindcss": "^2.0.3",
+    "typescript": "^4.6.3",
     "vite": "^2.6.2",
     "vite-plugin-html": "^2.0.0-rc.3"
   },
   "eik": {
     "server": "https://assets.finn.no",
-    "files": "dist"
+    "files": {
+      "fabric.min.css": "./dist/fabric.min.css"
+    }
   },
   "config": {
     "commitizen": {

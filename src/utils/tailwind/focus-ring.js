@@ -6,8 +6,8 @@ const focusRing = {
 };
 
 const focusRingInset = {
-    '--f-outline-offset': '-3px'
-}
+    '--f-outline-offset': '-3px',
+};
 
 module.exports = plugin(({ addUtilities }) => {
     const focusRingClass = {

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "strictNullChecks": false,
+        "emitDeclarationOnly": true,
+        "declaration": true,
+        "outDir": "dist",
+        "removeComments": false
+    },
+    "files": [
+        "./src/utils/component-classes/index.js"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
