@@ -6,11 +6,15 @@
     "dist"
   ],
   "style": "dist/fabric.min.css",
+  "exports": {
+    ".": "./dist/fabric.min.css",
+    "./tailwind-config": "./dist/tailwind/tailwind.config.js"
+  },
   "scripts": {
     "eik:login": "npx @eik/cli login",
     "eik:publish": "npx @eik/cli publish",
     "eik:alias": "eik package-alias @fabric-ds/css",
-    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css",
+    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css && cp -r src/tailwind dist",
     "postbuild": "./src/scripts/replaceTailwindVariables.mjs && ./src/scripts/reportSizes.mjs",
     "dev": "vite",
     "docs": "vite build && cp CNAME site",
