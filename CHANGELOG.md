@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/fabric-ds/css/compare/v1.1.1...v1.1.2) (2022-04-22)
+
+
+### Bug Fixes
+
+* wrong changelog ([f54bcfb](https://github.com/fabric-ds/css/commit/f54bcfbc7e18da822932c00b71e0aed5e58e5ccb))
+
 # 1.1.1 (2022-04-22)
 
 ### Bug Fixes
