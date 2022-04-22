@@ -1,12 +1,5 @@
 ## [1.1.2](https://github.com/fabric-ds/css/compare/v1.1.1...v1.1.2) (2022-04-22)
 
-
-### Bug Fixes
-
-* wrong changelog ([f54bcfb](https://github.com/fabric-ds/css/commit/f54bcfbc7e18da822932c00b71e0aed5e58e5ccb))
-
-# 1.1.1 (2022-04-22)
-
 ### Bug Fixes
 
 -   add export for tailwind-config from css
@@ -28,8 +21,8 @@
     ([1f3aab3](https://github.com/fabric-ds/css/commit/1f3aab3baabc6ae1336f333092b719270a5c67c7))
 -   set pointer events none to make arrow clickable
     ([c3b3c9c](https://github.com/fabric-ds/css/commit/c3b3c9caf333ebdb34dcd3cca80052a26e5b6504))
--   wrong version
-    ([8ef86d5](https://github.com/fabric-ds/css/commit/8ef86d5b2ddd75070cca06182df1f46b6c016a78))
+-   wrong changelog
+    ([f54bcfb](https://github.com/fabric-ds/css/commit/f54bcfbc7e18da822932c00b71e0aed5e58e5ccb))
 
 ### Features
 
@@ -39,10 +32,3 @@
     ([45f3586](https://github.com/fabric-ds/css/commit/45f358664753c439c37e66dde3510ded8abbe4ef))
 -   Add vars to :host for shadow dom situations
     ([8c602ab](https://github.com/fabric-ds/css/commit/8c602ab288cff631e7f1eb424ed5f9fdc1220f5d))
-
-# [1.0.0-next.3](https://github.com/fabric-ds/css/compare/v1.0.0-next.2...v1.0.0-next.3) (2022-04-21)
-
-### Bug Fixes
-
--   add export for tailwind-config from css
-    ([1b632c9](https://github.com/fabric-ds/css/commit/1b632c9c15a570cae9bd265ec00240d304c882b8))

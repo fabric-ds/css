@@ -28,7 +28,7 @@ module.exports = {
                         pattern: 'main',
                         notifyOnSuccess: true,
                         onSuccessTemplate: {
-                            text: ':tada: $package_name@$npm_package_version is now available - $repo_url. \n $release_notes',
+                            text: ':tada: $package_name@$npm_package_version is now available - $repo_url. \n\n $release_notes',
                         },
                     },
                 ],
