@@ -1,20 +1,20 @@
 export const pageIndicator = {
-  wrapper: 'flex space-x-8 p-8',
-  dot: 'h-8 w-8 rounded-full',
-  inactive: 'bg-bluegray-300',
-  active: 'bg-blue-600'
-}
+    wrapper: 'flex space-x-8 p-8',
+    dot: 'h-8 w-8 rounded-full',
+    inactive: 'bg-bluegray-300',
+    active: 'bg-blue-600',
+};
 
 export const ribbon = {
-  base: 'py-4 px-8 border rounded-4 inline-flex last-child:mb-0',
-  info: 'border-aqua-50 bg-aqua-50',
-  success: 'border-green-100 bg-green-100',
-  warning: 'border-yellow-100 bg-yellow-100',
-  error: 'border-red-100 bg-red-100',
-  disabled: 'border-bluegray-300 bg-bluegray-300',
-  sponsored: 'border-aqua-200 bg-aqua-200',
-  neutral: 'border-bluegray-300 bg-white'
-}
+    base: 'py-4 px-8 border rounded-4 inline-flex last-child:mb-0',
+    info: 'border-aqua-50 bg-aqua-50',
+    success: 'border-green-100 bg-green-100',
+    warning: 'border-yellow-100 bg-yellow-100',
+    error: 'border-red-100 bg-red-100',
+    disabled: 'border-bluegray-300 bg-bluegray-300',
+    sponsored: 'border-aqua-200 bg-aqua-200',
+    neutral: 'border-bluegray-300 bg-white',
+};
 
 export const slider = {
     wrapper: 'f-slider relative w-full h-44 py-2',
@@ -165,18 +165,19 @@ export const expandable = {
     buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
 };
 
-const prefixSuffixWrapperBase = 'absolute top-0 bottom-0 hover:text-aqua-400 flex justify-center items-center focus-ring ';
+const prefixSuffixWrapperBase =
+    'absolute top-0 bottom-0 hover:text-aqua-400 flex justify-center items-center focus-ring ';
 
 export const suffix = {
-  wrapper: prefixSuffixWrapperBase + 'right-0',
-  wrapperWithLabel: 'w-max pr-12',
-  wrapperWithIcon: 'w-40',
-  label: 'field-label pb-0 text-12'
-}
+    wrapper: prefixSuffixWrapperBase + 'right-0',
+    wrapperWithLabel: 'w-max pr-12',
+    wrapperWithIcon: 'w-40',
+    label: 'field-label pb-0 text-12',
+};
 
 export const prefix = {
-  wrapper: prefixSuffixWrapperBase + 'left-0',
-  wrapperWithLabel: 'w-max pl-12',
-  wrapperWithIcon: 'w-40',
-  label: 'field-label pb-0 text-secondary text-12'
-}
+    wrapper: prefixSuffixWrapperBase + 'left-0',
+    wrapperWithLabel: 'w-max pl-12',
+    wrapperWithIcon: 'w-40',
+    label: 'field-label pb-0 text-secondary text-12',
+};

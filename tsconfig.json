@@ -6,7 +6,7 @@
         "strictNullChecks": false,
         "emitDeclarationOnly": true,
         "declaration": true,
-        "outDir": "dist",
+        "outDir": "./src/utils/component-classes",
         "removeComments": false
     },
     "files": [

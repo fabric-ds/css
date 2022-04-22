@@ -3,18 +3,20 @@
   "description": "Fabric CSS core components and utilities",
   "version": "1.1.1",
   "files": [
-    "dist"
+    "dist",
+    "src/utils/tailwind",
+    "src/utils/component-classes"
   ],
   "style": "dist/fabric.min.css",
   "exports": {
     ".": "./dist/fabric.min.css",
-    "./tailwind-config": "./dist/tailwind/tailwind.config.js",
-    "./component-classes": "./dist/component-classes/index.js"
+    "./tailwind-config": "./src/utils/tailwind/tailwind.config.js",
+    "./component-classes": "./src/utils/component-classes/index.js"
   },
   "typesVersions": {
     "*": {
       "./component-classes": [
-        "dist/index.d.ts"
+        "src/utils/component-classes/index.d.ts"
       ]
     }
   },
@@ -22,8 +24,7 @@
     "eik:login": "npx @eik/cli login",
     "eik:publish": "npx @eik/cli publish",
     "eik:alias": "eik package-alias @fabric-ds/css",
-    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css && npm run copy && tsc",
-    "copy": "cp -r src/utils/tailwind dist && cp -r src/utils/component-classes dist",
+    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css && tsc",
     "postbuild": "./src/scripts/replaceTailwindVariables.mjs && ./src/scripts/reportSizes.mjs",
     "dev": "vite",
     "docs": "vite build && cp CNAME site",
