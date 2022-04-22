@@ -49,30 +49,35 @@
           In your app's
           <b><i>styles.css</i></b>
           file, import Troika utils:
-          <syntax-highlight>@import 'import '@finn-no/troika-css-utilities/dist/utilities.css';</syntax-highlight>
+          <syntax-highlight>
+            @import 'import '@finn-no/troika-css-utilities/dist/utilities.css';
+          </syntax-highlight>
         </p>
 
-        Alternatively, if you don't have a postcss build pipeline in place though, you can always import directly from the Eik server
+        Alternatively, if you don't have a postcss build pipeline in place though, you can always import
+        directly from the Eik server
 
         <syntax-highlight>
-          <link rel="stylesheet" href="https://assets.finn.no/pkg/troika-css-utilities/v1/utilities.css">
+          <link rel="stylesheet" href="https://assets.finn.no/pkg/troika-css-utilities/v1/utilities.css" />
         </syntax-highlight>
-        
-        <br>
+
+        <br />
         <h4>2. Install the Fabric CSS v1 dependency</h4>
 
         <syntax-highlight>npm install -D @fabric-ds/css@1</syntax-highlight>
 
-        <br>
+        <br />
         <h4>3. Update import map to v1</h4>
         <p>
-          Update your app's eik.json file to point at the correct import map. Without this step you will not end up with Fabric v1 in production.
+          Update your app's eik.json file to point at the correct import map. Without this step you will not
+          end up with Fabric v1 in production.
 
           <syntax-highlight>
             "import-map": [..., "https://assets.finn.no/map/fabric/v2", ...]
           </syntax-highlight>
 
-          <b>n.b.</b> Yes, the "v2" in the example above is correct. The v2 import map points at Fabric v1. 
+          <b>n.b.</b>
+          Yes, the "v2" in the example above is correct. The v2 import map points at Fabric v1.
         </p>
       </main>
       <%- include('footer.html'); -%>

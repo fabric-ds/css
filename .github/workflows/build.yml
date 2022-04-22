@@ -9,8 +9,6 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v2
             - name: Install Dependencies
-              run: |
-                  yarn
+              run: npm install
             - name: Build Packages
-              run: |
-                  yarn build
+              run: npm run build

@@ -5,14 +5,14 @@ const cssnano = require('cssnano');
 const atImport = require('postcss-import');
 const presetEnv = require('postcss-preset-env');
 const importSvg = require('postcss-import-svg');
-const { breakpoints: customMedia } = require('./packages/tailwind-config/colors');
+const { breakpoints: customMedia } = require('./src/utils/tailwind/colors');
 
 module.exports = (ctx) => {
     const plugins = [
         atImport,
         // For some reason, hot reloading the tailwind config only works in vite when we don't specify a config.
         // But if we don't specify a config, PostCSS doens't load it when building for prod.
-        ctx.env === 'production' ? tailwind(require('./tailwind.config')) : tailwind,
+        ctx.env === 'production' ? tailwind(require('./src/utils/tailwind/tailwind.config')) : tailwind,
         presetEnv({
             stage: 0,
             browsers: 'extends @finn-no/browserslist-config',

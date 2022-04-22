@@ -1,50 +1,89 @@
 {
-  "name": "@fabric-ds/css-root",
-  "private": true,
-  "version": "0.0.0",
-  "workspaces": [
-    "packages/*"
+  "name": "@fabric-ds/css",
+  "description": "Fabric CSS core components and utilities",
+  "version": "1.1.1",
+  "files": [
+    "dist",
+    "src/utils/tailwind",
+    "src/utils/component-classes"
   ],
+  "style": "dist/fabric.min.css",
+  "exports": {
+    ".": "./dist/fabric.min.css",
+    "./tailwind-config": "./src/utils/tailwind/tailwind.config.js",
+    "./component-classes": "./src/utils/component-classes/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "./component-classes": [
+        "src/utils/component-classes/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
-    "build": "NODE_ENV=production lerna run build --stream",
-    "postbuild": "./scripts/reportSizes.mjs",
+    "eik:login": "npx @eik/cli login",
+    "eik:publish": "npx @eik/cli publish",
+    "eik:alias": "eik package-alias @fabric-ds/css",
+    "build": "NODE_ENV=production postcss src/fabric.css --o dist/fabric.min.css && tsc",
+    "postbuild": "./src/scripts/replaceTailwindVariables.mjs && ./src/scripts/reportSizes.mjs",
     "dev": "vite",
     "docs": "vite build && cp CNAME site",
-    "docs:deploy": "yarn docs && gh-pages -d site",
+    "docs:deploy": "npm run docs && gh-pages -d site",
     "format": "prettier --write . --ignore-path .gitignore",
-    "lint": "prettier --check . --ignore-path .gitignore"
+    "lint": "prettier --check . --ignore-path .gitignore",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fabric-ds/css.git"
+    "url": "https://github.com/fabric-ds/css.git"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "license": "MIT",
   "devDependencies": {
     "@eik/cli": "^2.0.0-next.6",
+    "@fabric-ds/icons": "^0.3.8",
+    "@fabric-ds/tailwind-config": "^0.5.32",
     "@finn-no/browserslist-config": "^3.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "autoprefixer": "^10.1.0",
     "brotli-size": "^4.0.0",
     "cssnano": "^5.0.8",
+    "cz-conventional-changelog": "^3.3.0",
     "filesize": "^8.0.3",
     "gh-pages": "^3.1.0",
     "glob": "^7.1.6",
     "html-format": "^1.0.1",
-    "lerna": "^4.0.0",
     "lit-element": "^3.0.0",
     "postcss": "^8.2.6",
     "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.0",
     "postcss-import-svg": "^1.0.4",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^7.4.3",
     "prettier": "^2.2.1",
     "pretty-bytes": "^5.5.0",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
+    "semantic-release-slack-bot": "^3.5.2",
     "tailwindcss": "^2.0.3",
+    "typescript": "^4.6.3",
     "vite": "^2.6.2",
     "vite-plugin-html": "^2.0.0-rc.3"
-  }
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "files": {
+      "fabric.min.css": "./dist/fabric.min.css"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c"
 }
