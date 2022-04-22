@@ -1,7 +1,7 @@
 {
   "name": "@fabric-ds/css",
   "description": "Fabric CSS core components and utilities",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "files": [
     "dist",
     "src/utils/tailwind",
