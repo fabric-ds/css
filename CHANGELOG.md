@@ -1,11 +1,4 @@
-## [1.0.1](https://github.com/fabric-ds/css/compare/v1.0.0...v1.0.1) (2022-04-22)
-
-
-### Bug Fixes
-
-* wrong version ([8ef86d5](https://github.com/fabric-ds/css/commit/8ef86d5b2ddd75070cca06182df1f46b6c016a78))
-
-# 1.1.2 (2022-04-22)
+# 1.1.1 (2022-04-22)
 
 ### Bug Fixes
 
@@ -28,6 +21,8 @@
     ([1f3aab3](https://github.com/fabric-ds/css/commit/1f3aab3baabc6ae1336f333092b719270a5c67c7))
 -   set pointer events none to make arrow clickable
     ([c3b3c9c](https://github.com/fabric-ds/css/commit/c3b3c9caf333ebdb34dcd3cca80052a26e5b6504))
+-   wrong version
+    ([8ef86d5](https://github.com/fabric-ds/css/commit/8ef86d5b2ddd75070cca06182df1f46b6c016a78))
 
 ### Features
 
