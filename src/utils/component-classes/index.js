@@ -1,3 +1,14 @@
+export const attention = {
+  base: 'border-2 relative',
+  tooltip: 'bg-gray-700 border-gray-700 text-white rounded-4 py-6 px-8',
+  callout: 'bg-green-100 border-green-400 py-8 px-16 rounded-8',
+  popover: 'bg-white border-white rounded-8 p-16 filter drop-shadow-20',
+  arrowBase: 'absolute h-14 w-14 border-2 border-b-0 border-r-0 transform',
+  arrowTooltip: 'bg-gray-700 border-gray-700',
+  arrowCallout: 'bg-green-100 border-green-400',
+  arrowPopover: 'bg-white border-white'
+}
+
 export const pageIndicator = {
     wrapper: 'flex space-x-8 p-8',
     dot: 'h-8 w-8 rounded-full',
