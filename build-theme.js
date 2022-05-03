@@ -46,7 +46,7 @@ async function main() {
                     ...textProperties,
                 },
             },
-            exportTo: path.resolve(__dirname, './packages/css/src/theme.css'),
+            exportTo: path.resolve(__dirname, './src/theme.css'),
         }),
     ).process('', { from: undefined });
 }
