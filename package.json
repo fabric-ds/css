@@ -85,5 +85,8 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c"
+  "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c",
+  "dependencies": {
+    "lit-html": "^2.2.3"
+  }
 }
