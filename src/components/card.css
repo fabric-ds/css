@@ -2,14 +2,14 @@
     @apply shadow tap-highlight-transparent;
 
     &:hover {
-        @apply shadow-2 bg-blue-50;
+        @apply shadow-2 bg-gray-50;
     }
 
     &:active {
         @apply shadow-none;
 
         & .f-card-outline {
-            @apply border-gray-300;
+            @apply border-bluegray-300;
         }
     }
 

@@ -93,13 +93,14 @@ export const card = {
     card: 'cursor-pointer overflow-hidden relative transition-all outline-none',
     cardShadow: 'f-card rounded-8',
     cardFlat: 'border-2 rounded-4',
-    cardFlatUnselected: 'border-gray-300 hover:bg-blue-50 hover:border-blue-600 active:border-blue-700',
-    cardFlatSelected: 'border-blue-600 hover:bg-blue-100 hover:border-blue-700 active:border-blue-800',
-    cardSelected: 'bg-blue-50',
+    cardFlatUnselected: 'border-bluegray-300 hover:bg-gray-50 hover:border-bluegray-400 active:border-bluegray-300',
+    cardFlatSelected: 'border-blue-600 bg-blue-50 hover:bg-blue-100 hover:border-blue-700 active:border-blue-600',
+    cardSelected: 'border-blue-600 bg-blue-50 hover:bg-blue-100 hover:border-blue-700 active:border-blue-600',
     cardOutline: 'f-card-outline absolute rounded-8 inset-0 transition-all border-2',
     cardOutlineUnselected: 'border-transparent',
-    cardOutlineSelected: 'border-blue-600',
+    cardOutlineSelected: 'border-blue-600 hover:border-blue-700',
 };
+
 
 export const switchToggle = {
     label: 'block relative h-24 w-44 cursor-pointer f-switch',
