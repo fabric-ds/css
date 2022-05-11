@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/fabric-ds/css/compare/v1.1.2...v1.1.3) (2022-05-11)
+
+
+### Bug Fixes
+
+* color tuneup ([6fb181d](https://github.com/fabric-ds/css/commit/6fb181dbf18420775edb9cc6bbcabdcbcfb1d800))
+
 ## [1.1.2](https://github.com/fabric-ds/css/compare/v1.1.1...v1.1.2) (2022-04-22)
 
 ### Bug Fixes
