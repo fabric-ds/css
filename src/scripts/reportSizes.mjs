@@ -11,7 +11,7 @@ import glob from 'glob';
 import prettyBytes from 'pretty-bytes';
 import path from 'path';
 
-glob('packages/*/dist/*.css', { absolute: true }, async (er, files) => {
+glob('./dist/*.css', { absolute: true }, async (er, files) => {
     console.log('\n');
     await Promise.all(files.map(report));
 });
