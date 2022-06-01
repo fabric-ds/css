@@ -44,7 +44,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eik/cli": "2.0.22",
-    "@fabric-ds/icons": "0.3.18",
+    "@fabric-ds/icons": "0.4.2",
     "@fabric-ds/tailwind-config": "0.5.32",
     "@finn-no/browserslist-config": "3.0.0",
     "@semantic-release/changelog": "6.0.1",
