@@ -71,9 +71,9 @@ export const step = {
     stepDotVerticalRight: 'col-start-2',
     stepDotHorizontal: 'row-start-2 justify-self-end',
 
-    stepDotActive: 'border-blue-600 bg-white',
-    stepDotComplete: 'border-blue-600 bg-blue-600',
-    stepDotIncomplete: 'border-bluegray-300 bg-white',
+    stepDotActive: 'border-blue-600 bg-blue-600 text-blue-600',
+    stepDotComplete: 'border-blue-600 bg-blue-600 text-white',
+    stepDotIncomplete: 'border-bluegray-300 bg-white text-white',
 
     stepLine: 'step-line transition-colors duration-300',
     stepLineVertical: 'w-2 h-full justify-self-center',
