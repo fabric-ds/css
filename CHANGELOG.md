@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/fabric-ds/css/compare/v1.1.3...v1.1.4) (2022-06-07)
+
+
+### Bug Fixes
+
+* update the steps dot color to clarify UX ([2b8ec6a](https://github.com/fabric-ds/css/commit/2b8ec6abb77b1e2a93565f6a69d569395c1e52c5))
+
 ## [1.1.3](https://github.com/fabric-ds/css/compare/v1.1.2...v1.1.3) (2022-05-11)
 
 
