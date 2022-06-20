@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/fabric-ds/css/compare/v1.1.4...v1.1.5) (2022-06-20)
+
+
+### Bug Fixes
+
+* try to always HW-accelerate the chevron animation ([8b4779c](https://github.com/fabric-ds/css/commit/8b4779c2b427ce67c42b28c155f7c002677ff4cb))
+
 ## [1.1.4](https://github.com/fabric-ds/css/compare/v1.1.3...v1.1.4) (2022-06-07)
 
 
