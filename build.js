@@ -35,4 +35,5 @@ const plugins = [
   cssnano({ preset: 'default' })
 ]
 const result = await postcss(plugins).process(css, { from, to })
+fs.mkdirSync('./dist', { recursive: true })
 fs.writeFileSync(to, result.css, { encoding: 'utf-8' })
