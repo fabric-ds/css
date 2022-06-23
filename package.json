@@ -7,6 +7,7 @@
     "src/utils/tailwind",
     "src/utils/component-classes"
   ],
+  "type": "module",
   "style": "dist/fabric.min.css",
   "exports": {
     ".": "./dist/fabric.min.css",
