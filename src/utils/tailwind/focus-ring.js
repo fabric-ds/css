@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin.js'
 
 const focusRing = {
     outline: '2px solid var(--f-aqua-400)',
@@ -9,7 +9,7 @@ const focusRingInset = {
     '--f-outline-offset': '-3px',
 };
 
-module.exports = plugin(({ addUtilities }) => {
+export default plugin(({ addUtilities }) => {
     const focusRingClass = {
         '.focus-ring:focus': focusRing,
         '.focus-ring:focus:not(:focus-visible)': { outline: 'none' },

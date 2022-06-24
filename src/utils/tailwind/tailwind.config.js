@@ -1,8 +1,8 @@
-const { colors: colorSpec } = require('./colors');
-const focusRing = require('./focus-ring');
-const headings = require('./headings');
-const transitionGpu = require('./transition-gpu');
-const aspectRatio = require('@tailwindcss/aspect-ratio');
+import { colors as colorSpec } from './colors.js'
+import focusRing from './focus-ring.js'
+import headings from './headings.js'
+import transitionGpu from './transition-gpu.js'
+import aspectRatio from '@tailwindcss/aspect-ratio'
 
 const colors = Object.entries(colorSpec).reduce((acc, [colorName, colorObjectOrString]) => {
     acc[colorName] = {};
@@ -24,7 +24,7 @@ const shadows = {
     none: 'none',
 };
 
-module.exports = {
+export default {
     darkMode: false,
     purge: false,
     plugins: [focusRing, headings, transitionGpu, aspectRatio],
