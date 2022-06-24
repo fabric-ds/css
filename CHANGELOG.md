@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/fabric-ds/css/compare/v1.1.5...v1.1.6) (2022-06-24)
+
+
+### Bug Fixes
+
+* use ESM to unbreak component-classes ([6fe107e](https://github.com/fabric-ds/css/commit/6fe107e4ff7cbb0ac1233e8fe4f26883e2404322))
+
 ## [1.1.5](https://github.com/fabric-ds/css/compare/v1.1.4...v1.1.5) (2022-06-20)
 
 
