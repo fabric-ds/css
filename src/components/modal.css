@@ -11,6 +11,7 @@
     will-change: max-height, height;
     backface-visibility: hidden;
     transition: all 0.3s ease;
+    background-color: var(--f-honkpink-100);
 
     @media (--max480) {
         padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
