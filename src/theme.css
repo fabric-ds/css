@@ -142,6 +142,7 @@
 	--f-honkgray-700: #656170;
 	--f-honkgray-800: #524E5C;
 	--f-honkgray-900: #3F3B47;
+	--f-honkred-800: #B60000;
 	--f-white: #fff;
 	--f-current: currentColor;
 	--f-transparent: transparent;
@@ -284,6 +285,7 @@
 	--f-honkgray-700-rgb: 101,97,112;
 	--f-honkgray-800-rgb: 82,78,92;
 	--f-honkgray-900-rgb: 63,59,71;
+	--f-honkred-800-rgb: 182,0,0;
 	--f-primaryBlue: var(--f-blue-600);
 	--f-secondaryBlue: var(--f-aqua-400);
 	--f-ice: var(--f-aqua-50);

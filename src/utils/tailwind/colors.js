@@ -167,6 +167,9 @@ const colors = {
         800: '#524E5C',
         900: '#3F3B47',
     },
+    honkred: {
+        800: '#B60000',
+    },
     white: '#fff',
     current: 'currentColor',
     transparent: 'transparent',

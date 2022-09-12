@@ -12,8 +12,8 @@ export const attention = {
 export const pageIndicator = {
     wrapper: 'flex space-x-8 p-8',
     dot: 'h-8 w-8 rounded-full',
-    inactive: 'bg-bluegray-300',
-    active: 'bg-blue-600',
+    inactive: 'bg-honkburgundy-800',
+    active: 'bg-honkburgundy-800',
 };
 
 export const ribbon = {
@@ -71,9 +71,9 @@ export const step = {
     stepDotVerticalRight: 'col-start-2',
     stepDotHorizontal: 'row-start-2 justify-self-end',
 
-    stepDotActive: 'border-blue-600 bg-blue-600 text-blue-600',
-    stepDotComplete: 'border-blue-600 bg-blue-600 text-white',
-    stepDotIncomplete: 'border-bluegray-300 bg-white text-white',
+    stepDotActive: 'border-honkburgundy-800 bg-honkburgundy-800 text-honkburgundy-800 --check',
+    stepDotComplete: 'border-honkburgundy-800 bg-honkburgundy-800 text-honkburgundy-800',
+    stepDotIncomplete: 'border-honkburgundy-800 bg-white text-honkburgundy-800',
 
     stepLine: 'step-line transition-colors duration-300',
     stepLineVertical: 'w-2 h-full justify-self-center',
@@ -81,8 +81,8 @@ export const step = {
     stepLineVerticalRight: 'col-start-2',
     stepLineHorizontal: 'h-2 w-full row-start-2',
 
-    stepLineIncomplete: 'bg-bluegray-300',
-    stepLineComplete: 'bg-blue-600',
+    stepLineIncomplete: 'bg-honkburgundy-800',
+    stepLineComplete: 'bg-honkburgundy-800',
 
     content: 'last-child:mb-0',
     contentVertical: 'row-span-2 pb-32',
@@ -152,11 +152,11 @@ export const tab = {
     tabContainedActive: 'bg-aqua-50',
     icon: 'mx-auto ',
     iconUnderlined: 'f-tab-icon',
-    iconUnderlinedActive: 'text-blue-600',
+    iconUnderlinedActive: 'text-honkburgundy-800',
     iconUnderlinedInactive: 'text-gray-300',
     contentUnderlined: 'font-bold content-underlined', // content-underlined is a no-op that prevents a quirk in how Vue handles class bindings
     contentUnderlinedInactive: 'text-gray-500 f-tab-text',
-    contentUnderlinedActive: 'text-blue-600',
+    contentUnderlinedActive: 'text-honkburgundy-800',
     contentContainedActive: 'font-bold',
 };
 

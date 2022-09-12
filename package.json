@@ -1,7 +1,7 @@
 {
   "name": "honk-css-stylesheet",
   "description": "Fabric CSS core components and utilities",
-  "version": "2.2.6",
+  "version": "2.2.63",
   "files": [
     "dist",
     "src/utils/tailwind",
