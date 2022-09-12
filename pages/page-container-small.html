@@ -1,0 +1,50 @@
+<html lang="en">
+<%- include('head.html'); -%>
+<body>
+<f-docs-template>
+    <%- include('nav.html'); -%>
+    <main slot="content">
+        <h1>Page-container-small</h1>
+        <p>
+            Page-container-small is the primary container for HONK pages. Its main job is to give the standardized
+            responsive behavior, keep the width of the main content, and center/left align it on certain screen
+            sizes to mach banner setups. It is considered the outer boundary for content.
+        </p>
+
+        <h2 class="h4 mt-48 text-yellow-600">Warning</h2>
+        <p>
+            Note that
+            <code>page-container-small</code>
+            is not fully compatible with
+            <code>panel</code>
+            from Troika. Please migrate to the new Box component in Fabric before using this class, or ensure
+            your Panels still have the appropriate vertical-alignment.
+        </p>
+
+        <h2>Common usage</h2>
+        <syntax-highlight>
+            <div>
+                <!-- FINN header -->
+            </div>
+
+            <main class="page-container-small">
+                <!-- Content here -->
+            </main>
+
+            <div>
+                <!-- FINN footer -->
+            </div>
+        </syntax-highlight>
+
+        Note that the
+        <code>page-container-small</code>
+        class doesn't have to be applied to a
+        <code>main</code>
+        element. You can adjust this as needed.
+    </main>
+    <%- include('footer.html'); -%>
+</f-docs-template>
+
+<%- include('scripts.html'); -%>
+</body>
+</html>

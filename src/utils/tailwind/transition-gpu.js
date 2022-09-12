@@ -1,6 +1,6 @@
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin.js';
 
-module.exports = plugin(({ addUtilities }) => {
+export default plugin(({ addUtilities }) => {
     const transitionGpu = {
         ['.transition-gpu']: { backfaceVisibility: 'hidden' },
     };

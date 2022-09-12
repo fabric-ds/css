@@ -1,6 +1,6 @@
-const preset = require('./src/utils/tailwind/tailwind.config');
+import preset from './src/utils/tailwind/tailwind.config'
 
-module.exports = {
+export default {
     presets: [preset],
     purge: false,
 };

@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
     blue: {
         50: '#eff5ff',
         100: '#e1edfe',
@@ -83,18 +83,105 @@ const colors = {
         800: '#2b2b2b',
         900: '#171717',
     },
+    honkburgundy: {
+        50: '#FAE8F1',
+        100: '#E4CFD9',
+        200: '#CFB6C1',
+        300: '#C5A1B1',
+        400: '#B68399',
+        500: '#9B5A76',
+        600: '#82455F',
+        700: '#702846',
+        800: '#570E2D',
+        900: '#310015',
+    },
+    honkgreen: {
+        50: '#F1FFE5',
+        100: '#D5FFC5',
+        200: '#BEFF98',
+        300: '#A5FF70',
+        400: '#8CFF48',
+        500: '#70FA1E',
+        600: '#57DB09',
+        700: '#42B200',
+        800: '#338900',
+        900: '#246100',
+    },
+    honkpurple: {
+        50: '#F0E6FF',
+        100: '#E5D2FF',
+        200: '#CFAAFF',
+        300: '#B98DFD',
+        400: '#A077E0',
+        500: '#8863C3',
+        600: '#7150A6',
+        700: '#5B3E88',
+        800: '#462E6B',
+        900: '#32204E',
+    },
+    honkorange: {
+        50: '#FFF1E5',
+        100: '#FFDFCE',
+        200: '#FFC5A7',
+        400: '#FFAD84',
+        500: '#FF7300',
+        600: '#D95B00',
+        700: '#B04A00',
+        800: '#873900',
+        900: '#5F2800',
+    },
+    honkpink: {
+        50: '#FFEBF9',
+        100: '#FFD0FC',
+        200: '#FFA9F9',
+        300: '#EB92E5',
+        400: '#D47DCE',
+        500: '#B86DB3',
+        600: '#995995',
+        700: '#80487C',
+        800: '#663763',
+        900: '#4D284A',
+    },
+
+    honkyellow: {
+        50: '#FFFBE2',
+        100: '#FFF6B9',
+        200: '#FFF191',
+        300: '#FFEC6B',
+        400: '#FFE63A',
+        500: '#FFDF03',
+        600: '#E4C807',
+        700: '#B7A108',
+        800: '#867500',
+        900: '#5C5000',
+    },
+    honkgray: {
+        50: '#FAF8FF',
+        100: '#E3E0EB',
+        200: '#CDC9D6',
+        300: '#B7B3C2',
+        400: '#A29EAD',
+        500: '#8D8999',
+        600: '#797485',
+        700: '#656170',
+        800: '#524E5C',
+        900: '#3F3B47',
+    },
+    honkred: {
+        800: '#B60000',
+    },
     white: '#fff',
     current: 'currentColor',
     transparent: 'transparent',
 };
 
-const textColors = {
+export const textColors = {
     primary: 'var(--f-gray-700)',
     secondary: 'var(--f-gray-500)',
     danger: 'var(--f-red-600)',
 };
 
-const breakpoints = {
+export const breakpoints = {
     '--sm': '(min-width: 480px)',
     '--md': '(min-width: 768px)',
     '--lg': '(min-width: 990px)',
@@ -106,7 +193,7 @@ const breakpoints = {
     '--min990': '(min-width: 990px)',
 };
 
-const troikaAliases = {
+export const troikaAliases = {
     primaryBlue: 'var(--f-blue-600)',
     secondaryBlue: 'var(--f-aqua-400)',
     ice: 'var(--f-aqua-50)',
@@ -124,4 +211,3 @@ const troikaAliases = {
     licorice: 'var(--f-gray-700)',
 };
 
-module.exports = { colors, textColors, breakpoints, troikaAliases };
