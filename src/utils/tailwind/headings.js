@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin.js'
 
 const h1 = { '@apply text-34': {} };
 const h2 = { '@apply text-28': {} };
@@ -7,7 +7,7 @@ const h4 = { '@apply text-16': {} };
 const h5 = { '@apply text-14': {} };
 const bold = { '@apply font-bold': {} };
 
-module.exports = plugin(({ addUtilities, addBase }) => {
+export default plugin(({ addUtilities, addBase }) => {
     const headings = {
         '.h1': h1,
         '.h2': h2,

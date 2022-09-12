@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
     blue: {
         50: '#eff5ff',
         100: '#e1edfe',
@@ -175,13 +175,13 @@ const colors = {
     transparent: 'transparent',
 };
 
-const textColors = {
+export const textColors = {
     primary: 'var(--f-gray-700)',
     secondary: 'var(--f-gray-500)',
     danger: 'var(--f-red-600)',
 };
 
-const breakpoints = {
+export const breakpoints = {
     '--sm': '(min-width: 480px)',
     '--md': '(min-width: 768px)',
     '--lg': '(min-width: 990px)',
@@ -193,7 +193,7 @@ const breakpoints = {
     '--min990': '(min-width: 990px)',
 };
 
-const troikaAliases = {
+export const troikaAliases = {
     primaryBlue: 'var(--f-blue-600)',
     secondaryBlue: 'var(--f-aqua-400)',
     ice: 'var(--f-aqua-50)',
@@ -211,4 +211,3 @@ const troikaAliases = {
     licorice: 'var(--f-gray-700)',
 };
 
-module.exports = { colors, textColors, breakpoints, troikaAliases };

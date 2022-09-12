@@ -168,7 +168,7 @@ export const expandable = {
     expandableInfo: 'bg-aqua-50',
     expandableBox: 'py-0 px-0 ' + box.box,
     expandableBleed: box.bleed,
-    chevron: 'inline-block align-middle transform transition-transform',
+    chevron: 'inline-block align-middle transform transition-transform transition-gpu',
     chevronNonBox: 'relative left-8',
     chevronBox: 'f-expandable-chevron absolute right-16',
     chevronExpanded: '-rotate-180',
