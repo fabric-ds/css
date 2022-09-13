@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/fabric-ds/css/compare/v1.1.7...v1.1.8) (2022-09-13)
+
+
+### Bug Fixes
+
+* vite's __dirname replacement is unreliable ([0a332d3](https://github.com/fabric-ds/css/commit/0a332d3935063510169f5ebf6ed195a5fc0357f3))
+
 ## [1.1.7](https://github.com/fabric-ds/css/compare/v1.1.6...v1.1.7) (2022-09-13)
 
 
