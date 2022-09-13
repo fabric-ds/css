@@ -1,6 +1,9 @@
 import { injectHtml } from 'vite-plugin-html';
 import glob from 'glob';
 import path from 'path';
+import drnm from 'drnm';
+
+const basedir = drnm(import.meta.url)
 
 export default function ({ mode }) {
     let input = {};
@@ -10,7 +13,7 @@ export default function ({ mode }) {
     // For production we need to specify all our entry points
     // See https://vitejs.dev/guide/build.html#multi-page-app
     if (isProduction) {
-        input.main = path.resolve(__dirname, 'index.html');
+        input.main = path.resolve(basedir, 'index.html');
 
         const pages = glob.sync('pages/*.html', { absolute: true });
 
