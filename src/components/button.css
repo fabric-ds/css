@@ -7,7 +7,7 @@
     transition-property: background-color, border-color;
 
     /* secondary */
-    @apply py-10 px-14 text-honkburgundy-800 bg-transparent border-honkburgundy-800 border-2 hover:bg-honkgreen-50 hover:border-honkburgundy-800;
+    @apply py-10 px-14 text-honkburgundy-800 bg-transparent border-honkburgundy-800 border-1 hover:bg-honkgreen-50 hover:border-honkburgundy-800;
 }
 
 /* Overrides for links pretending to be buttons */
@@ -20,7 +20,7 @@ a.button:hover {
 .button--primary,
 .button--cta {
     @apply py-12 px-16 rounded-full;
-    @apply border-2 border-honkburgundy-800;
+    @apply border-1 border-honkburgundy-800;
     @apply text-honkburgundy-800 bg-honkgreen-600 hover:bg-honkburgundy-800 hover:text-white active:bg-honkgreen-700;
 }
 

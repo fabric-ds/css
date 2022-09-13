@@ -1,7 +1,13 @@
-const postcss = require('postcss');
-const presetEnv = require('postcss-preset-env');
-const path = require('path');
-const { colors, troikaAliases, textColors } = require('./src/utils/tailwind/colors');
+import postcss from 'postcss';
+import presetEnv from 'postcss-preset-env';
+import path from 'path';
+import { colors, troikaAliases, textColors } from './src/utils/tailwind/colors.js';
+import drnm from 'drnm'
+
+// NB - after running this script you need to change tabs to spaces, and add  ", :host" to the top ":root" declaration in theme.css
+// also this thing should just get automated at some point and theme.css should be a build artifact, but whatever
+
+const __dirname = drnm(import.meta.url)
 
 function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
