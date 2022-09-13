@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/fabric-ds/css/compare/v1.1.6...v1.1.7) (2022-09-13)
+
+
+### Bug Fixes
+
+* theme builder was still in cjs ([#99](https://github.com/fabric-ds/css/issues/99)) ([0f32887](https://github.com/fabric-ds/css/commit/0f32887ec050f179fd3c12c97392028210bf2294))
+
 ## [1.1.6](https://github.com/fabric-ds/css/compare/v1.1.5...v1.1.6) (2022-06-24)
 
 
