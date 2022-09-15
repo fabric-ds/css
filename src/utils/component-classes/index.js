@@ -24,7 +24,8 @@ export const ribbon = {
     error: 'border-red-100 bg-red-100',
     disabled: 'border-bluegray-300 bg-bluegray-300',
     sponsored: 'border-aqua-200 bg-aqua-200',
-    neutral: 'border-bluegray-300 bg-white',
+    neutral: 'border-gray-100 bg-gray-100',
+    outlined: 'border-bluegray-300 bg-white',
 };
 
 export const slider = {
