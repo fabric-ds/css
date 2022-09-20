@@ -1,17 +1,19 @@
 .input {
     @apply text-16 relative;
+    border-width: 1px;
 
     & input,
     & select,
     & textarea {
-        @apply block border bg-white text-gray-700 border-bluegray-300 px-8 py-12 rounded-4 w-full;
+        @apply block bg-white text-honkburgundy-800 border-honkburgundy-800 px-8 py-12 rounded-4 w-full;
 
         &:hover {
-            @apply border-gray-500;
+            @apply bg-honkgray-50;
         }
         &:focus {
-            @apply ring-1 ring-inset ring-blue-600 border-blue-600 outline-none;
-            caret-color: var(--f-blue-600);
+             @apply ring-1 ring-inset ring-honkburgundy-800 border-honkburgundy-800 outline-none;
+             caret-color: var(--f-honkburgundy-800);
+             border-width: 2px;
         }
     }
 
@@ -24,7 +26,7 @@
     }
 
     & label {
-        @apply antialiased block relative text-14 text-gray-700 font-bold pb-4 cursor-pointer;
+        @apply antialiased block relative text-14 text-honkburgundy-700 font-bold pb-4 cursor-pointer;
     }
 
     & textarea {
@@ -41,7 +43,7 @@
 
     @nest .is-invalid &, &.input--is-invalid {
         & input, & select, & textarea {
-            @apply border-red-600;
+            @apply border-honkred-800;
 
             &:focus {
                 @apply ring-1 ring-inset ring-red-600 outline-none;
@@ -49,13 +51,13 @@
         }
 
         & label, & .input__sub-text {
-            @apply text-red-600;
+            @apply text-honkred-800;
         }
     }
 
     @nest .is-disabled &, &.input--is-disabled {
         & input, & select, & textarea {
-            @apply bg-gray-200 border-gray-200 text-bluegray-300 pointer-events-none;
+            @apply bg-honkgray-200 border-honkburgundy-200 text-honkburgundy-200 pointer-events-none;
         }
         & .input--select__wrap:before {
             opacity: 0.25;
@@ -106,25 +108,25 @@
     @apply relative py-1;
 
     & label {
-        @apply cursor-pointer text-16 text-gray-700 py-2 pl-28 select-none relative block;
+        @apply cursor-pointer text-16 text-honkburgundy-800 py-2 pl-28 select-none relative block;
         -webkit-tap-highlight-color: transparent;
     }
 
     & input {
-        @apply sr-only;
+        @apply sr-only border-honkburgundy-800;
+        border-width: 1px;
 
         & + label:before {
-            @apply border border-gray-500 absolute block transition-all left-0 w-20 h-20 h-20 top-2;
+            @apply absolute block transition-all left-0 w-20 h-20 h-20 top-2;
             content: "";
         }
 
         &:hover + label:before {
-            @apply border-blue-600;
-            background-color: rgba(var(--f-blue-600-rgb), 0.1);
+            @apply bg-honkgreen-100;
         }
 
         &:focus + label {
-            outline: 2px solid var(--f-aqua-400);
+            outline: 2px solid var(--f-honkgreen-600);
             outline-offset: 1px;
         }
 
@@ -133,48 +135,51 @@
         }
 
         &:focus-visible + label {
-            outline: 2px solid var(--f-aqua-400);
+            outline: 2px solid var(--f-honkgreen-600);
             outline-offset: 1px;
         }
     }
 
     & input[type="radio"] {
         & + label:before {
-            @apply rounded-full;
+            @apply rounded-full border-honkburgundy-800;
+            border-width: 1px;
         }
 
         &:checked + label:before {
-            @apply border-blue-600;
             border-width: 6px;
+            @apply border-honkburgundy-800;
         }
 
-        &:checked:hover + label:before {
-            @apply border-blue-700;
+        &:hover + label:before {
+            @apply bg-honkgreen-100 border-honkburgundy-800;
         }
     }
 
     & input[type="checkbox"] {
         & + label:before {
-            @apply rounded-2;
-            background-image: svg-load("16/check.svg", currentColor: "white");
-            background-position: center;
+            @apply rounded-2 border-honkburgundy-800;
+            border-width: 1px;
         }
 
         &:indeterminate + label:before,
         &:checked + label:before {
-            @apply bg-blue-600 border-blue-600;
+            @apply bg-honkburgundy-800;
+            background-position: center;
+            background-image: svg-load("16/check.svg", currentColor: "white");
         }
 
         &:indeterminate:hover + label:before,
         &:checked:hover + label:before {
-            @apply bg-blue-700 border-blue-700;
+            @apply bg-honkgreen-100 border-honkburgundy-800;
         }
 
         &:indeterminate + label:before {
-            @apply text-white text-center font-bold;
+            @apply text-white text-center font-bold border-honkburgundy-800;
             content: "–";
             line-height: 1.1;
             background-image: none;
+            border-width: 1px;
         }
     }
 
@@ -189,11 +194,12 @@
 
         /* we duplicate 'type' here for specificity */
         & input[type="radio"] + label:before, & input[type="checkbox"] + label:before {
-            @apply border-bluegray-300;
+            @apply border-honkburgundy-800;
         }
 
         & input[type="checkbox"]:checked + label:before {
-            @apply bg-bluegray-300;
+            @apply bg-transparent border-honkburgundy-800;
+            border-width: 1px;
         }
     }
 }
@@ -210,7 +216,7 @@
             @apply bg-gray-200 border-gray-200 text-bluegray-300 pointer-events-none;
         }
         & input[type="radio"]:checked + .segment-control__item, & input[type="radio"]:checked + label {
-            @apply bg-gray-300 border-gray-300 text-bluegray-400;
+            @apply bg-honkburgundy-800 border-gray-300 text-bluegray-400;
         }
     }
 
@@ -219,8 +225,9 @@
         /* from .input label */
         @apply block relative text-14 font-bold pb-4 cursor-pointer;
 
-        @apply text-blue-600 text-center bg-white border-2 border-bluegray-300 py-10 px-14;
+        @apply text-honkburgundy-800 text-center bg-white border-honkburgundy-800 py-10 px-14;
         flex: 0 0 auto;
+        border-width: 1px;
 
         &:first-of-type {
             @apply rounded-tl-8 rounded-bl-8;
@@ -232,7 +239,7 @@
             @apply rounded-tr-8 rounded-br-8;
         }
         &:hover {
-            @apply bg-aqua-50;
+            @apply bg-honkgreen-100 border-honkburgundy-800;
         }
     }
 
@@ -242,7 +249,7 @@
     & [type="radio"]:checked {
         & + label,
         & + .segment-control__item {
-            @apply bg-blue-600 border-blue-600 text-white pr-16;
+            @apply bg-honkburgundy-800 border-honkburgundy-800 text-white pr-16;
         }
         & + label + * + label,
         & + .segment-control__item + * + .segment-control__item {

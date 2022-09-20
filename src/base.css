@@ -1,16 +1,6 @@
-@font-face {
-    font-family: "inter";
-    src:  url("https://fonts.googleapis.com/css?family=Font+Name") format("inter");
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url("https://use.typekit.net/qhp8ajm.css");
 
-@font-face {
-    font-family: "moret";
-    src: url("https://use.typekit.net/qhp8ajm.css") format("moret");
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
     /* Trickery: resets a more sensible default font-size */
@@ -32,6 +22,7 @@ h1{
     font-family: moret, serif;
     font-size: 60px;
     line-height: 70px;
+    font-weight: 400;
 
     @media (max-width: 479px) {
         font-size: 34px;
@@ -44,24 +35,32 @@ h2 {
     font-family: moret, serif;
     font-size: 28px;
     line-height: 34px;
+    font-weight: 400;
 }
 h3 {
     @apply text-honkburgundy-800;
+    font-family: Inter, serif;
     margin: 0 0 8px 0;
-    font-family: inter, serif;
     font-size: 22px;
     line-height: 28px;
+    font-weight: 500;
 }
 h4,
 h5,
 ul,
 ol,
 dl,
-p,
+label,
 blockquote {
     @apply text-honkburgundy-800;
     margin: 0 0 8px 0;
-    font-family: inter, serif;
+    font-family: Inter, serif;
+}
+
+div,
+span {
+    @apply text-honkburgundy-800;
+    font-family: Inter, serif;
 }
 
 /*
@@ -71,14 +70,19 @@ a {
     @apply text-honkburgundy-800;
     @apply cursor-pointer;
     @apply underline;
+    font-family: Inter;
+    font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-
+    margin: 0 0 8px 0;
 }
 p {
     @apply text-honkburgundy-800;
+    font-family: Inter;
+    font-weight: 300;
     font-size: 17px;
     line-height: 22px;
+    margin: 0 0 8px 0;
 }
 
 a:active,
@@ -132,6 +136,6 @@ body:not(:-moz-handler-blocked) fieldset {
 /* Ensure font styling gets appended to the DOM and SDOM */
 html,
 :host {
-    font-family: moret, inter, Arial, Helvetica, sans-serif;
+    font-family: moret, Inter, Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }

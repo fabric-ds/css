@@ -2,9 +2,10 @@
 .button--secondary,
 .button--default {
     /* Common for all button types */
-    @apply font-bold rounded-full leading-24 max-w-max focus-ring justify-center;
+    @apply font-normal rounded-full leading-24 max-w-max focus-ring justify-center border-honkburgundy-800;
     transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
     transition-property: background-color, border-color;
+    border-width: 1px;
 
     /* secondary */
     @apply py-10 px-14 text-honkburgundy-800 bg-transparent border-honkburgundy-800 border-1 hover:bg-honkgreen-50 hover:border-honkburgundy-800;

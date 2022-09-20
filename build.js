@@ -15,7 +15,7 @@ const require = createRequire(import.meta.url) // have to do these hacks it seem
 const iconsLocation = path.resolve(path.dirname(require.resolve('@fabric-ds/icons/package.json')), 'dist')
 
 const from = './src/fabric.css'
-const to = './dist/fabric.min.css'
+const to = './dist/honk.min.css'
 const css = fs.readFileSync(from, 'utf-8')
 const plugins = [
   atImport,
