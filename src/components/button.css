@@ -57,7 +57,7 @@ a.button:hover {
 .button--utility-flat {
     padding: 12px 16px;
     @apply bg-transparent;
-    @apply text-gray-800 hover:bg-gray-100 active:border-gray-500 active:bg-gray-100 rounded-4;
+    @apply text-gray-800 border-0 hover:bg-gray-100 active:border-gray-500 active:bg-gray-200 rounded-4;
 }
 
 .button--pill {
