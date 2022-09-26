@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/fabric-ds/css/compare/v1.1.8...v1.1.9) (2022-09-26)
+
+
+### Bug Fixes
+
+* utility + quiet variant still had a border ([46849ee](https://github.com/fabric-ds/css/commit/46849eecd51bb7ff3da8a28479497055a6b351cf))
+
 ## [1.1.8](https://github.com/fabric-ds/css/compare/v1.1.7...v1.1.8) (2022-09-13)
 
 
