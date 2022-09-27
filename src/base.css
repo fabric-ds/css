@@ -4,7 +4,7 @@
 
 body {
     /* Trickery: resets a more sensible default font-size */
-    @apply bg-white text-gray-700 text-16;
+    @apply bg-white text-gray-500 text-16;
     /* Always stretch body to fill the width, this makes the behaviour of the scrollbar a little nicer in some cases */
     min-height: 100%;
     /* Always show Scrollbar to prevent content jumping in certain situations (dynamic loading etc) */
@@ -74,7 +74,6 @@ a {
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    margin: 0 0 8px 0;
 }
 p {
     @apply text-honkburgundy-800;

@@ -1,5 +1,5 @@
 .page-container-small {
-    @apply bg-white m-0 p-0;
+    @apply bg-transparent m-0 p-0;
     max-width: 624px;
     padding-left: 16px;
     padding-right: 16px;

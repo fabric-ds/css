@@ -99,6 +99,7 @@ export default {
             28: '28px',
             34: '34px',
             41: '41px',
+            70: '70px'
         },
         maxWidth: (theme, { breakpoints }) => ({
             none: 'none',
@@ -119,6 +120,8 @@ export default {
             4: '4px',
             8: '8px',
             16: '16px',
+            20: '20px',
+            30: '30px',
             full: '9999px',
         },
         colors,
@@ -135,9 +138,9 @@ export default {
         // Typography
         textColor: {
             ...colors,
-            primary: colors.gray['700'],
+            primary: colors.honkburgundy['800'],
             secondary: colors.gray['500'],
-            danger: colors.red['600'],
+            danger: colors.honkred['800'],
         },
         fontSize: {
             12: ['12px', '16px'],
@@ -146,10 +149,11 @@ export default {
             22: ['22px', '28px'],
             28: ['28px', '34px'],
             34: ['34px', '41px'],
+            60: ['60px', '70px'],
         },
         fontWeight: {
             normal: 400,
-            bold: 700,
+            bold: 500,
         },
         // Effects
         boxShadow: {
