@@ -1,6 +1,7 @@
 .input {
-    @apply text-16 relative;
+    @apply text-16 relative border-honkburgundy-800;
     border-width: 1px;
+    border-radius: 4px;
 
     & input,
     & select,
