@@ -41,14 +41,14 @@ export const slider = {
 export const modal = {
     backdrop:
         'f-modal-backdrop fixed inset-0 flex sm:place-content-center sm:place-items-center items-end z-20',
-    modal: 'f-modal rounded-8 mx-0 sm:mx-16 bg-white flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32 rounded-b-0 sm:rounded-b-8',
+    modal: 'f-modal mx-0 sm:mx-16 flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32 rounded-b-0 sm:rounded-b-8',
     content:
         'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink px-16 sm:px-32 relative',
     footer: 'flex justify-end flex-shrink-0 px-16 sm:px-32',
     transitionTitle: 'transition-all duration-300',
     title: '-mt-4 sm:-mt-8 h-40 sm:h-48 grid f-grid gap-8 sm:gap-16 f-modal-title items-center px-16 sm:px-32 border-b sm:border-b-0 flex-shrink-0',
     titleText: 'mb-0 h4 sm:h3',
-    titleButton: 'button button--pill f-modal-title-button',
+    titleButton: 'button button--exit',
     titleButtonLeft: '-ml-8 sm:-ml-12',
     titleButtonRight: '-mr-8 sm:-mr-12',
     titleButtonIcon: 'h-16 w-16 sm:h-24 sm:w-24',
@@ -149,7 +149,7 @@ export const tab = {
     tab: 'grid f-grid items-center gap-8 focus-ring font-normal antialias p-16 pb-4 hover:underline f-tab',
     tabActive: 'active-tab',
     tabContained: 'rounded-t-8',
-    tabContainedActive: 'bg-aqua-50',
+    tabContainedActive: 'bg-transparent',
     icon: 'mx-auto ',
     iconUnderlined: 'f-tab-icon',
     iconUnderlinedActive: 'text-honkburgundy-800',
@@ -178,11 +178,11 @@ export const expandable = {
 };
 
 const prefixSuffixWrapperBase =
-    'absolute top-0 bottom-0 hover:text-aqua-400 flex justify-center items-center focus-ring ';
+    'absolute top-0 bottom-0 hover:text-honkorange-400 flex justify-center items-center focus-ring ';
 
 export const suffix = {
     wrapper: prefixSuffixWrapperBase + 'right-0',
-    wrapperWithLabel: 'w-max pr-12',
+    wrapperWithLabel: 'w-max pr-16',
     wrapperWithIcon: 'w-40',
     label: 'field-label pb-0 text-12',
 };

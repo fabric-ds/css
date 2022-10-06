@@ -1,8 +1,8 @@
 .f-tab:hover {
     & .f-tab-icon {
-        color: var(--f-blue-600);
+        color: var(--f-honkorange-400);
     }
     & .f-tab-text {
-        color: var(--f-gray-700);
+        color: var(--f-honkburgundy-800);
     }
 }

@@ -4,7 +4,7 @@
 
 .field > label,
 .field-label {
-    @apply antialiased block relative text-14 text-gray-700 font-bold pb-4 cursor-default;
+    @apply antialiased block relative text-14 text-honkburgundy-800 font-bold pb-4 cursor-default;
 }
 
 .field-hint {

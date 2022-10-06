@@ -50,7 +50,6 @@ h5,
 ul,
 ol,
 dl,
-label,
 blockquote {
     @apply text-honkburgundy-800;
     margin: 0 0 8px 0;
@@ -58,6 +57,7 @@ blockquote {
 }
 
 div,
+label,
 span {
     @apply text-honkburgundy-800;
     font-family: Inter, serif;

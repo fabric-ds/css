@@ -6,9 +6,11 @@
     transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
     transition-property: background-color, border-color;
     border-width: 1px;
+    font-size: 17px;
+    font-weight: 500;
 
     /* secondary */
-    @apply py-12 px-14 text-honkburgundy-800 bg-transparent border-honkburgundy-800 hover:bg-honkgreen-50 hover:border-honkburgundy-800;
+    @apply py-16 px-24 text-honkburgundy-800 bg-transparent border-honkburgundy-800 hover:bg-honkgreen-50 hover:border-honkburgundy-800;
 }
 
 /* Overrides for links pretending to be buttons */
@@ -20,10 +22,12 @@ a.button:hover {
 
 .button--primary,
 .button--cta {
-    @apply py-12 px-16 rounded-full;
+    @apply py-16 px-24 rounded-full;
     @apply border-honkburgundy-800;
     @apply text-honkburgundy-800 bg-honkgreen-600 hover:bg-honkburgundy-800 hover:text-white active:bg-honkgreen-700;
     border-width: 1px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .button--tertiary,
@@ -31,6 +35,8 @@ a.button:hover {
     @apply py-12 px-16 rounded-full;
     @apply border-0 bg-honkburgundy-800;
     @apply text-white hover:bg-honkorange-100 hover:text-honkburgundy-800 active:bg-honkburgundy-600;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .button--destructive {
@@ -64,15 +70,36 @@ a.button:hover {
 
 .button--pill {
     border-radius: 50%;
-    min-height: 44px;
     min-width: 44px;
-    @apply border-transparent p-4 text-honkburgundy-800 bg-transparent inline-flex items-center justify-center;
+    font-size: 15px;
+    font-weight: 300;
+    @apply border-transparent py-10 px-16 text-honkburgundy-800 bg-honkorange-100 inline-flex items-center justify-center;
 }
 
 .button--pill:hover {
-    background-color: var(--f-honkorange-50);
+    background-color: var(--f-honkorange-400);
     background-clip: padding-box;
-    border-color: hsla(0, 0%, 100%, 0.4);
+}
+
+.button--pill:active {
+    background-color: var(--f-honkorange-400);
+    font-weight: 500;
+
+}
+
+.button--exit {
+    @apply border-transparent p-12 text-honkburgundy-800 bg-transparent inline-flex items-center justify-center;
+    border-radius: 100%;
+    font-size: 24px;
+
+    @media (max-width: 479px) {
+        @apply border-transparent
+        font-size: 16px;
+    }
+}
+
+.button--exit:hover {
+    background-color: var(--f-honkorange-100);
 }
 
 .button--link {
@@ -87,7 +114,9 @@ a.button:hover {
 
 /* Sizing */
 .button--small {
-    @apply px-16 py-6 text-12 leading-16;
+    @apply px-16 py-10 leading-18;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .button--small.button--primary,
@@ -95,12 +124,10 @@ a.button:hover {
 .button--small.button--destructive-flat,
 .button--small.button--order,
 .button--small.button--tertiary {
-    @apply py-8;
+    @apply py-10 px-16;
 }
 
 .button--small.button--secondary {
-    padding-top: 6px;
-    padding-bottom: 6px;
     background: transparent;
 }
 

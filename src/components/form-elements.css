@@ -1,20 +1,17 @@
 .input {
-    @apply text-16 relative border-honkburgundy-800;
-    border-width: 1px;
-    border-radius: 4px;
+    @apply text-16 relative;
 
     & input,
     & select,
     & textarea {
-        @apply block bg-white text-honkburgundy-800 border-honkburgundy-800 px-8 py-12 rounded-4 w-full;
+        @apply block border bg-white text-honkburgundy-800 border-honkburgundy-800 p-16 rounded-4 w-full;
 
         &:hover {
             @apply bg-honkgray-50;
         }
         &:focus {
-             @apply ring-1 ring-inset ring-honkburgundy-800 border-honkburgundy-800 outline-none;
+             @apply ring-2 ring-inset ring-honkburgundy-800 border-honkburgundy-800 outline-none;
              caret-color: var(--f-honkburgundy-800);
-             border-width: 2px;
         }
     }
 
@@ -27,7 +24,7 @@
     }
 
     & label {
-        @apply antialiased block relative text-14 text-honkburgundy-700 font-bold pb-4 cursor-pointer;
+        @apply antialiased block relative text-14 text-honkburgundy-800 font-bold pb-4 cursor-pointer;
     }
 
     & textarea {
@@ -95,7 +92,7 @@
     @apply relative;
 
     &:before {
-        @apply block absolute right-0 bottom-0 w-32 h-full;
+        @apply block absolute right-0 bottom-0 w-32 h-full mr-16;
         content: "";
         background-image: svg-load("16/chevron-down.svg", currentColor: "#404040");
         background-repeat: no-repeat;
@@ -114,11 +111,10 @@
     }
 
     & input {
-        @apply sr-only border-honkburgundy-800;
-        border-width: 1px;
+        @apply sr-only;
 
         & + label:before {
-            @apply absolute block transition-all left-0 w-20 h-20 h-20 top-2;
+            @apply border border-honkburgundy-800 absolute block transition-all left-0 w-20 h-20 h-20 top-2;
             content: "";
         }
 
@@ -148,8 +144,8 @@
         }
 
         &:checked + label:before {
-            border-width: 6px;
             @apply border-honkburgundy-800;
+            border-width: 6px;
         }
 
         &:hover + label:before {
@@ -186,7 +182,7 @@
 
     @nest .is-disabled &, &.input-toggle--is-disabled {
         & label {
-            @apply text-bluegray-300 pointer-events-none;
+            @apply text-honkgray-400 pointer-events-none;
         }
 
         & input {
@@ -208,13 +204,9 @@
 .segment-control {
     @apply inline-flex relative font-bold rounded-8;
 
-    &:focus-within {
-        box-shadow: 0 0 0 1px var(--f-white), 0 0 0 3px var(--f-aqua-400);
-    }
-
     @nest .is-disabled &, &.segment-control--is-disabled {
         & .segment-control__item, & label {
-            @apply bg-gray-200 border-gray-200 text-bluegray-300 pointer-events-none;
+            @apply bg-honkgray-200 border-honkgray-200 text-honkgray-300 pointer-events-none;
         }
         & input[type="radio"]:checked + .segment-control__item, & input[type="radio"]:checked + label {
             @apply bg-honkburgundy-800 border-gray-300 text-bluegray-400;
@@ -226,9 +218,8 @@
         /* from .input label */
         @apply block relative text-14 font-bold pb-4 cursor-pointer;
 
-        @apply text-honkburgundy-800 text-center bg-white border-honkburgundy-800 py-10 px-14;
+        @apply text-honkburgundy-800 text-center bg-white border border-honkburgundy-800 py-10 px-14;
         flex: 0 0 auto;
-        border-width: 1px;
 
         &:first-of-type {
             @apply rounded-tl-8 rounded-bl-8;
