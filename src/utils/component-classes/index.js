@@ -71,11 +71,11 @@ export const step = {
     stepDotVerticalRight: 'col-start-2',
     stepDotHorizontal: 'row-start-2 justify-self-end',
 
-    stepDotActive: 'border-honkburgundy-800 bg-honkburgundy-800 text-honkburgundy-800 --check',
-    stepDotComplete: 'border-honkburgundy-800 bg-honkburgundy-800 text-honkburgundy-800',
-    stepDotIncomplete: 'border-honkburgundy-800 bg-white text-honkburgundy-800',
+    stepDotActive: 'border-honkburgundy-800 bg-honkburgundy-800 text-honkburgundy-800',
+    stepDotComplete: 'border-honkburgundy-800 bg-honkburgundy-800 text-white',
+    stepDotIncomplete: 'border-honkburgundy-800 bg-white text-white',
 
-    stepLine: 'step-line transition-colors duration-300',
+    stepLine: 'step-line bg-honkburgundy-800 duration-300',
     stepLineVertical: 'w-2 h-full justify-self-center',
     stepLineVerticalLeft: '',
     stepLineVerticalRight: 'col-start-2',

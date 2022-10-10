@@ -1,7 +1,7 @@
 {
-  "name": "honk-css-stylesheet",
+  "name": "@honk-ds/css",
   "description": "Fabric CSS core components and utilities",
-  "version": "2.3.54",
+  "version": "0.0.4",
   "files": [
     "dist",
     "src/utils/tailwind",
@@ -24,7 +24,7 @@
   "scripts": {
     "eik:login": "npx @eik/cli login",
     "eik:publish": "npx @eik/cli publish",
-    "eik:alias": "eik package-alias @fabric-ds/css",
+    "eik:alias": "eik package-alias @honk-ds/css",
     "build": "NODE_ENV=production postcss src/fabric.css --o dist/honk.min.css && tsc",
     "postbuild": "./src/scripts/replaceTailwindVariables.mjs && ./src/scripts/reportSizes.mjs",
     "dev": "vite",
