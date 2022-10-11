@@ -13,7 +13,5 @@
 @media (min-width: 1300px) {
     .page-container {
         @apply mx-auto;
-        padding-left: 31px;
-        padding-right: 31px;
     }
 }
