@@ -17,6 +17,7 @@ export default plugin(({ addUtilities, addBase }) => {
         '.h1, .h2, .h3, .h4, .h5': bold,
     };
     const veryNormal = { fontWeight: 'normal !important' };
+    const verySmall = { fontWeight: 'small !important' };
     addUtilities(headings, ['responsive']);
     addBase({
         h1,
@@ -25,6 +26,7 @@ export default plugin(({ addUtilities, addBase }) => {
         h4,
         h5,
         'h1, h2, h3, h4, h5': bold,
+        '.font-small': verySmall,
         '.font-normal': veryNormal, // fixes specificity/order issue with .hN classes
     });
 });

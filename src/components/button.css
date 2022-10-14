@@ -32,9 +32,9 @@ a.button:hover {
 
 .button--tertiary,
 .button--flat {
-    @apply py-12 px-16 rounded-full;
-    @apply border-0 bg-honkburgundy-800;
-    @apply text-white hover:bg-honkorange-100 hover:text-honkburgundy-800 active:bg-honkburgundy-600;
+    @apply py-16 px-24 rounded-full;
+    @apply border border-honkburgundy-800 bg-honkburgundy-800;
+    @apply text-white hover:bg-honkorange-100 hover:text-honkburgundy-800 active:bg-honkburgundy-700;
     font-size: 17px;
     font-weight: 500;
 }
@@ -100,6 +100,7 @@ a.button:hover {
 
 .button--exit:hover {
     background-color: var(--f-honkorange-100);
+    @apply border-transparent;
 }
 
 .button--link {
@@ -114,7 +115,7 @@ a.button:hover {
 
 /* Sizing */
 .button--small {
-    @apply px-16 py-10 leading-18;
+    @apply py-10 px-16 leading-18;
     font-size: 15px;
     font-weight: 500;
 }
@@ -128,6 +129,7 @@ a.button:hover {
 }
 
 .button--small.button--secondary {
+    @apply py-10 px-16;
     background: transparent;
 }
 

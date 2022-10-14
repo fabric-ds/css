@@ -2,7 +2,6 @@
     @apply text-16 relative;
 
     & input,
-    & select,
     & textarea {
         @apply block border bg-white text-honkburgundy-800 border-honkburgundy-800 p-16 rounded-4 w-full;
 
@@ -20,7 +19,16 @@
     }
 
     & select {
-        @apply appearance-none pr-32 cursor-pointer;
+        @apply appearance-none pl-32 cursor-pointer;
+        @apply block border bg-white text-honkburgundy-800 border-honkburgundy-800 p-16 rounded-4 w-full;
+
+        &:hover {
+             @apply bg-honkgreen-50;
+         }
+        &:focus {
+             @apply ring-1 ring-inset ring-honkburgundy-800 border-honkburgundy-800 outline-none;
+             caret-color: var(--f-honkburgundy-800);
+         }
     }
 
     & label {
@@ -92,7 +100,7 @@
     @apply relative;
 
     &:before {
-        @apply block absolute right-0 bottom-0 w-32 h-full mr-16;
+        @apply block absolute left-0 bottom-0 w-32 h-full mr-16;
         content: "";
         background-image: svg-load("16/chevron-down.svg", currentColor: "#404040");
         background-repeat: no-repeat;

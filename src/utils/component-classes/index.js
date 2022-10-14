@@ -55,7 +55,7 @@ export const modal = {
 };
 
 export const box = {
-    box: 'group block relative break-words last-child:mb-0 p-16 rounded-8', // relative here enables f-clickable
+    box: 'group block relative break-words last-child:mb-0 py-16 pr-16 pl-40 rounded-8', // relative here enables f-clickable
     bleed: '-mx-16 sm:mx-0 rounded-l-0 rounded-r-0 sm:rounded-8', // we target L and R separately because of TW's rules-order
 };
 

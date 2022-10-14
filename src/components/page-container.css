@@ -10,8 +10,10 @@
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 940px) {
     .page-container {
         @apply mx-auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

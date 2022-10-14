@@ -152,6 +152,7 @@ export default {
             60: ['60px', '70px'],
         },
         fontWeight: {
+            small: 300,
             normal: 400,
             bold: 500,
         },
