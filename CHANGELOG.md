@@ -1,3 +1,10 @@
+## [1.1.10-next.1](https://github.com/fabric-ds/css/compare/v1.1.9...v1.1.10-next.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* add relative to fix toast overflow issue ([62133d6](https://github.com/fabric-ds/css/commit/62133d620c2c33d6afb29e288bebb7902f0c0e31))
+
 ## [1.1.9](https://github.com/fabric-ds/css/compare/v1.1.8...v1.1.9) (2022-09-26)
 
 

@@ -123,7 +123,7 @@ export const toaster = {
 };
 
 export const toast = {
-    toastWrapper: 'overflow-hidden w-full',
+    toastWrapper: 'relative overflow-hidden w-full',
     toast: 'toast flex group p-8 mt-16 rounded-8 border-2 w-full pointer-events-auto transition-all',
     toastPositive: 'bg-green-50 border-green-200 text-green-800',
     toastWarning: 'bg-yellow-50 border-yellow-200 text-yellow-800',
