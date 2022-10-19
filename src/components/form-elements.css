@@ -117,10 +117,6 @@
     font-weight: 500;
 }
 
-.select-small.select.input{
-
-}
-
 .input-toggle {
     @apply relative py-1;
 
