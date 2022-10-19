@@ -20,7 +20,7 @@
 
     & select {
         @apply appearance-none pl-32 cursor-pointer;
-        @apply block border bg-white text-honkburgundy-800 border-honkburgundy-800 p-16 rounded-4 w-full;
+        @apply block border bg-white text-honkburgundy-800 border-honkburgundy-800 py-16 pl-32 pr-16 rounded-4 w-full;
 
         &:hover {
              @apply bg-honkgreen-50;
@@ -102,12 +102,23 @@
     &:before {
         @apply block absolute left-0 bottom-0 w-32 h-full mr-16;
         content: "";
-        background-image: svg-load("16/chevron-down.svg", currentColor: "#404040");
+        background-image: svg-load("16/chevron-down.svg", currentColor: "#570e2d");
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: 62.5%;
         pointer-events: none;
+        margin-left: 2px;
     }
+}
+
+.select-small {
+    @apply py-10 px-16 leading-18;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.select-small.select.input{
+
 }
 
 .input-toggle {
@@ -249,7 +260,7 @@
     & [type="radio"]:checked {
         & + label,
         & + .segment-control__item {
-            @apply bg-honkburgundy-800 border-honkburgundy-800 text-white pr-16;
+            @apply bg-honkgreen-600 border-honkburgundy-800 text-honkburgundy-800 pr-16;
         }
         & + label + * + label,
         & + .segment-control__item + * + .segment-control__item {
@@ -268,7 +279,7 @@
     &.segment-control--small {
         & label,
         & .segment-control__item {
-            padding: 5px 8px !important;
+            padding: 8px 16px !important;
             @apply text-12;
         }
     }

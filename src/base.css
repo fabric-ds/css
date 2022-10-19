@@ -132,6 +132,10 @@ body:not(:-moz-handler-blocked) fieldset {
     display: table-cell;
 }
 
+.text-15 {
+    font-size: 15px;
+}
+
 /* Ensure font styling gets appended to the DOM and SDOM */
 html,
 :host {

@@ -4,7 +4,7 @@
   width: var(--spinner-size);
   border-radius: 50%;
   border: calc(var(--spinner-size) / 8) solid var(--f-blue-100);
-  border-top-color: var(--f-aqua-400);
+  border-top-color: var(--f-honkgreen-600);
   position: relative;
   animation: f-spin-rotate 0.75s infinite linear;
 }
@@ -14,7 +14,7 @@
   width: calc(var(--spinner-size) / 8);
   border-radius: 50%;
   position: absolute;
-  background: var(--f-aqua-400);
+  background: var(--f-honkgreen-600);
   /* yes seriously - this corrects a weird top-quirk at large sizes */
   top: calc(var(--spinner-size) / 180);
 }
