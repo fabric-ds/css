@@ -55,7 +55,7 @@ export const modal = {
 };
 
 export const box = {
-    box: 'group block relative break-words last-child:mb-0 py-16 pr-16 pl-40 rounded-8', // relative here enables f-clickable
+    box: 'group block relative break-words last-child:mb-0 p-16 rounded-8', // relative here enables f-clickable
     bleed: '-mx-16 sm:mx-0 rounded-l-0 rounded-r-0 sm:rounded-8', // we target L and R separately because of TW's rules-order
 };
 
@@ -165,7 +165,7 @@ export const buttonReset =
 
 export const expandable = {
     expandable: 'f-expandable',
-    expandableInfo: 'bg-aqua-50',
+    expandableInfo: 'bg-honkgreen-100',
     expandableBox: 'py-0 px-0 ' + box.box,
     expandableBleed: box.bleed,
     chevron: 'inline-block align-middle transform transition-transform transition-gpu',
@@ -178,7 +178,7 @@ export const expandable = {
 };
 
 const prefixSuffixWrapperBase =
-    'absolute top-0 bottom-0 hover:text-honkorange-400 flex justify-center items-center focus-ring p-16';
+    'absolute top-0 bottom-0 hover:text-honkorange-400 flex justify-center items-center focus-ring p-16 ';
 
 export const suffix = {
     wrapper: prefixSuffixWrapperBase + 'right-0',
