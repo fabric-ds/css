@@ -17,6 +17,7 @@
 
     @media (--max480) {
         padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+        align-self: center;
     }
 }
 .f-modal-title {

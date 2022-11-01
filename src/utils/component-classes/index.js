@@ -41,7 +41,7 @@ export const slider = {
 export const modal = {
     backdrop:
         'f-modal-backdrop fixed inset-0 flex sm:place-content-center sm:place-items-center items-end z-20',
-    modal: 'f-modal mx-0 sm:mx-16 flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32',
+    modal: 'f-modal mx-16 sm:mx-16 flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32',
     content:
         'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink px-16 sm:px-32 relative',
     footer: 'flex justify-end flex-shrink-0 px-16 sm:px-32',
