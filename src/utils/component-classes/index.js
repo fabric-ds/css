@@ -41,7 +41,7 @@ export const slider = {
 export const modal = {
     backdrop:
         'f-modal-backdrop fixed inset-0 flex sm:place-content-center sm:place-items-center items-end z-20',
-    modal: 'f-modal mx-0 sm:mx-16 flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32 rounded-b-0 sm:rounded-b-8',
+    modal: 'f-modal mx-16 sm:mx-16 flex flex-col overflow-hidden outline-none space-y-16 pt-8 sm:pt-32 sm:pb-32',
     content:
         'block overflow-y-auto overflow-x-hidden last-child:mb-0 flex-grow flex-shrink px-16 sm:px-32 relative',
     footer: 'flex justify-end flex-shrink-0 px-16 sm:px-32',
@@ -165,7 +165,7 @@ export const buttonReset =
 
 export const expandable = {
     expandable: 'f-expandable',
-    expandableInfo: 'bg-aqua-50',
+    expandableInfo: 'bg-honkgreen-100',
     expandableBox: 'py-0 px-0 ' + box.box,
     expandableBleed: box.bleed,
     chevron: 'inline-block align-middle transform transition-transform transition-gpu',
@@ -174,11 +174,11 @@ export const expandable = {
     chevronExpanded: '-rotate-180',
     button: buttonReset + ' hover:underline focus:underline',
     buttonBox: 'w-full text-left relative ' + box.box,
-    buttonInfo: 'hover:text-aqua-700 active:text-aqua-800',
+    buttonInfo: 'hover:text-green-500 active:text-green-600',
 };
 
 const prefixSuffixWrapperBase =
-    'absolute top-0 bottom-0 hover:text-honkorange-400 flex justify-center items-center focus-ring ';
+    'absolute top-0 bottom-0 hover:text-honkorange-400 flex justify-center items-center focus-ring p-16 ';
 
 export const suffix = {
     wrapper: prefixSuffixWrapperBase + 'right-0',
