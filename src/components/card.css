@@ -7,16 +7,6 @@
 
     &:active {
         @apply shadow-none;
-
-        & .f-card-outline {
-            @apply border-bluegray-300;
-        }
-    }
-
-    &:focus-visible {
-        & .f-card-outline {
-            @apply border-aqua-400;
-        }
     }
 }
 
