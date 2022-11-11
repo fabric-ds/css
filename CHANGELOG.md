@@ -1,3 +1,10 @@
+## [1.1.11-next.1](https://github.com/fabric-ds/css/compare/v1.1.10...v1.1.11-next.1) (2022-11-11)
+
+
+### Bug Fixes
+
+* move commitizen to the dev section ([cc969b4](https://github.com/fabric-ds/css/commit/cc969b4c4339e15eccc7cd7e6a9e15e7889559a2))
+
 ## [1.1.10-next.2](https://github.com/fabric-ds/css/compare/v1.1.10-next.1...v1.1.10-next.2) (2022-11-11)
 
 
