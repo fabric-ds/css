@@ -14,9 +14,9 @@
     "./component-classes": "./src/utils/component-classes/index.js",
     "./component-classes/list.js": "./src/utils/component-classes/list.js",
     "./base.css": "./src/base.css",
-    "./components.css": "./components.css",
-    "./utilities.css": "./utilities.css",
-    "./theme.css": "./theme.css",
+    "./components.css": "./src/components.css",
+    "./utilities.css": "./src/utilities.css",
+    "./theme.css": "./src/theme.css",
     "./colors.js": "./src/utils/tailwind/colors.js"
   },
   "typesVersions": {
