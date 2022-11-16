@@ -1,18 +1,23 @@
 {
   "name": "@fabric-ds/css",
   "description": "Fabric CSS core components and utilities",
-  "version": "1.1.11-next.1",
+  "version": "1.2.0-next.1",
   "files": [
     "dist",
-    "src/utils/tailwind",
-    "src/utils/component-classes"
+    "src"
   ],
   "type": "module",
   "style": "dist/fabric.min.css",
   "exports": {
     ".": "./dist/fabric.min.css",
     "./tailwind-config": "./src/utils/tailwind/tailwind.config.js",
-    "./component-classes": "./src/utils/component-classes/index.js"
+    "./component-classes": "./src/utils/component-classes/index.js",
+    "./component-classes/list.js": "./src/utils/component-classes/list.js",
+    "./base.css": "./src/base.css",
+    "./components.css": "./src/components.css",
+    "./utilities.css": "./src/utilities.css",
+    "./theme.css": "./src/theme.css",
+    "./colors.js": "./src/utils/tailwind/colors.js"
   },
   "typesVersions": {
     "*": {
