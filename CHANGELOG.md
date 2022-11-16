@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/fabric-ds/css/compare/v1.1.10...v1.2.0) (2022-11-16)
+
+
+### Bug Fixes
+
+* move commitizen to the dev section ([a1196b0](https://github.com/fabric-ds/css/commit/a1196b04cec064cbeb9d66b9e15569000c477128))
+
+
+### Features
+
+* export css building blocks and component class array ([a3db2a0](https://github.com/fabric-ds/css/commit/a3db2a0425740cc168b581d21f54ec8a0f504eb4))
+
 # [1.2.0-next.1](https://github.com/fabric-ds/css/compare/v1.1.10...v1.2.0-next.1) (2022-11-16)
 
 
