@@ -1,0 +1,209 @@
+<html lang="en">
+  <head>
+  <title>Fabric CSS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon" />
+  <style>
+    f-docs-template {
+      visibility: hidden;
+    }
+    f-docs-template:defined {
+      visibility: visible;
+    }
+  </style>
+  <!-- switch the next two lines (comment-wise) to develop on this repo -->
+  <!-- <link href="../../dist/fabric.min.css" rel="stylesheet" /> -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/css/v1/fabric.min.css" rel="stylesheet" />
+  <!-- Markdown.css breaks several things in this repo (e.g. list styling ), so comment it out when developing -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/css/markdown.css" rel="stylesheet" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" rel="modulepreload" />
+
+  
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+    integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" crossorigin src="/assets/syntax-highlight.8d92468a.js"></script>
+</head>
+  <body>
+    <f-docs-template>
+      <script data-for="sidebar" type="application/json">
+  {
+    "category": "CSS",
+    "items": [
+      {
+        "title": "Foundations",
+        "open": true,
+        "items": [
+          {
+            "title": "Breakpoints",
+            "href": "/pages/breakpoints.html"
+          },
+          {
+            "title": "Rounded",
+            "href": "/pages/rounded.html"
+          },
+          {
+            "title": "Shadows",
+            "href": "/pages/shadows.html"
+          },
+          {
+            "title": "Typography",
+            "href": "/pages/typography.html"
+          }
+        ]
+      },
+      {
+        "title": "Actions",
+        "open": true,
+        "items": [
+          {
+            "title": "Buttons",
+            "href": "/pages/buttons.html"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "open": true,
+        "items": [
+          {
+            "title": "Form elements",
+            "href": "/pages/form-elements.html"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "open": true,
+        "items": [
+          {
+            "title": "Grid",
+            "href": "/pages/grid.html"
+          },
+          {
+            "title": "Page-container",
+            "href": "/pages/page-container.html"
+          },
+
+          {
+            "title": "Spacing",
+            "href": "/pages/spacing.html"
+          }
+        ]
+      },
+      {
+        "title": "Guides",
+        "open": true,
+        "items": [
+          {
+            "title": "Upgrading",
+            "href": "/pages/upgrades.html"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+      <main slot="content">
+        <h1>Upgrading</h1>
+        <h2>Upgrading from Fabric v0 to v1</h2>
+        <p>
+          Fabric CSS version 1 contains a
+          <b>BREAKING CHANGE</b>
+          which removes support for Troika utility classes. We don't do this lightly as our general goal is to
+          avoid breaking changes as much as possible but it seems wise to clear this out sooner rather than
+          later.
+        </p>
+
+        <h3>Will this affect me?</h3>
+        <p>
+          This will affect anyone using Troika utility classes in Fabric only apps. These classes are always
+          prefixed with
+          <b><i>u-</i></b>
+          so they are easy to recognise
+        </p>
+
+        <h3>How can I make the upgrade?</h3>
+        <h4>1. Handle u- prefixed Troika utility classes</h4>
+        <p>
+          Go through your markup and replace
+          <b><i>u-</i></b>
+          prefixed classes with valid Fabric equivalents. This should be a quick job even on a large app. You
+          can find example replacements here:
+          <a href="https://github.schibsted.io/finn/fabric#noteable-changes">
+            https://github.schibsted.io/finn/fabric#noteable-changes
+          </a>
+        </p>
+
+        <h5>Compatibility mode</h5>
+        <p>
+          If you don't have time to make this change right away, you will always have the option of including
+          the Troika utilities package manually to keep supporting
+          <b><i>u-</i></b>
+          classes until you can find time.
+        </p>
+        <p>
+          Install the utils package
+          <syntax-highlight>npm install -D @finn-no/troika-css-utilities</syntax-highlight>
+        </p>
+        <p>
+          In your app's
+          <b><i>styles.css</i></b>
+          file, import Troika utils:
+          <syntax-highlight>
+            @import 'import '@finn-no/troika-css-utilities/dist/utilities.css';
+          </syntax-highlight>
+        </p>
+
+        Alternatively, if you don't have a postcss build pipeline in place though, you can always import
+        directly from the Eik server
+
+        <syntax-highlight>
+          <link rel="stylesheet" href="https://assets.finn.no/pkg/troika-css-utilities/v1/utilities.css" />
+        </syntax-highlight>
+
+        <br />
+        <h4>2. Install the Fabric CSS v1 dependency</h4>
+
+        <syntax-highlight>npm install -D @fabric-ds/css@1</syntax-highlight>
+
+        <br />
+        <h4>3. Update import map to v1</h4>
+        <p>
+          Update your app's eik.json file to point at the correct import map. Without this step you will not
+          end up with Fabric v1 in production.
+
+          <syntax-highlight>
+            "import-map": [..., "https://assets.finn.no/map/fabric/v2", ...]
+          </syntax-highlight>
+
+          <b>n.b.</b>
+          Yes, the "v2" in the example above is correct. The v2 import map points at Fabric v1.
+        </p>
+      </main>
+      <script data-for="footer" type="application/json">
+  {
+    "github": {
+      "name": "Github",
+      "href": "https://github.com/fabric-ds/css"
+    },
+    "slack": {
+      "name": "#finn-fabric",
+      "href": "https://sch-chat.slack.com/archives/C01GYKPJVFT"
+    }
+  }
+</script>
+    </f-docs-template>
+
+    <script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" type="module"></script>
+  </body>
+</html>

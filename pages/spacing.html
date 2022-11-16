@@ -1,0 +1,228 @@
+<html lang="en">
+  <head>
+  <title>Fabric CSS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon" />
+  <style>
+    f-docs-template {
+      visibility: hidden;
+    }
+    f-docs-template:defined {
+      visibility: visible;
+    }
+  </style>
+  <!-- switch the next two lines (comment-wise) to develop on this repo -->
+  <!-- <link href="../../dist/fabric.min.css" rel="stylesheet" /> -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/css/v1/fabric.min.css" rel="stylesheet" />
+  <!-- Markdown.css breaks several things in this repo (e.g. list styling ), so comment it out when developing -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/css/markdown.css" rel="stylesheet" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" rel="modulepreload" />
+
+  
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+    integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" crossorigin src="/assets/syntax-highlight.8d92468a.js"></script>
+</head>
+  <body>
+    <f-docs-template>
+      <script data-for="sidebar" type="application/json">
+  {
+    "category": "CSS",
+    "items": [
+      {
+        "title": "Foundations",
+        "open": true,
+        "items": [
+          {
+            "title": "Breakpoints",
+            "href": "/pages/breakpoints.html"
+          },
+          {
+            "title": "Rounded",
+            "href": "/pages/rounded.html"
+          },
+          {
+            "title": "Shadows",
+            "href": "/pages/shadows.html"
+          },
+          {
+            "title": "Typography",
+            "href": "/pages/typography.html"
+          }
+        ]
+      },
+      {
+        "title": "Actions",
+        "open": true,
+        "items": [
+          {
+            "title": "Buttons",
+            "href": "/pages/buttons.html"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "open": true,
+        "items": [
+          {
+            "title": "Form elements",
+            "href": "/pages/form-elements.html"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "open": true,
+        "items": [
+          {
+            "title": "Grid",
+            "href": "/pages/grid.html"
+          },
+          {
+            "title": "Page-container",
+            "href": "/pages/page-container.html"
+          },
+
+          {
+            "title": "Spacing",
+            "href": "/pages/spacing.html"
+          }
+        ]
+      },
+      {
+        "title": "Guides",
+        "open": true,
+        "items": [
+          {
+            "title": "Upgrading",
+            "href": "/pages/upgrades.html"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+      <main slot="content">
+        <h1>Spacing</h1>
+        <p>Utilities for controlling an element's padding/margin.</p>
+
+        <h2>References</h2>
+        <ul>
+          <li><a href="https://tailwindcss.com/pages/margin">Margin in Tailwind</a></li>
+          <li><a href="https://tailwindcss.com/pages/padding">Padding in Tailwind</a></li>
+          <li><a href="https://tailwindcss.com/pages/responsive-design">Responsive prefix</a></li>
+        </ul>
+
+        <h2>Fabric config</h2>
+        <p>The Fabric setup supports the px specific sizes.</p>
+
+        <p>
+          Available sizes from
+          <a href="https://github.com/fabric-ds/css/blob/main/src/utils/tailwind/tailwind.config.js">
+            tailwind-config
+          </a>
+          :
+        </p>
+        <syntax-highlight>
+          spacing: { 0: '0', 1: '1px', 2: '2px', 4: '4px', 6: '6px', 8: '8px', 10: '10px', 12: '12px', 14:
+          '14px', 16: '16px', 20: '20px', 24: '24px', 28: '28px', 32: '32px', 40: '40px', 44: '44px', 48:
+          '48px', 56: '56px', 64: '64px', 80: '80px', 96: '96px', 112: '112px', 128: '128px', 144: '144px', }
+        </syntax-highlight>
+
+        <h2>Common usage</h2>
+        <p>
+          These can be used in a number of ways as described in more detail in the
+          <a href="https://tailwindcss.com/pages/padding">Tailwind documentation</a>
+          . The syntax is exactly the same for margins and paddings , just m instead of p.
+        </p>
+
+        <h3>Padding examples</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Direction</th>
+              <th>Syntax</th>
+              <th>Example</th>
+              <th>Explanation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>top, right, bottom, left</td>
+              <td>p{t|r|b|l}-{size}</td>
+              <td>pr-48</td>
+              <td>Padding right 48px</td>
+            </tr>
+            <tr>
+              <td>horizontal, vertical</td>
+              <td>p{x|y}-{size}</td>
+              <td>px-48</td>
+              <td>Padding horizontally 48px</td>
+            </tr>
+            <tr>
+              <td>All sides</td>
+              <td>p-{size}</td>
+              <td>p-48</td>
+              <td>Padding all sides 48 px</td>
+            </tr>
+            <tr>
+              <td>Responsive</td>
+              <td></td>
+              <td>md:p-48</td>
+              <td>Padding 48px on medium devices and bigger</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Examples</h3>
+        <syntax-highlight>
+          <div class="p-48">...</div>
+        </syntax-highlight>
+        <p>48px padding on all sides</p>
+
+        <syntax-highlight>
+          <div class="my-24 mx-48">...</div>
+        </syntax-highlight>
+        <p>24px margin vertically, 48px margin horizontally</p>
+        <syntax-highlight>
+          <div class="p-16 md:p-24 lg:p-16">...</div>
+        </syntax-highlight>
+        <p>
+          16px padding on smaller devices, 24px padding on medium devices, 16px padding on larger devices and
+          up.
+        </p>
+
+        <syntax-highlight>
+          <div class="mx-auto">...</div>
+        </syntax-highlight>
+        <p>Centers the div when theres room using the good old margin-x:auto trick.</p>
+      </main>
+      <script data-for="footer" type="application/json">
+  {
+    "github": {
+      "name": "Github",
+      "href": "https://github.com/fabric-ds/css"
+    },
+    "slack": {
+      "name": "#finn-fabric",
+      "href": "https://sch-chat.slack.com/archives/C01GYKPJVFT"
+    }
+  }
+</script>
+    </f-docs-template>
+
+    <script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" type="module"></script>
+  </body>
+</html>

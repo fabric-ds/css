@@ -1,0 +1,184 @@
+<html lang="en">
+  <head>
+  <title>Fabric CSS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon" />
+  <style>
+    f-docs-template {
+      visibility: hidden;
+    }
+    f-docs-template:defined {
+      visibility: visible;
+    }
+  </style>
+  <!-- switch the next two lines (comment-wise) to develop on this repo -->
+  <!-- <link href="../../dist/fabric.min.css" rel="stylesheet" /> -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/css/v1/fabric.min.css" rel="stylesheet" />
+  <!-- Markdown.css breaks several things in this repo (e.g. list styling ), so comment it out when developing -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/css/markdown.css" rel="stylesheet" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" rel="modulepreload" />
+
+  
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+    integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" crossorigin src="/assets/syntax-highlight.8d92468a.js"></script>
+</head>
+  <body>
+    <f-docs-template>
+      <script data-for="sidebar" type="application/json">
+  {
+    "category": "CSS",
+    "items": [
+      {
+        "title": "Foundations",
+        "open": true,
+        "items": [
+          {
+            "title": "Breakpoints",
+            "href": "/pages/breakpoints.html"
+          },
+          {
+            "title": "Rounded",
+            "href": "/pages/rounded.html"
+          },
+          {
+            "title": "Shadows",
+            "href": "/pages/shadows.html"
+          },
+          {
+            "title": "Typography",
+            "href": "/pages/typography.html"
+          }
+        ]
+      },
+      {
+        "title": "Actions",
+        "open": true,
+        "items": [
+          {
+            "title": "Buttons",
+            "href": "/pages/buttons.html"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "open": true,
+        "items": [
+          {
+            "title": "Form elements",
+            "href": "/pages/form-elements.html"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "open": true,
+        "items": [
+          {
+            "title": "Grid",
+            "href": "/pages/grid.html"
+          },
+          {
+            "title": "Page-container",
+            "href": "/pages/page-container.html"
+          },
+
+          {
+            "title": "Spacing",
+            "href": "/pages/spacing.html"
+          }
+        ]
+      },
+      {
+        "title": "Guides",
+        "open": true,
+        "items": [
+          {
+            "title": "Upgrading",
+            "href": "/pages/upgrades.html"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+      <main slot="content">
+        <h1>Rounded</h1>
+        <h2>Syntax px units</h2>
+        <p class="pb-0">
+          Border-radius related utillity classes. Supporting Units in pixels, this translates directly to
+          border-radius: 8px.
+        </p>
+        <syntax-highlight>
+          <div class="rounded-0"></div>
+          <div class="rounded-2"></div>
+          <div class="rounded-4"></div>
+          <div class="rounded-6"></div>
+          <div class="rounded-8"></div>
+          <div class="rounded-16"></div>
+          <div class="rounded-full"></div>
+        </syntax-highlight>
+        <section class="space-x-16 flex example rub">
+          <div class="bg-gray-200 h-64 w-64 rounded-0"></div>
+          <div class="bg-gray-200 h-64 w-64 rounded-2"></div>
+          <div class="bg-gray-200 h-64 w-64 rounded-4"></div>
+          <div class="bg-gray-200 h-64 w-64 rounded-6"></div>
+          <div class="bg-gray-200 h-64 w-64 rounded-8"></div>
+          <div class="bg-gray-200 h-64 w-64 rounded-16"></div>
+          <div class="bg-gray-200 h-64 w-64 rounded-full"></div>
+        </section>
+
+        <h2>Directional pattern</h2>
+        <p>
+          As most things in Fabric/Tailwind this follows the same directional pattern. (tl-t-tr-r-br-b-bl-l)
+        </p>
+
+        <syntax-highlight>
+          <div class="rounded-tl-16"></div>
+          <div class="rounded-t-16"></div>
+          <div class="rounded-tr-16"></div>
+          <div class="rounded-r-16"></div>
+          <div class="brounded-br-16"></div>
+          <div class="rounded-b-16"></div>
+          <div class="rounded-bl-16"></div>
+          <div class="rounded-l-16"></div>
+        </syntax-highlight>
+        <section class="space-x-16 flex example rub">
+          <div class="bg-gray-200 rounded-tl-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-t-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-tr-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-r-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-br-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-b-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-bl-16 h-64 w-64"></div>
+          <div class="bg-gray-200 rounded-l-16 h-64 w-64"></div>
+        </section>
+      </main>
+      <script data-for="footer" type="application/json">
+  {
+    "github": {
+      "name": "Github",
+      "href": "https://github.com/fabric-ds/css"
+    },
+    "slack": {
+      "name": "#finn-fabric",
+      "href": "https://sch-chat.slack.com/archives/C01GYKPJVFT"
+    }
+  }
+</script>
+    </f-docs-template>
+
+    <script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" type="module"></script>
+  </body>
+</html>

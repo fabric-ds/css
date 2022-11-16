@@ -1,0 +1,394 @@
+<html lang="en">
+  <head>
+  <title>Fabric CSS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon" />
+  <style>
+    f-docs-template {
+      visibility: hidden;
+    }
+    f-docs-template:defined {
+      visibility: visible;
+    }
+  </style>
+  <!-- switch the next two lines (comment-wise) to develop on this repo -->
+  <!-- <link href="../../dist/fabric.min.css" rel="stylesheet" /> -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/css/v1/fabric.min.css" rel="stylesheet" />
+  <!-- Markdown.css breaks several things in this repo (e.g. list styling ), so comment it out when developing -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/css/markdown.css" rel="stylesheet" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" rel="modulepreload" />
+
+  
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+    integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" crossorigin src="/assets/syntax-highlight.8d92468a.js"></script>
+</head>
+  <body>
+    <f-docs-template>
+      <script data-for="sidebar" type="application/json">
+  {
+    "category": "CSS",
+    "items": [
+      {
+        "title": "Foundations",
+        "open": true,
+        "items": [
+          {
+            "title": "Breakpoints",
+            "href": "/pages/breakpoints.html"
+          },
+          {
+            "title": "Rounded",
+            "href": "/pages/rounded.html"
+          },
+          {
+            "title": "Shadows",
+            "href": "/pages/shadows.html"
+          },
+          {
+            "title": "Typography",
+            "href": "/pages/typography.html"
+          }
+        ]
+      },
+      {
+        "title": "Actions",
+        "open": true,
+        "items": [
+          {
+            "title": "Buttons",
+            "href": "/pages/buttons.html"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "open": true,
+        "items": [
+          {
+            "title": "Form elements",
+            "href": "/pages/form-elements.html"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "open": true,
+        "items": [
+          {
+            "title": "Grid",
+            "href": "/pages/grid.html"
+          },
+          {
+            "title": "Page-container",
+            "href": "/pages/page-container.html"
+          },
+
+          {
+            "title": "Spacing",
+            "href": "/pages/spacing.html"
+          }
+        ]
+      },
+      {
+        "title": "Guides",
+        "open": true,
+        "items": [
+          {
+            "title": "Upgrading",
+            "href": "/pages/upgrades.html"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+      <main slot="content">
+        <h1>Form elements</h1>
+        <div class="mb-24">
+          <h2>Input</h2>
+          <syntax-highlight>
+            <div class="input">
+              <label for="normalInput">Text</label>
+              <input type="text" id="normalInput" />
+              <div class="input__sub-text">Hint message</div>
+            </div>
+          </syntax-highlight>
+
+          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="example">
+            <div
+              class="input input--text"
+              :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
+            >
+              <label for="_normalInput">Text</label>
+              <input type="text" id="_normalInput" />
+              <div class="input__sub-text">Hint message</div>
+            </div>
+
+            <div class="example-controls">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="invalid" />
+                Invalid
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                Disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="readonly" />
+                Read-only
+              </label>
+            </div>
+          </section>
+
+          <!-- uncomment me to test the fieldset/legend vs label reset -->
+          <!-- <fieldset class="field mt-32 bg-gray-100 p-16 inline-block rounded-4"> -->
+          <!--   <legend class="field-label">I am a legend</legend> -->
+          <!--   <div class="input-toggle"><input id="f-x921z3" type="radio" name="f-x921z2:toggles" value="input"><label for="f-x921z3">Input</label><input id="f-x921z4" type="radio" name="f-x921z2:toggles" value="textarea"><label for="f-x921z4">Textarea</label><input id="f-x921z5" type="radio" name="f-x921z2:toggles" value="select"><label for="f-x921z5">Select</label><input id="f-x921z6" type="radio" name="f-x921z2:toggles" value="radio"><label for="f-x921z6">Radio</label><input id="f-x921z7" type="radio" name="f-x921z2:toggles" value="checkbox"><label for="f-x921z7">Checkbox</label><input id="f-x921z8" type="radio" name="f-x921z2:toggles" value="radio-button"><label for="f-x921z8">Radio-button</label></div> -->
+          <!-- </fieldset> -->
+          <!-- <fieldset class="field mt-32 bg-gray-100 p-16 inline-block rounded-4"> -->
+          <!--   <label class="field-label">I am a label</label> -->
+          <!--   <div class="input-toggle"><input id="f-x921z3" type="radio" name="f-x921z2:toggles" value="input"><label for="f-x921z3">Input</label><input id="f-x921z4" type="radio" name="f-x921z2:toggles" value="textarea"><label for="f-x921z4">Textarea</label><input id="f-x921z5" type="radio" name="f-x921z2:toggles" value="select"><label for="f-x921z5">Select</label><input id="f-x921z6" type="radio" name="f-x921z2:toggles" value="radio"><label for="f-x921z6">Radio</label><input id="f-x921z7" type="radio" name="f-x921z2:toggles" value="checkbox"><label for="f-x921z7">Checkbox</label><input id="f-x921z8" type="radio" name="f-x921z2:toggles" value="radio-button"><label for="f-x921z8">Radio-button</label></div> -->
+          <!-- </fieldset> -->
+
+          <h2>Select</h2>
+          <syntax-highlight>
+            <div class="input input--select">
+              <label for="xyx">Select</label>
+              <div class="input--select__wrap">
+                <select id="xyx">
+                  <option>Velg noe</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="input__sub-text">Hint message</div>
+            </div>
+          </syntax-highlight>
+          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="example">
+            <div
+              class="input input--select"
+              :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
+            >
+              <label for="xyx">Select</label>
+              <div class="input--select__wrap">
+                <select id="xyxz">
+                  <option>Velg noe</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="input__sub-text">Hint message</div>
+            </div>
+
+            <div class="example-controls">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="invalid" />
+                Invalid
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                Disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="readonly" />
+                Read-only
+              </label>
+            </div>
+          </section>
+
+          <h2>Textarea</h2>
+          <syntax-highlight>
+            <div class="input">
+              <label for="textarea-example">Textarea</label>
+              <textarea id="textarea-example" rows="2"></textarea>
+              <div class="input__sub-text">Hint message</div>
+            </div>
+          </syntax-highlight>
+          <section x-data="{ invalid: false, disabled: false, readonly: false }" class="example">
+            <div
+              class="input"
+              :class="{ 'input--is-invalid': invalid, 'input--is-disabled': disabled, 'input--is-read-only': readonly }"
+            >
+              <label for="textarea-example">Textarea</label>
+              <textarea id="textarea-example" rows="2"></textarea>
+              <div class="input__sub-text">Hint message</div>
+            </div>
+
+            <div class="example-controls">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="invalid" />
+                Invalid
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                Disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="readonly" />
+                Read-only
+              </label>
+            </div>
+          </section>
+
+          <h2>Toggle - Radio</h2>
+          <syntax-highlight>
+            <div class="field">
+              <label>Contact method</label>
+              <div class="input-toggle">
+                <input type="radio" id="contactChoice1" name="contact" value="email" checked />
+                <label for="contactChoice1">Email</label>
+              </div>
+              <div class="input-toggle">
+                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                <label for="contactChoice2">Phone</label>
+              </div>
+            </div>
+          </syntax-highlight>
+          <section x-data="{ disabled: false }" class="example">
+            <div class="field">
+              <label>Contact method</label>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="radio" id="contactChoice3" name="contact" value="email" checked />
+                <label for="contactChoice3">Email</label>
+              </div>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="radio" id="contactChoice4" name="contact" value="phone" />
+                <label for="contactChoice4">Phone</label>
+              </div>
+            </div>
+            <div class="example-controls">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                Disabled
+              </label>
+            </div>
+          </section>
+
+          <h2>Toggle - Checkbox</h2>
+          <syntax-highlight class="u-mb0">
+            <div class="field">
+              <label>Checkboxes!</label>
+              <div class="input-toggle">
+                <input type="checkbox" id="fancycheckbox1" checked />
+                <label for="fancycheckbox1">Nothing</label>
+              </div>
+              <div class="input-toggle">
+                <input type="checkbox" id="fancycheckbox2" />
+                <label for="fancycheckbox2">Something</label>
+              </div>
+            </div>
+          </syntax-highlight>
+          <section x-data="{ disabled: false }" class="example">
+            <div class="field">
+              <label>Checkboxes!</label>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="fancycheckbox3" checked />
+                <label for="fancycheckbox3">Nothing</label>
+              </div>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="fancycheckbox4" />
+                <label for="fancycheckbox4">Something</label>
+              </div>
+              <div class="input-toggle" :class="{ 'input-toggle--is-disabled': disabled }">
+                <input type="checkbox" id="maybe-checkbox" />
+                <label for="maybe-checkbox">Maybe</label>
+              </div>
+            </div>
+            <div class="example-controls">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                Disabled
+              </label>
+            </div>
+          </section>
+
+          <h2>Toggle - Radio-button</h2>
+          <syntax-highlight class="u-mb0">
+            <div class="field">
+              <label id="segment-label">Number of rooms:</label>
+              <div aria-labelledby="segment-label" class="segment-control" role="radiogroup">
+                <input type="radio" name="group-1" id="one-d" checked="" />
+                <label for="one-d">One</label>
+                <input type="radio" name="group-1" id="two-d" />
+                <label for="two-d">Two</label>
+                <input type="radio" name="group-1" id="three-d" />
+                <label for="three-d">Three</label>
+                <input type="radio" name="group-1" id="four-d" />
+                <label for="four-d">Four</label>
+              </div>
+              <div class="field-hint">A segment hint</div>
+            </div>
+          </syntax-highlight>
+
+          <section x-data="{ small: false, justified: false, disabled: false }" class="example">
+            <div class="field">
+              <label id="segment-label">Number of rooms:</label>
+              <div
+                aria-labelledby="segment-label"
+                class="segment-control"
+                :class="{ 'segment-control--small': small, 'segment-control--justified': justified, 'segment-control--is-disabled': disabled }"
+                role="radiogroup"
+              >
+                <input type="radio" name="group-1" id="one" checked="" />
+                <label for="one">One</label>
+                <input type="radio" name="group-1" id="two" />
+                <label for="two">Two</label>
+                <input type="radio" name="group-1" id="three" />
+                <label for="three">Three</label>
+                <input type="radio" name="group-1" id="four" />
+                <label for="four">Four</label>
+              </div>
+              <div class="field-hint">A segment hint, Error msg</div>
+            </div>
+            <div class="example-controls">
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="disabled" />
+                Disabled
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="small" />
+                Small
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="justified" />
+                Justified
+              </label>
+            </div>
+          </section>
+        </div>
+      </main>
+      <script data-for="footer" type="application/json">
+  {
+    "github": {
+      "name": "Github",
+      "href": "https://github.com/fabric-ds/css"
+    },
+    "slack": {
+      "name": "#finn-fabric",
+      "href": "https://sch-chat.slack.com/archives/C01GYKPJVFT"
+    }
+  }
+</script>
+    </f-docs-template>
+
+    <script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <script>
+      const el = document.getElementById('maybe-checkbox');
+      el.indeterminate = true;
+    </script>
+  </body>
+</html>

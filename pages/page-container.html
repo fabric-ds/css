@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+  <title>Fabric CSS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" href="https://www.finn.no/favicon.ico" type="image/x-icon" />
+  <style>
+    f-docs-template {
+      visibility: hidden;
+    }
+    f-docs-template:defined {
+      visibility: visible;
+    }
+  </style>
+  <!-- switch the next two lines (comment-wise) to develop on this repo -->
+  <!-- <link href="../../dist/fabric.min.css" rel="stylesheet" /> -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/css/v1/fabric.min.css" rel="stylesheet" />
+  <!-- Markdown.css breaks several things in this repo (e.g. list styling ), so comment it out when developing -->
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/css/markdown.css" rel="stylesheet" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" rel="modulepreload" />
+  <link href="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" rel="modulepreload" />
+
+  
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+    integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" crossorigin src="/assets/syntax-highlight.8d92468a.js"></script>
+</head>
+  <body>
+    <f-docs-template>
+      <script data-for="sidebar" type="application/json">
+  {
+    "category": "CSS",
+    "items": [
+      {
+        "title": "Foundations",
+        "open": true,
+        "items": [
+          {
+            "title": "Breakpoints",
+            "href": "/pages/breakpoints.html"
+          },
+          {
+            "title": "Rounded",
+            "href": "/pages/rounded.html"
+          },
+          {
+            "title": "Shadows",
+            "href": "/pages/shadows.html"
+          },
+          {
+            "title": "Typography",
+            "href": "/pages/typography.html"
+          }
+        ]
+      },
+      {
+        "title": "Actions",
+        "open": true,
+        "items": [
+          {
+            "title": "Buttons",
+            "href": "/pages/buttons.html"
+          }
+        ]
+      },
+      {
+        "title": "Forms",
+        "open": true,
+        "items": [
+          {
+            "title": "Form elements",
+            "href": "/pages/form-elements.html"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "open": true,
+        "items": [
+          {
+            "title": "Grid",
+            "href": "/pages/grid.html"
+          },
+          {
+            "title": "Page-container",
+            "href": "/pages/page-container.html"
+          },
+
+          {
+            "title": "Spacing",
+            "href": "/pages/spacing.html"
+          }
+        ]
+      },
+      {
+        "title": "Guides",
+        "open": true,
+        "items": [
+          {
+            "title": "Upgrading",
+            "href": "/pages/upgrades.html"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+      <main slot="content">
+        <h1>Page-container</h1>
+        <p>
+          Page-container is the primary container for FINN pages. Its main job is to give the standardized
+          responsive behavior, keep the width of the main content, and center/left align it on certain screen
+          sizes to mach banner setups. It is considered the outer boundary for content.
+        </p>
+
+        <h2 class="h4 mt-48 text-yellow-600">Warning</h2>
+        <p>
+          Note that
+          <code>page-container</code>
+          is not fully compatible with
+          <code>panel</code>
+          from Troika. Please migrate to the new Box component in Fabric before using this class, or ensure
+          your Panels still have the appropriate vertical-alignment.
+        </p>
+
+        <h2>Common usage</h2>
+        <syntax-highlight>
+          <div>
+            <!-- FINN header -->
+          </div>
+
+          <main class="page-container">
+            <!-- Content here -->
+          </main>
+
+          <div>
+            <!-- FINN footer -->
+          </div>
+        </syntax-highlight>
+
+        Note that the
+        <code>page-container</code>
+        class doesn't have to be applied to a
+        <code>main</code>
+        element. You can adjust this as needed.
+      </main>
+      <script data-for="footer" type="application/json">
+  {
+    "github": {
+      "name": "Github",
+      "href": "https://github.com/fabric-ds/css"
+    },
+    "slack": {
+      "name": "#finn-fabric",
+      "href": "https://sch-chat.slack.com/archives/C01GYKPJVFT"
+    }
+  }
+</script>
+    </f-docs-template>
+
+    <script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/template/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/asset-links/index.js" type="module"></script>
+<script src="https://assets.finn.no/pkg/@fabric-ds/common/v1/highlight-box/index.js" type="module"></script>
+  </body>
+</html>
