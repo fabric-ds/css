@@ -1,5 +1,5 @@
 .f-slider {
-    touch-action: pan-y;
+    touch-action: pan-x;
     &:hover,
     &:focus {
         /* deprecated; remove 2021q4 */
