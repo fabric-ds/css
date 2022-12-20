@@ -52,7 +52,7 @@
             @apply border-honkred-800;
 
             &:focus {
-                @apply ring-1 ring-inset ring-red-600 outline-none;
+                @apply ring-2 ring-inset border-honkred-800 outline-none;
             }
         }
 
@@ -133,12 +133,8 @@
             content: "";
         }
 
-        &:hover + label:before {
-            @apply bg-honkgreen-100;
-        }
-
         &:focus + label {
-            outline: 2px solid var(--f-honkgreen-600);
+            outline: 2px solid var(--f-honkgreen-300);
             outline-offset: 1px;
         }
 
@@ -163,8 +159,10 @@
             border-width: 6px;
         }
 
-        &:hover + label:before {
-            @apply bg-honkgreen-100 border-honkburgundy-800;
+        &:indeterminate:hover + label:before {
+            @media (min-width: 990px)  {
+                @apply bg-honkgreen-100 border-honkburgundy-800;
+            }
         }
     }
 
@@ -174,24 +172,20 @@
             border-width: 1px;
         }
 
-        &:indeterminate + label:before,
         &:checked + label:before {
-            @apply bg-honkburgundy-800;
+            @apply bg-honkburgundy-800 hover:bg-honkburgundy-700;
             background-position: center;
             background-image: svg-load("16/check.svg", currentColor: "white");
         }
 
-        &:indeterminate:hover + label:before,
-        &:checked:hover + label:before {
-            @apply bg-honkgreen-100 border-honkburgundy-800;
-        }
-
         &:indeterminate + label:before {
-            @apply text-white text-center font-bold border-honkburgundy-800;
+            @apply text-white text-center font-bold;
             content: "–";
             line-height: 1.1;
             background-image: none;
-            border-width: 1px;
+
+        &:indeterminate:hover + label:before {
+            @apply hover:bg-honkgreen-100 hover:ring-2;
         }
     }
 

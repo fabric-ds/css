@@ -1,7 +1,7 @@
 {
   "name": "@honk-ds/css",
   "description": "Fabric CSS core components and utilities",
-  "version": "0.0.23",
+  "version": "0.0.34",
   "files": [
     "dist",
     "src/utils/tailwind",
@@ -89,6 +89,7 @@
   },
   "gitHead": "7b7391f45aa2c2256f0ca89ff2d5133ec34bda9c",
   "dependencies": {
+    "@honk-ds/css": "^0.0.32",
     "lit-html": "^2.2.3"
   }
 }

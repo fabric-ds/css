@@ -174,7 +174,7 @@ export const expandable = {
     chevronExpanded: '-rotate-180',
     button: buttonReset + ' hover:underline focus:underline',
     buttonBox: 'w-full text-left relative ' + box.box,
-    buttonInfo: 'hover:text-green-500 active:text-green-600',
+    buttonInfo: 'hover:text-honkburgundy-800',
 };
 
 const prefixSuffixWrapperBase =
