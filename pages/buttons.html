@@ -221,10 +221,10 @@
             <button class="button button--utility">Button</button>
             <a href="#" class="button button--utility">link in disguise</a>
           </syntax-highlight>
-          <section x-data="{ disabled: false, progress:false, small: false }" class="example">
+          <section x-data="{ disabled: false, progress:false, small: false, quiet: false }" class="example">
             <button
-              class="button button--utility"
-              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small }"
+              class="button"
+              :class="{ 'button--is-disabled': disabled, 'button--in-progress': progress, 'button--small': small, 'button--utility-flat': quiet, 'button--utility': !quiet }"
             >
               Button
             </button>
@@ -243,6 +243,10 @@
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="progress" />
                 In-progress
+              </label>
+              <label class="mr-32">
+                <input class="mr-8" type="checkbox" x-model="quiet" />
+                Quiet
               </label>
               <label class="mr-32">
                 <input class="mr-8" type="checkbox" x-model="small" />

@@ -4,15 +4,20 @@
   "version": "0.0.34",
   "files": [
     "dist",
-    "src/utils/tailwind",
-    "src/utils/component-classes"
+    "src"
   ],
   "type": "module",
   "style": "dist/honk.min.css",
   "exports": {
     ".": "./dist/honk.min.css",
     "./tailwind-config": "./src/utils/tailwind/tailwind.config.js",
-    "./component-classes": "./src/utils/component-classes/index.js"
+    "./component-classes": "./src/utils/component-classes/index.js",
+    "./component-classes/list.js": "./src/utils/component-classes/list.js",
+    "./base.css": "./src/base.css",
+    "./components.css": "./src/components.css",
+    "./utilities.css": "./src/utilities.css",
+    "./theme.css": "./src/theme.css",
+    "./colors.js": "./src/utils/tailwind/colors.js"
   },
   "typesVersions": {
     "*": {
@@ -45,7 +50,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eik/cli": "^2.0.0-next.6",
-    "@fabric-ds/icons": "^0.3.8",
+    "@fabric-ds/icons": "^0.6.0",
     "@fabric-ds/tailwind-config": "^0.5.32",
     "@finn-no/browserslist-config": "^3.0.0",
     "@semantic-release/changelog": "^6.0.1",

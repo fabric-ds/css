@@ -24,7 +24,8 @@ export const ribbon = {
     error: 'border-red-100 bg-red-100',
     disabled: 'border-bluegray-300 bg-bluegray-300',
     sponsored: 'border-aqua-200 bg-aqua-200',
-    neutral: 'border-bluegray-300 bg-white',
+    neutral: 'border-gray-100 bg-gray-100',
+    outlined: 'border-bluegray-300 bg-white',
 };
 
 export const slider = {
@@ -122,12 +123,12 @@ export const toaster = {
 };
 
 export const toast = {
-    toastWrapper: 'overflow-hidden w-full',
+    toastWrapper: 'relative overflow-hidden w-full',
     toast: 'toast flex group p-8 mt-16 rounded-8 border-2 w-full pointer-events-auto transition-all',
-    toastPositive: 'bg-green-50 border-green-200 text-green-800',
-    toastWarning: 'bg-yellow-50 border-yellow-200 text-yellow-800',
-    toastNegative: 'bg-red-50 border-red-200 text-red-800',
-    toastNeutral: 'bg-gray-50 border-gray-200 text-gray-800',
+    toastPositive: 'bg-green-50 border-green-300 text-green-800',
+    toastWarning: 'bg-yellow-50 border-yellow-300 text-yellow-800',
+    toastNegative: 'bg-red-50 border-red-300 text-red-800',
+    toastNeutral: 'bg-gray-50 border-gray-300 text-gray-800',
     toastIcon: 'flex-shrink-0 rounded-full w-16 h-16 m-8',
     toastIconPositive: 'bg-green-300',
     toastIconWarning: 'bg-yellow-300',

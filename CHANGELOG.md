@@ -1,3 +1,76 @@
+# [1.2.0](https://github.com/fabric-ds/css/compare/v1.1.10...v1.2.0) (2022-11-16)
+
+
+### Bug Fixes
+
+* move commitizen to the dev section ([a1196b0](https://github.com/fabric-ds/css/commit/a1196b04cec064cbeb9d66b9e15569000c477128))
+
+
+### Features
+
+* export css building blocks and component class array ([a3db2a0](https://github.com/fabric-ds/css/commit/a3db2a0425740cc168b581d21f54ec8a0f504eb4))
+
+# [1.2.0-next.1](https://github.com/fabric-ds/css/compare/v1.1.10...v1.2.0-next.1) (2022-11-16)
+
+
+### Bug Fixes
+
+* move commitizen to the dev section ([a1196b0](https://github.com/fabric-ds/css/commit/a1196b04cec064cbeb9d66b9e15569000c477128))
+
+
+### Features
+
+* export css building blocks and component class array ([a3db2a0](https://github.com/fabric-ds/css/commit/a3db2a0425740cc168b581d21f54ec8a0f504eb4))
+
+## [1.1.11-next.1](https://github.com/fabric-ds/css/compare/v1.1.10...v1.1.11-next.1) (2022-11-11)
+
+
+### Bug Fixes
+
+* move commitizen to the dev section ([cc969b4](https://github.com/fabric-ds/css/commit/cc969b4c4339e15eccc7cd7e6a9e15e7889559a2))
+
+## [1.1.10-next.2](https://github.com/fabric-ds/css/compare/v1.1.10-next.1...v1.1.10-next.2) (2022-11-11)
+
+
+### Bug Fixes
+
+* move commitizen to the dev section ([cc969b4](https://github.com/fabric-ds/css/commit/cc969b4c4339e15eccc7cd7e6a9e15e7889559a2))
+
+## [1.1.10](https://github.com/fabric-ds/css/compare/v1.1.9...v1.1.10) (2022-10-19)
+
+
+### Bug Fixes
+
+* add relative to fix toast overflow issue ([62133d6](https://github.com/fabric-ds/css/commit/62133d620c2c33d6afb29e288bebb7902f0c0e31))
+
+## [1.1.10-next.1](https://github.com/fabric-ds/css/compare/v1.1.9...v1.1.10-next.1) (2022-10-18)
+
+
+### Bug Fixes
+
+* add relative to fix toast overflow issue ([62133d6](https://github.com/fabric-ds/css/commit/62133d620c2c33d6afb29e288bebb7902f0c0e31))
+
+## [1.1.9](https://github.com/fabric-ds/css/compare/v1.1.8...v1.1.9) (2022-09-26)
+
+
+### Bug Fixes
+
+* utility + quiet variant still had a border ([46849ee](https://github.com/fabric-ds/css/commit/46849eecd51bb7ff3da8a28479497055a6b351cf))
+
+## [1.1.8](https://github.com/fabric-ds/css/compare/v1.1.7...v1.1.8) (2022-09-13)
+
+
+### Bug Fixes
+
+* vite's __dirname replacement is unreliable ([0a332d3](https://github.com/fabric-ds/css/commit/0a332d3935063510169f5ebf6ed195a5fc0357f3))
+
+## [1.1.7](https://github.com/fabric-ds/css/compare/v1.1.6...v1.1.7) (2022-09-13)
+
+
+### Bug Fixes
+
+* theme builder was still in cjs ([#99](https://github.com/fabric-ds/css/issues/99)) ([0f32887](https://github.com/fabric-ds/css/commit/0f32887ec050f179fd3c12c97392028210bf2294))
+
 ## [1.1.6](https://github.com/fabric-ds/css/compare/v1.1.5...v1.1.6) (2022-06-24)
 
 
