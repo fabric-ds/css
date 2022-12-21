@@ -1,16 +1,14 @@
 @font-face {
-    font-family: "Finntype";
-    src: url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2") format("woff2"),
-        url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff") format("woff");
+    font-family: "inter";
+    src:  url("https://fonts.googleapis.com/css?family=Font+Name") format("inter");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Finntype";
-    src: url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2") format("woff2"),
-        url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff") format("woff");
-    font-weight: bold;
+    font-family: "moret";
+    src: url("https://use.typekit.net/qhp8ajm.css") format("moret");
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -28,9 +26,32 @@ dd {
     margin: 0 16px;
 }
 
-h1,
-h2,
-h3,
+h1{
+    @apply text-honkburgundy-800;
+    margin: 0 0 8px 0;
+    font-family: moret, serif;
+    font-size: 60px;
+    line-height: 70px;
+
+    @media (max-width: 479px) {
+        font-size: 34px;
+        line-height: 41px;
+    }
+}
+h2 {
+    @apply text-honkburgundy-800;
+    margin: 0 0 8px 0;
+    font-family: moret, serif;
+    font-size: 28px;
+    line-height: 34px;
+}
+h3 {
+    @apply text-honkburgundy-800;
+    margin: 0 0 8px 0;
+    font-family: inter, serif;
+    font-size: 22px;
+    line-height: 28px;
+}
 h4,
 h5,
 ul,
@@ -38,16 +59,26 @@ ol,
 dl,
 p,
 blockquote {
+    @apply text-honkburgundy-800;
     margin: 0 0 8px 0;
+    font-family: inter, serif;
 }
 
 /*
-  * Default anchor styles 
+  * Default anchor styles
   */
 a {
-    @apply text-blue-600;
+    @apply text-honkburgundy-800;
     @apply cursor-pointer;
-    @apply no-underline;
+    @apply underline;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+p {
+    @apply text-honkburgundy-800;
+    font-size: 17px;
+    line-height: 22px;
 }
 
 a:active,
@@ -61,7 +92,7 @@ a:hover {
   */
 b,
 strong {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* Used to be part of normalize.css */
@@ -101,6 +132,6 @@ body:not(:-moz-handler-blocked) fieldset {
 /* Ensure font styling gets appended to the DOM and SDOM */
 html,
 :host {
-    font-family: Finntype, Arial, Helvetica, sans-serif;
+    font-family: moret, inter, Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }

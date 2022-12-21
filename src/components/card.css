@@ -1,8 +1,8 @@
 .f-card {
-    @apply shadow tap-highlight-transparent;
+    @apply shadow-none tap-highlight-transparent;
 
     &:hover {
-        @apply shadow-2 bg-gray-50;
+        @apply shadow-none bg-gray-50;
     }
 
     &:active {

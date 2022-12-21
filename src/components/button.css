@@ -2,12 +2,12 @@
 .button--secondary,
 .button--default {
     /* Common for all button types */
-    @apply font-bold rounded-8 leading-24 max-w-max focus-ring justify-center;
+    @apply font-bold rounded-full leading-24 max-w-max focus-ring justify-center;
     transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
     transition-property: background-color, border-color;
 
     /* secondary */
-    @apply py-10 px-14 text-blue-600 bg-white border-gray-300 border-2 hover:bg-blue-50 hover:border-blue-600 active:bg-blue-100;
+    @apply py-10 px-14 text-honkburgundy-800 bg-transparent border-honkburgundy-800 border-2 hover:bg-honkgreen-50 hover:border-honkburgundy-800;
 }
 
 /* Overrides for links pretending to be buttons */
@@ -19,32 +19,32 @@ a.button:hover {
 
 .button--primary,
 .button--cta {
-    @apply py-12 px-16;
-    @apply border-0;
-    @apply text-white bg-blue-600  hover:bg-blue-700 active:bg-blue-800;
+    @apply py-12 px-16 rounded-full;
+    @apply border-2 border-honkburgundy-800;
+    @apply text-honkburgundy-800 bg-honkgreen-600 hover:bg-honkburgundy-800 hover:text-white active:bg-honkgreen-700;
 }
 
 .button--tertiary,
 .button--flat {
-    @apply py-12 px-16;
-    @apply border-0 bg-transparent;
-    @apply text-blue-600 hover:bg-blue-50 active:bg-blue-100;
+    @apply py-12 px-16 rounded-full;
+    @apply border-0 bg-honkburgundy-800;
+    @apply text-white hover:bg-honkorange-100 hover:text-honkburgundy-800 active:bg-honkburgundy-600;
 }
 
 .button--destructive {
-    @apply py-12 px-16;
+    @apply py-12 px-16 rounded-full;
     @apply border-0;
     @apply text-white bg-red-600 hover:bg-red-700 active:bg-red-800;
 }
 
 .button--destructive-flat {
-    @apply py-12 px-16;
+    @apply py-12 px-16 rounded-full;
     @apply border-0 bg-transparent;
     @apply text-red-600 hover:bg-red-50 active:bg-red-100;
 }
 
 .button--order {
-    @apply py-12 px-16;
+    @apply py-12 px-16 rounded-full;
     @apply border-0;
     @apply text-gray-900 bg-green-400 hover:bg-green-500 active:bg-green-600;
 }
@@ -99,6 +99,7 @@ a.button:hover {
 .button--small.button--secondary {
     padding-top: 6px;
     padding-bottom: 6px;
+    background: transparent;
 }
 
 .button--small.button--utility {
