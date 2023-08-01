@@ -58,7 +58,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "autoprefixer": "^10.1.0",
     "brotli-size": "^4.0.0",
-    "cssnano": "^5.0.8",
+    "cssnano": "^6.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "drnm": "^0.9.0",
     "filesize": "^8.0.3",
