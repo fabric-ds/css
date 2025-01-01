@@ -49,7 +49,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@eik/cli": "^2.0.0-next.6",
+    "@eik/cli": "^3.0.0",
     "@fabric-ds/icons": "^0.6.0",
     "@fabric-ds/tailwind-config": "^0.5.32",
     "@finn-no/browserslist-config": "^3.0.0",
